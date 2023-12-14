@@ -16,7 +16,6 @@
 .location {
     color: white;
     font-size: 14px;
-    font-family: Nunito;
     font-weight: 600;
     line-height: 18px;
     word-wrap: break-word"
@@ -56,7 +55,6 @@
 .book-now {
     color: white;
     font-size: 14px;
-    font-family: Nunito;
     font-weight: 600;
     line-height: 18px;
     word-wrap: break-word;
@@ -221,9 +219,74 @@
     padding-right: 85px
 }
 
+.adventure-section {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position:relative
+}
+
+.adventure-content {
+    height: 210px;
+    justify-content: flex-start;
+    gap: 5px;
+    display: flex;
+    position:absolute
+}
+
+.adventure-heading {
+    height: 157px;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.heading-text {
+    align-self: stretch;
+    text-align: center;
+    color: white;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 58px;
+    word-wrap: break-word;
+}
+
+.heading-description {
+    height: 84px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.booking-button {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background: #AF9065;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.button-text {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+
 .restaurant {
     height: 1053px;
-    widht: 1440px;
+    width: 1440px;
   
 }
 
@@ -263,7 +326,6 @@
 .heading-text {
     color: #AF9065;
     font-size: 14px;
-    font-family: Nunito;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.68px;
@@ -282,8 +344,7 @@
 
 .menu-description {
     width: 696px;
-    text-align: center;
-    color: #474A57;
+    color: black;
     font-size: 18px;
     font-weight: 400;
     line-height: 32px;
