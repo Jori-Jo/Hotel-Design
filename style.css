@@ -28,7 +28,7 @@
 }
 
 .frame-image {
-    width: 253.57px;
+    width: 2px;
     height: 60px" 
 
 }
@@ -194,19 +194,98 @@
     display: inline-flex
 }
 
-.image-right-side{
-    justify-content: flex-start; 
-    align-items: flex-start; 
-    gap: 50px; 
+.image-right-side {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
     display: flex;
-    width: 280px; 
-    height: 464px; 
+    width: 280px;
+    height: 464px;
+}
+
+.booking-wrapper {
+    width: 50px;
+    height: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex
+}
+
+.container {
+    padding-left: 85px;
+    padding-right: 85px
+}
+
+.restaurant {
+    height: 1053px;
+    widht: 1440px;
+  
+}
+
+.restaurant-wrap {
+    display: flex;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-top:100px;
+    padding: down 100px;
+
+
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.specials-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+
+.specials-heading {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
 }
 
 
 
+.heading-text {
+    color: #AF9065;
+    font-size: 14px;
+    font-family: Nunito;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.68px;
+    word-wrap: break-word;
+}
 
+.menu-title {
+    width: 607px;
+    text-align: center;
+    color: black;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 58px;
+    word-wrap: break-word;
+}
 
-
-
-
+.menu-description {
+    width: 696px;
+    text-align: center;
+    color: #474A57;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    word-wrap: break-word;
+}
