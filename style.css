@@ -265,13 +265,13 @@
 }
 
 .booking-button {
-    
+
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 13px;
     padding-bottom: 13px;
     background: #AF9065;
-  
+
     color: white;
     font-size: 16px;
     font-weight: 600;
@@ -352,35 +352,85 @@
     word-wrap: break-word;
 }
 
-.holidays-image{
+.holidays-image {
     width: 1440px;
     height: 338px
 }
 
-.holiday-container{
-    padding-top: 100px;
-    padding-bottom: 100px;
+.holiday-container {
+
     position: relative;
-    
-    
+
+
 }
 
-.holiday-content{ 
-    position:absolute;
+.holiday-content {
+    position: absolute;
     top: 50%;
     transform: translateY(-50%) translateX(-50%);
-    left:50%;
+    left: 50%;
 
 }
 
-.holiday-button{
+.holiday-button {
     width: 30px;
-    height:30px;   
-     
+    height: 30px;
+
 }
 
-.holiday-text{
+.holiday-text {
     color: white;
     font-family: Cardo;
 }
 
+.offers-wrapper {
+    height: 1440px;
+    width: 1073px;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+
+
+}
+
+.offers-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.offers-top {
+    display: grid;
+    place-items: center;
+
+}
+
+.offers-top-heading {
+    color: #AF9065;
+    font-size: 14px;
+    font-family: Nunito;
+
+}
+
+.line {
+    color: #AF9065;
+    width: 30px;
+    height: 1.5px; 
+
+}
+
+.h3{
+    font-family: Cardo;
+font-size: 44px;
+font-style: normal;
+font-weight: 700;
+
+}
+
+.offers-row{
+    margin-top: 50px;
+
+}
