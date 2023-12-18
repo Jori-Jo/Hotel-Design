@@ -9,6 +9,10 @@
     --white-color: #fff;
 }
 
+body {
+    background-color: #C4C4C4;
+}
+
 
 /* global css */
 
@@ -21,8 +25,8 @@
     cursor: pointer;
     text-decoration: none;
 }
- 
-.secondary-btn{
+
+.secondary-btn {
     background-color: transparent;
     padding: 12px 24px;
     font-size: 16px;
@@ -30,6 +34,11 @@
     border: 1px solid white;
     cursor: pointer;
     text-decoration: none;
+}
+
+.container {
+    padding-left: 85px;
+    padding-right: 85px;
 }
 
 /* infobar starts */
@@ -63,45 +72,45 @@
 
 /* menu-bar starts */
 
-.menubar{
+.menubar {
     background-color: white;
 
 }
 
-.menubar__spacing{
-    padding:20px 0; 
+.menubar__spacing {
+    padding: 20px 0;
 }
 
-.menubar__image{
+.menubar__image {
     height: 35 px;
     width: 20 px;
     left: 0px;
     top: 0px;
 }
 
-.menubar__image{
+.menubar__image {
     height: 100%;
     width: 100%;
 }
 
 
-.menubar__wrapper{
-    display:flex;
+.menubar__wrapper {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.menubar__left{
+.menubar__left {
     height: 60px;
 }
 
-.menubar__right{
-    display:flex;
-    gap:24px;
+.menubar__right {
+    display: flex;
+    gap: 24px;
 
 }
 
-.text__style{
+.text__style {
     color: #000;
 }
 
@@ -122,7 +131,8 @@
     border: 1px black solid" 
 
 }
-.banner__image img{
+
+.banner__image img {
     height: 100%;
     width: 100%;
 }
@@ -132,8 +142,7 @@
     top: 50%;
     transform: translateY(-50%) translateX(-50%);
     left: 50%;
-    display:grid
-
+    display: grid
 }
 
 .banner-text-worldclass {
@@ -141,22 +150,24 @@
     font-size: 23px;
 }
 
-.banner__space{
+.banner__space {
     margin-top: 40px;
 }
 
-.banner__buttons{
-    display:flex;
+.banner__buttons {
+    display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.button__space{
+.button__space {
     margin-left: 10px;
 }
 
 /* banner ends */
+
+/* about starts */
 
 .about {
     display: flex;
@@ -223,10 +234,9 @@
     display: inline-flex
 }
 
-.container {
-    padding-left: 85px;
-    padding-right: 85px
-}
+/* about ends */
+
+
 
 .adventure-section {
     padding-left: 70px;
@@ -392,65 +402,86 @@
     font-family: Cardo;
 }
 
-.offers-wrapper {
-    height: 1440px;
-    width: 1073px;
-    padding-left: 85px;
-    padding-right: 85px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-
-
-
-}
-
-.offers-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.offers-top {
-    display: grid;
-    place-items: center;
-
-}
-
-.offers-top-heading {
-    color: #AF9065;
-    font-size: 14px;
-    font-family: Nunito;
-
-}
-
 .line {
     color: #AF9065;
     width: 30px;
-    height: 1.5px; 
+    height: 1.5px;
 
 }
 
-.h3{
+/* news starts */
+.news {
+    padding: 100px 0;
+}
+
+.news-title__wrapper {
+    text-align: center;
+}
+
+.section-tag {
+    color: #AF9065;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-title {
+    font-size: 44px;
+}
+
+.section-desc {
+    font-size: 18px;
+}
+
+.section-desc {}
+
+.news__wrapper {
+    display: flex;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+.card {
+    width: calc((100% - 100px)/3);
+}
+
+.card__content {
+    padding: 42px 26px;
+    background-color: white;
+
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-tag {
+    font-family: Nunito;
+    font-size: 16px;
+    color: #AF9065;
+    margin-bottom: 10px;
+}
+
+.card-title {
     font-family: Cardo;
-font-size: 44px;
-font-style: normal;
-font-weight: 700;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
 
 }
 
-.offers-row{
-    margin-top: 50px;
-
+.card-desc {
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    color: #474A57;
+    margin-bottom: 22px;
 }
 
-.offers-content{
-    display:flex;
-    align-items: center;
+.card-link{
+    color:#AF9065;
 }
 
-.offers-container-box{
-
-    height:564px;
-    width:390px
-}
+/* news ends */
