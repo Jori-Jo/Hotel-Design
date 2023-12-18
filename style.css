@@ -1,153 +1,162 @@
-.top-header {
-    width: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #AF9065;
+    --white-color: #fff;
+}
+
+
+/* global css */
+
+.primary__btn {
+    background-color: var(--primary-color);
+    padding: 12px 24px;
+    font-size: 16px;
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+ 
+.secondary-btn{
+    background-color: transparent;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: var(--white-color);
+    border: 1px solid white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* infobar starts */
+
+.infoBar {
+    background-color: #000;
+    padding: 12px 0;
+}
+
+.infobar__address {
+    color: #fff;
+}
+
+.infobar__mail {
+    color: #fff;
+}
+
+.infoBar__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infobar__left {
+    display: flex;
+    gap: 24px;
+}
+
+
+/* infobar ends */
+
+/* menu-bar starts */
+
+.menubar{
+    background-color: white;
+
+}
+
+.menubar__spacing{
+    padding:20px 0; 
+}
+
+.menubar__image{
+    height: 35 px;
+    width: 20 px;
+    left: 0px;
+    top: 0px;
+}
+
+.menubar__image{
     height: 100%;
-    padding-left: 85px;
-    padding-right: 85px;
-    background: #18191F;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 10px;
-    display: inline-flex
+    width: 100%;
 }
 
 
-
-.location {
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 18px;
-    word-wrap: break-word"
-
-}
-
-.email {
-    display: inline-flex
-}
-
-.frame-image {
-    width: 2px;
-    height: 60px" 
-
-}
-
-
-.right-side {
-    justify-content: flex-start;
-    align-items: center;
-    display: inline-flex;
-    gap: 30;
-
-}
-
-
-
-.cart-social {
-
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px;
-    display: inline-flex"
-
-}
-
-.book-now {
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 18px;
-    word-wrap: break-word;
-    display: inline-flex"
-
-}
-
-.menu {
-    display: flex;
-    width: 1300px;
-    padding: 20px 85px;
+.menubar__wrapper{
+    display:flex;
     justify-content: space-between;
     align-items: center;
-    display: inline-flex
 }
 
-.frame {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1 0 0;
+.menubar__left{
     height: 60px;
 }
 
-.frame-right {
-    justify-content: flex-start;
-    align-items: center;
-    gap: 80px;
-    display: flex
-}
-
-.home-bar {
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
-    display: flex"
+.menubar__right{
+    display:flex;
+    gap:24px;
 
 }
 
-.home-bar-items {
-    color: black;
-    font-size: 15px;
-    line-height: 22px;
-
+.text__style{
+    color: #000;
 }
+
+
+
+/* menu-bar ends */
+
+/* banner starts */
 
 .banner {
     position: relative
 }
 
-.banner-image {
-    width: 1440px;
+.banner__image {
     height: 650px;
     left: 0px;
     top: 0px;
     border: 1px black solid" 
 
 }
+.banner__image img{
+    height: 100%;
+    width: 100%;
+}
 
-.banner-text {
-    width: 720px;
-    height: 188px;
-    left: 359px;
-    top: 177px;
+.banner__text {
     position: absolute;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    display: inline-flex
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    display:grid
+
 }
 
-.first-text {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 15px;
-    display: flex;
+.banner-text-worldclass {
     color: white;
-    font-size: 54px;
+    font-size: 23px;
 }
 
-.second-text {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background: #f5f5dc;
+.banner__space{
+    margin-top: 40px;
+}
+
+.banner__buttons{
+    display:flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    display: inline
+
 }
+
+.button__space{
+    margin-left: 10px;
+}
+
+/* banner ends */
 
 .about {
     display: flex;
@@ -433,4 +442,15 @@ font-weight: 700;
 .offers-row{
     margin-top: 50px;
 
+}
+
+.offers-content{
+    display:flex;
+    align-items: center;
+}
+
+.offers-container-box{
+
+    height:564px;
+    width:390px
 }
