@@ -333,10 +333,8 @@ body {}
 
 /* week section starts */
 
-
-/* week section ends */
 .week {
-    background-color: #C4C4C4;
+    background-color: #e5e5e5;
     padding: 100px 0;
 }
 
@@ -366,8 +364,6 @@ body {}
     flex-wrap: wrap;
     gap: 50px;
 }
-
-
 
 .meal-left {
     background-color: var(--white-color);
@@ -435,10 +431,10 @@ body {}
 }
 
 .meal__items:nth-child(even) .meal-info {
-margin-left: 36px;}
+    margin-left: 36px;
+}
 
-
-
+/* week section ends */
 
 /* video section starts*/
 .video {
@@ -507,7 +503,7 @@ margin-left: 36px;}
 /* news starts */
 .news {
     padding: 100px 0;
-    background-color: #C4C4C4;
+    background-color: #e5e5e5;
 
 }
 
@@ -632,3 +628,122 @@ margin-left: 36px;}
 }
 
 /* news ends */
+
+/* footer starts */
+
+.footer {
+    padding-top: 70px;
+    padding-bottom: 16px;
+    background-color: #413525;
+}
+
+.footer__wrapper {}
+
+.footer__top {
+    display: flex;
+    gap: 50px;
+}
+
+.section-info {
+    margin-right: 50px;
+}
+
+.section-info img {
+    margin-bottom: 20px;
+
+}
+
+.section-info p {
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+
+}
+
+.section-info .infobar-social {
+    padding: 30px 0;
+    list-style: none;
+}
+
+.section-download {
+    margin-right: 14px;
+}
+
+.section-rooms {
+    color: var(--white-color);
+    margin-right: 50px;
+}
+
+.section-rooms p {
+    font-family: Cardo;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 20px;
+}
+
+.section-rooms ul {
+    list-style: none;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.section-rooms-gap {
+    margin-bottom: 10px;
+}
+
+.section-contact {
+    color: var(--white-color);
+    margin-bottom: 20px;
+
+}
+
+.contact-title {
+    font-family: Cardo;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.contact-desc {
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.section-phone{
+    text-decoration: none;  
+    color: var(--white-color);
+    margin-bottom: 19px;
+    align-items: center;
+    gap:15px;
+
+
+}
+
+.section-phone a{
+    color: var(--white-color);
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+.footer__bottom {
+    display: flex;
+}
+
+
+/* footer ends */
