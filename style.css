@@ -393,6 +393,19 @@ body {}
     padding: 20px 38px 20px 37px;
 }
 
+.meal-image {
+    width: 90px;
+    height: 90px;
+    
+
+}
+
+.meal-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 .meal-price {
     color: var(--primary-color);
     font-family: Cardo;
@@ -642,11 +655,13 @@ body {}
 .footer__top {
     display: flex;
     gap: 50px;
+    margin-bottom: 70px;
 }
 
 .section-info {
-    margin-right: 50px;
+    width: calc(40% - 50px);
 }
+
 
 .section-info img {
     margin-bottom: 20px;
@@ -673,7 +688,7 @@ body {}
 
 .section-rooms {
     color: var(--white-color);
-    margin-right: 50px;
+    width: calc(20% - 50px)
 }
 
 .section-rooms p {
@@ -692,13 +707,25 @@ body {}
     line-height: 32px;
 }
 
+.section-rooms li::before{
+    content: "";
+    width: 8px;
+    height: 2px;
+    background-color: var(--primary-color);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+
+}
+
 .section-rooms-gap {
     margin-bottom: 10px;
 }
 
-.section-contact {
+.contactus {
     color: var(--white-color);
     margin-bottom: 20px;
+    width:20%;
 
 }
 
@@ -718,31 +745,33 @@ body {}
     margin-bottom: 30px;
 }
 
-.section-phone{
-    text-decoration: none;  
+.section-phone {
+    text-decoration: none;
     color: var(--white-color);
     margin-bottom: 19px;
     align-items: center;
-    gap:15px;
-
-
-}
-
-.section-phone a{
-    color: var(--white-color);
-    text-decoration: none;
-
+    display: flex;
+    gap: 15px;
 }
 
 
-
-
-
-
-
+.full-line {
+    top: 0;
+    left: 0;
+    height: 1px;
+    background-color: var(--white-color);
+    margin-bottom: 14px;
+}
 
 .footer__bottom {
     display: flex;
+    justify-content: space-between;
+    color: var(--white-color);
+
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
 }
 
 
