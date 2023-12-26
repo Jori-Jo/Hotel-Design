@@ -215,8 +215,6 @@ body {}
     margin-left: 10px;
 }
 
-
-
 /* banner ends */
 
 /* about starts */
@@ -757,34 +755,26 @@ body {}
     font-family: Nunito;
     font-size: 16px;
     line-height: 22px;
-
-
-
-.full-line {
-    top: 0;
-    left: 0;
-    height: 1px;
-    background-color: var(--white-color);
-    margin-bottom: 14px;
 }
 
-.footer__bottom {
-    display: flex;
-    justify-content: space-between;
-    color: var(--white-color);
-
-    font-family: Nunito;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
-}
-
-/* footer ends */
-
-/* responsive */
-/* about wrapper */
-@media only screen and (max-width: 1024px) {
-    .example {
-        background: red;
+    .full-line {
+        top: 0;
+        left: 0;
+        height: 1px;
+        background-color: var(--white-color);
+        margin-bottom: 14px;
     }
-}
+
+    .footer__bottom {
+        display: flex;
+        justify-content: space-between;
+        color: var(--white-color);
+
+        font-family: Nunito;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+
+
+    /* footer ends */
