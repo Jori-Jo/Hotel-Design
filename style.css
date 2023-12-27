@@ -784,6 +784,12 @@ body {}
 @media screen and (max-width: 992px) {}
 
 @media screen and (max-width: 768px) {
+    
+
+    .container {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
 
     /* Infobar Starts */
     .infoBar__wrapper {
@@ -806,16 +812,48 @@ body {}
 
     /* Banner starts */
 
-    .banner-title{
+    .banner__image {
+        height: 250px;
+        width: 1000px;
+    }
+
+    .banner-title {
+        margin-bottom: 8px;
+    }
+
+    .banner__buttons button {
+        padding: 8px 36px;
+    }
+
+    .banner-title {
         font-size: 40px;
     }
+
 
 
     /* Banner Ends */
 
     /* About Starts */
+
+    .about-right__wrapper {
+        height: 450px;
+    }
+
     .about__wrapper {
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .about h2 {
+        margin-bottom: 0;
+    }
+
+    .about button {
+        margin-top: 12px;
+    }
+
+    .about__wrapper {
+        padding: 40px 0px;
+        gap: 28px;
     }
 
     .about-left__wrapper {
@@ -826,36 +864,54 @@ body {}
         width: 100%;
     }
 
-   .section-desc {
-        font-size: 16px
-    }
-    /* About Ends */
-
     /* Cta starts */
 
     .section-title {
         font-size: 25px;
     }
 
+    .cta__wrapper {
+        height: 212px;
+    }
+
+    .cta__text {
+        transform: translateY(-50%) translateX(-50%);
+    }
+
+    .cta h4 {
+        margin-bottom: -13px;
+        font-size: 28px;
+    }
+
+    .cta__text .primary__btn {
+        padding: 8px 24px;
+    }
+
+    .section-desc {
+        font-size: 11px;
+        line-height: 24px;
+    }
+
     /* Cta ends */
 
     /* Weeks Starts */
 
-    .week-heading .section-desc{
+    .week-heading .section-desc {
         text-align: center;
     }
 
-    .meal__items{
+    .meal__items {
         width: 100%;
     }
 
-    .meal-desc{
+    .meal-desc {
         font-size: 16px;
     }
 
     .meal__items:nth-child(even) {
         flex-direction: row;
     }
+
     .meal__items:nth-child(even) .meal-info .meal-title {
         flex-direction: row;
     }
@@ -864,21 +920,177 @@ body {}
         text-align: right;
     }
 
-    .meal-name {
-        font-size: 20px;
+    .meal__items:nth-child(even) .meal-info {
+        margin-left: 0;
     }
+
+    .meal-name {
+        font-size: 16px;
+    }
+
+    .meal-price {
+        font-size: 16px;
+    }
+
+    .meal-desc {
+        font-size: 14px;
+    }
+
+    .meal-image {
+        width: 75px;
+        height: 75px;
+        margin-left: 0;
+    }
+
+    .week {
+        padding: 40px;
+    }
+
+    .week-heading h2 {
+        margin-top: -7px;
+        margin-bottom: -7px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-tag {
+        font-size: 11px;
+    }
+
+    .week-heading .section-desc {
+        font-size: 15px;
+    }
+
+    .week-menu__wrapper {
+        margin-top: 28px;
+        gap: 32px;
+    }
+
+
 
     /* Week Ends */
 
+    /* Video Section Starts */
+
+    .video__wrapper {
+        height: 172px;
+    }
+
     .video p {
         font-size: 23px;
+        margin-top: -5px;
     }
 
     .video-content svg {
-        width: 47px;
-        height: 43px;
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Video Section Ends */
+
+    /* News Section Starts */
+
+    .news {
+        padding: 40px 0;
+    }
+
+    .news-title__wrapper .section-desc {
+        font-size: 14px;
+    }
+
+    .news-title__wrapper .section-title {
+        line-height: 40px;
+    }
+
+    .news__wrapper {
+        padding: 24px 0;
+        flex-wrap: wrap;
+    }
+
+    .news-button .primary__btn {
+        padding: 6px 20px;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .section-rooms li::before {
+        content: "";
+        width: 3px;
+        height: 1px;
+        margin-right: 5px;
+    }
+
+    .section-rooms ul {
+        font-size: 9px;
+        font-weight: 349;
+        line-height: 24px;
+    }
+
+    .section-rooms p {
+        font-size: 22px;
+    }
+
+    .section-info p {
+        font-size: 14px;
+    }
+
+    .contact-desc {
+        font-size: 14px;
+    }
+
+    .contact-title {
+        font-size: 22px;
+    }
+
+    svg {
+        width: 15px;
+    }
+
+    */
+    /* News Section Ends
+
+    /* Footer Starts */
+ 
+
+    .footer__top .section-info img {
+        width: 96px;
+        height: 28px;
+        margin-bottom: 8px;
+    }
+
+
+    .section-info {
+        width: 50%;
+    }
+
+    
+
+    .footer__top {
+        flex-wrap: wrap;
+    }
+
+    .section-info {
+        width: 50%;
+    }
+
+    .section-rooms {
+        width: 42%;
+    }
+    .footer{
+        padding-top: 32px;
     }
 
 }
+
+
+
+/* Footer Ends */
+
+
+
 
 @media screen and (max-width: 576px) {}
