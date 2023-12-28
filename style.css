@@ -230,8 +230,6 @@ body {}
     display: flex;
     padding: 100px 0px;
     gap: 50px;
-
-
 }
 
 .about-left__wrapper {
@@ -501,8 +499,7 @@ body {}
     color: var(--white-color);
     text-align: center;
     margin-top: 20px;
-
-    font-size: 44px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 58px;
     /* 131.818% */
@@ -552,7 +549,8 @@ body {}
 
 
 .section-title {
-    font-size: 44px;
+    font-size: 40px;
+
     font-family: Cardo;
     font-weight: 700;
     line-height: 58px;
@@ -651,8 +649,6 @@ body {}
     background-color: #413525;
 }
 
-.footer__wrapper {}
-
 .footer__top {
     display: flex;
     gap: 50px;
@@ -663,10 +659,8 @@ body {}
     width: calc(40% - 50px);
 }
 
-
 .section-info img {
     margin-bottom: 20px;
-
 }
 
 .section-info p {
@@ -675,7 +669,6 @@ body {}
     font-size: 18px;
     font-weight: 400;
     line-height: 32px;
-
 }
 
 .section-info .infobar-social {
@@ -716,7 +709,6 @@ body {}
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
-
 }
 
 .section-rooms-gap {
@@ -727,7 +719,6 @@ body {}
     color: var(--white-color);
     margin-bottom: 20px;
     width: 20%;
-
 }
 
 .contact-title {
@@ -755,7 +746,6 @@ body {}
     gap: 15px;
 }
 
-
 .full-line {
     top: 0;
     left: 0;
@@ -768,23 +758,294 @@ body {}
     display: flex;
     justify-content: space-between;
     color: var(--white-color);
-
     font-family: Nunito;
     font-size: 18px;
     font-weight: 400;
     line-height: 32px;
 }
 
-
 /* footer ends */
 
+/* Dimensions 1200 Px */
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
 
-@media screen and (max-width: 992px) {}
+    .container {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
 
+    /* About Starts */
+    .about__wrapper {
+        padding: 80px 0px;
+    }
+
+    /* About Ends */
+
+    /* Cta Starts */
+    .cta h4 {
+        margin-bottom: 4px;
+    }
+
+    /* Cta Ends  */
+
+    /* Week Starts */
+    .week {
+        padding: 72px 0;
+    }
+
+    .section-desc {
+        text-align: left;
+    }
+
+    .meal-info {
+        margin-right: 12px;
+    }
+
+    .meal__items:nth-child(2n) .meal-info {
+        margin-left: 12px;
+    }
+
+    .meal-name {
+        font-size: 18px;
+        line-height: 34px;
+        margin-bottom: 4px;
+    }
+
+    .meal-price {
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .meal-desc {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* Week Ends */
+
+    /* News Starts */
+    .news {
+        padding: 72px 0;
+    }
+
+    /* News Ends */
+
+    /* Footer Starts */
+    .footer__top {
+        margin-bottom: 48px;
+    }
+
+    .footer {
+        padding-top: 48px;
+    }
+
+    /* Footer Ends */
+}
+
+/* Dimensions 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    /* Menu Starts */
+    .menubar__image {
+        height: 48px;
+        width: 158px;
+    }
+
+    .menubar__spacing {
+        padding: 4px 0;
+    }
+
+    /* Menu Ends */
+    /* Banner Starts */
+    .banner__image {
+        height: 408px;
+        width: 991px;
+    }
+
+    .banner-title {
+        margin-bottom: 28px;
+    }
+
+    /* Banner Ends */
+
+    /* About Starts  */
+    .about__wrapper {
+        flex-direction: column-reverse;
+        padding: 60px 0px;
+        gap: 28px;
+    }
+
+    .about-left__wrapper {
+        width: 100%;
+    }
+
+    .about-right__wrapper {
+        height: 550px;
+        width: 900px;
+    }
+
+    .about-right__wrapper img {
+        width: 100%;
+    }
+
+    .about h2 {
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+
+    .about button {
+        margin-top: 28px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    /* About Ends */
+
+    /* cta Starts */
+    .cta__wrapper {
+        height: 236px;
+    }
+
+    .cta__text .section-title {
+        font-size: 29px;
+    }
+
+    .cta__text .section-desc {
+        font-size: 16px;
+    }
+
+    .cta button {
+        padding: 8px 36px;
+    }
+
+    /* Cta Ends */
+
+    /* Week Starts */
+    .week {
+        padding: 60px 0;
+    }
+
+    .week-heading h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .week-heading .section-desc {
+        text-align: center;
+    }
+
+    .week-menu__wrapper {
+        margin-top: 36px;
+    }
+
+    .section-desc {
+        text-align: left;
+    }
+
+    .meal__items {
+        padding: 8px 16px 8px 14px;
+    }
+
+    .meal-info {
+        margin-right: 10px;
+    }
+
+    .meal__items:nth-child(2n) .meal-info {
+        margin-left: 8px;
+    }
+
+    .meal-name {
+        font-size: 19px;
+        line-height: 34px;
+        margin-bottom: 4px;
+    }
+
+    .meal-price {
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    .meal-desc {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* Week Ends */
+    /* Video Starts */
+    .video__wrapper {
+        height: 266px;
+    }
+
+    .video-content svg {
+        width: 48px;
+        height: 44px;
+    }
+
+    .video p {
+        margin-top: 12px;
+        font-size: 30px;
+        line-height: 72px;
+    }
+
+    .news-title__wrapper .section-desc {
+        text-align: center;
+    }
+
+    .news__wrapper {
+        padding: 36px 0;
+    }
+
+    /* Video Ends */
+
+    /* News Starts */
+    .news {
+        padding: 52px 0;
+    }
+
+    /* News Ends */
+
+    .section-info p {
+        font-size: 17px;
+    }
+
+    .section-rooms ul {
+        font-size: 15px;
+        line-height: 33px;
+    }
+
+    .section-rooms p {
+        font-size: 26px;
+    }
+
+    .contact-desc {
+        font-size: 17px;
+    }
+
+    .contactus .section-phone {
+        font-size: 16px;
+        font-family: Nunito;
+    }
+
+    .contactus {
+        margin-bottom: 9px;
+    }
+
+    .footer__bottom {
+        font-size: 17px;
+        flex-direction: column;
+
+    }
+}
+
+/* Dimensions 768px */
 @media screen and (max-width: 768px) {
-    
 
     .container {
         padding-left: 45px;
@@ -817,19 +1078,14 @@ body {}
         width: 1000px;
     }
 
-    .banner-title {
-        margin-bottom: 8px;
-    }
-
     .banner__buttons button {
         padding: 8px 36px;
     }
 
     .banner-title {
-        font-size: 40px;
+        font-size: 39px;
+        margin-bottom: 8px;
     }
-
-
 
     /* Banner Ends */
 
@@ -841,6 +1097,8 @@ body {}
 
     .about__wrapper {
         flex-direction: column-reverse;
+        padding: 40px 0px;
+        gap: 28px;
     }
 
     .about h2 {
@@ -849,11 +1107,6 @@ body {}
 
     .about button {
         margin-top: 12px;
-    }
-
-    .about__wrapper {
-        padding: 40px 0px;
-        gap: 28px;
     }
 
     .about-left__wrapper {
@@ -868,6 +1121,7 @@ body {}
 
     .section-title {
         font-size: 25px;
+        line-height: 48px;
     }
 
     .cta__wrapper {
@@ -879,7 +1133,7 @@ body {}
     }
 
     .cta h4 {
-        margin-bottom: -13px;
+        margin-bottom: -4px;
         font-size: 28px;
     }
 
@@ -887,9 +1141,15 @@ body {}
         padding: 8px 24px;
     }
 
-    .section-desc {
-        font-size: 11px;
-        line-height: 24px;
+    .about-left__wrapper .section-desc {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .cta__text .section-desc {
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 32px;
     }
 
     /* Cta ends */
@@ -968,8 +1228,6 @@ body {}
         gap: 32px;
     }
 
-
-
     /* Week Ends */
 
     /* Video Section Starts */
@@ -979,7 +1237,7 @@ body {}
     }
 
     .video p {
-        font-size: 23px;
+        font-size: 20px;
         margin-top: -5px;
     }
 
@@ -1017,44 +1275,10 @@ body {}
         width: 45%;
     }
 
-    .section-rooms li::before {
-        content: "";
-        width: 3px;
-        height: 1px;
-        margin-right: 5px;
-    }
-
-    .section-rooms ul {
-        font-size: 9px;
-        font-weight: 349;
-        line-height: 24px;
-    }
-
-    .section-rooms p {
-        font-size: 22px;
-    }
-
-    .section-info p {
-        font-size: 14px;
-    }
-
-    .contact-desc {
-        font-size: 14px;
-    }
-
-    .contact-title {
-        font-size: 22px;
-    }
-
-    svg {
-        width: 15px;
-    }
-
     */
     /* News Section Ends
 
     /* Footer Starts */
- 
 
     .footer__top .section-info img {
         width: 96px;
@@ -1062,35 +1286,252 @@ body {}
         margin-bottom: 8px;
     }
 
-
     .section-info {
         width: 50%;
     }
-
-    
 
     .footer__top {
         flex-wrap: wrap;
+        margin-bottom: 4px;
     }
 
     .section-info {
         width: 50%;
+        margin-bottom: -40px;
     }
 
     .section-rooms {
         width: 42%;
+        margin-bottom: 14px;
     }
-    .footer{
+
+    .footer {
         padding-top: 32px;
     }
 
+    .footer__bottom {
+        flex-direction: column;
+        font-size: 14px;
+        font-weight: 200px;
+        line-height: 24px;
+    }
+
+    .footer__top img {
+        width: 124px;
+        height: 30px;
+    }
+
+    .section-info p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: -4px;
+    }
+
+    .section-info .infobar-social {
+        padding: 20px 0;
+    }
+
+    .section-rooms p {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+
+    .section-rooms ul {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    svg {
+        width: 15px;
+    }
+
+    .contactus {
+        width: 50%;
+    }
+
+    .contact-title {
+        font-size: 24px;
+        margin-bottom: -10px;
+    }
+
+    .contact-desc {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    .section-phone {
+        margin-bottom: 12px;
+        font-family: Nunito;
+    }
+
+    /* Footer Ends */
 }
 
+/* Dimensions 576px */
 
+@media screen and (max-width: 576px) {
 
-/* Footer Ends */
+    /* Banner Starts */
+    .banner__image {
+        height: 200px;
+        width: 572px;
+    }
 
+    .banner-title {
+        font-size: 28px;
+        line-height: 48px;
+        margin-bottom: 4px;
+    }
 
+    .banner__buttons button {
+        padding: 7px 28px;
+    }
 
+    .primary__btn {
+        font-size: 10px;
+    }
 
-@media screen and (max-width: 576px) {}
+    .secondary-btn {
+        padding: 8px 28px;
+        font-size: 10px;
+    }
+
+    /* About Starts */
+    .about-right__wrapper img {
+        height: 316px;
+        width: 250px;
+    }
+
+    .about-right__wrapper {
+        height: 304px;
+    }
+
+    .about-left__wrapper .section-title {
+        font-size: 21px;
+        line-height: 40px;
+    }
+
+    .about-left__wrapper .section-desc {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .about-left__wrapper .primary__btn {
+        font-size: 10px;
+        padding: 8px 28px;
+    }
+
+    .about__wrapper {
+        padding: 32px 0px
+    }
+
+    /* Cta Starts */
+    .cta__wrapper {
+        height: 136px;
+    }
+
+    .cta__text .section-title {
+        font-size: 18px;
+    }
+
+    .cta__text .section-desc {
+        margin-bottom: 4px;
+        font-size: 8px;
+        line-height: 16px;
+    }
+
+    .cta h4 {
+        margin-bottom: -8px;
+    }
+
+    .cta__text .primary__btn {
+        font-size: 10px;
+        padding: 6px 20px;
+    }
+
+    .week-heading h2 {
+        font-size: 21px;
+        line-height: 40px;
+    }
+
+    .section-tag {
+        font-size: 8px;
+    }
+
+    .week-heading .section-desc {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .week-menu__wrapper {
+        margin-top: 20px;
+    }
+
+    .week {
+        padding: 28px;
+    }
+
+    /* Video Section */
+    .video__wrapper {
+        height: 144px;
+    }
+
+    .video p {
+        font-size: 17px;
+        margin-top: -12px;
+    }
+
+    .video-content svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Offers Starts */
+
+    .news {
+        padding: 32px 0;
+    }
+
+    .news-title__wrapper .section-title {
+        font-size: 25px;
+    }
+
+    .news-title__wrapper .section-desc {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .news__wrapper {
+        padding: 20px 0;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: 174px;
+    }
+
+    .card__content {
+        padding: 20px 20px
+    }
+
+    .card-tag {
+        font-size: 12px;
+        line-height: 4px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      .card-desc {
+        font-size: 15px;
+        margin-bottom: 18px;
+        line-height: 0px;
+      }
+}
