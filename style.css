@@ -232,6 +232,10 @@ body {}
     gap: 50px;
 }
 
+.about-left__wrapper .section-desc {
+    text-align: left;
+  }
+
 .about-left__wrapper {
     width: calc((100% - 50px)/2);
 
@@ -780,12 +784,20 @@ body {}
         padding: 80px 0px;
     }
 
+    .about-right__wrapper img {
+        object-fit: cover;
+      }
+
     /* About Ends */
 
     /* Cta Starts */
     .cta h4 {
         margin-bottom: 4px;
     }
+    
+    .cta h4 {
+        font-size: 36px;
+      }
 
     /* Cta Ends  */
 
@@ -795,8 +807,8 @@ body {}
     }
 
     .section-desc {
-        text-align: left;
-    }
+        text-align: center;
+      }
 
     .meal-info {
         margin-right: 12px;
@@ -1032,7 +1044,7 @@ body {}
         font-size: 16px;
         font-family: Nunito;
         line-height: 22px;
-      }
+    }
 
     .contactus {
         margin-bottom: 9px;
@@ -1049,8 +1061,8 @@ body {}
 @media screen and (max-width: 768px) {
 
     .container {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 36px;
+        padding-right: 36px;
     }
 
     /* Infobar Starts */
@@ -1354,7 +1366,7 @@ body {}
         font-size: 18px;
         line-height: 28px;
         margin-bottom: 12px;
-      }
+    }
 
     .section-phone {
         margin-bottom: 12px;
@@ -1369,6 +1381,15 @@ body {}
 @media screen and (max-width: 576px) {
 
     /* Banner Starts */
+
+    .banner__buttons {
+        flex-direction: column;
+    }
+
+    .about h2 {
+        line-height: 36px;
+      }
+
     .banner-title {
         line-height: 28px;
         text-align: center;
@@ -1378,6 +1399,7 @@ body {}
     .banner__buttons button {
         padding: 4px 24px;
     }
+
 
     /* About Starts */
     .about-right__wrapper img {
@@ -1416,7 +1438,7 @@ body {}
     }
 
     .cta__wrapper {
-        height: 196px;
+        height: 220px;
     }
 
     .cta__text .section-desc {
@@ -1431,8 +1453,8 @@ body {}
     }
 
     .cta__text .primary__btn {
-        padding: 6px 20px;
-    }
+        padding: 2px 12px;
+      }
 
     /* Video Section */
     .video__wrapper {
@@ -1494,22 +1516,20 @@ body {}
 
     .section-info {
         width: 40%;
-      }
+    }
 
-      .section-rooms {
+    .section-rooms {
         width: 39%;
         margin-bottom: 14px;
-      }
+    }
 
-      .footer__top img {
+    .footer__top img {
         width: 88px;
         height: 36px;
-      }
+    }
 
-      .footer__bottom {
+    .footer__bottom {
         font-size: 16px;
-       
-      }
 
-
+    }
 }
