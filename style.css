@@ -1016,8 +1016,8 @@ body {}
     }
 
     .section-rooms ul {
-        font-size: 15px;
-        line-height: 33px;
+        font-size: 18px;
+        line-height: 32px;
     }
 
     .section-rooms p {
@@ -1031,7 +1031,8 @@ body {}
     .contactus .section-phone {
         font-size: 16px;
         font-family: Nunito;
-    }
+        line-height: 22px;
+      }
 
     .contactus {
         margin-bottom: 9px;
@@ -1048,8 +1049,8 @@ body {}
 @media screen and (max-width: 768px) {
 
     .container {
-        padding-left: 45px;
-        padding-right: 45px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     /* Infobar Starts */
@@ -1185,15 +1186,15 @@ body {}
     }
 
     .meal-name {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .meal-price {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .meal-desc {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .meal-image {
@@ -1220,7 +1221,7 @@ body {}
     }
 
     .week-heading .section-desc {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .week-menu__wrapper {
@@ -1255,7 +1256,8 @@ body {}
     }
 
     .news-title__wrapper .section-desc {
-        font-size: 14px;
+        font-size: 18px;
+
     }
 
     .news-title__wrapper .section-title {
@@ -1317,13 +1319,13 @@ body {}
     }
 
     .footer__top img {
-        width: 124px;
-        height: 30px;
+        width: 144px;
+        height: 40px;
     }
 
     .section-info p {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 18px;
+        line-height: 28px;
         margin-top: -4px;
     }
 
@@ -1332,13 +1334,8 @@ body {}
     }
 
     .section-rooms p {
-        font-size: 24px;
+        font-size: 28px;
         margin-bottom: 14px;
-    }
-
-    .section-rooms ul {
-        font-size: 16px;
-        line-height: 16px;
     }
 
     svg {
@@ -1350,15 +1347,14 @@ body {}
     }
 
     .contact-title {
-        font-size: 24px;
         margin-bottom: -10px;
     }
 
     .contact-desc {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 28px;
-        margin-bottom: 10px;
-    }
+        margin-bottom: 12px;
+      }
 
     .section-phone {
         margin-bottom: 12px;
@@ -1373,28 +1369,14 @@ body {}
 @media screen and (max-width: 576px) {
 
     /* Banner Starts */
-    .banner__image {
-        height: 200px;
-        width: 572px;
-    }
-
     .banner-title {
-        font-size: 28px;
-        line-height: 48px;
-        margin-bottom: 4px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 12px;
     }
 
     .banner__buttons button {
-        padding: 7px 28px;
-    }
-
-    .primary__btn {
-        font-size: 10px;
-    }
-
-    .secondary-btn {
-        padding: 8px 28px;
-        font-size: 10px;
+        padding: 4px 24px;
     }
 
     /* About Starts */
@@ -1407,18 +1389,19 @@ body {}
         height: 304px;
     }
 
-    .about-left__wrapper .section-title {
-        font-size: 21px;
-        line-height: 40px;
+    .section-tag {
+        font-size: 14px;
     }
 
     .about-left__wrapper .section-desc {
-        font-size: 13px;
-        line-height: 23px;
+        line-height: 28px;
+    }
+
+    .about-left__wrapper .section-desc {
+        font-size: 16px
     }
 
     .about-left__wrapper .primary__btn {
-        font-size: 10px;
         padding: 8px 28px;
     }
 
@@ -1427,18 +1410,20 @@ body {}
     }
 
     /* Cta Starts */
-    .cta__wrapper {
-        height: 136px;
+    .cta__text .section-title {
+        font-size: 28px;
+        line-height: 32px;
     }
 
-    .cta__text .section-title {
-        font-size: 18px;
+    .cta__wrapper {
+        height: 196px;
     }
 
     .cta__text .section-desc {
-        margin-bottom: 4px;
-        font-size: 8px;
+        margin-bottom: 8px;
         line-height: 16px;
+        font-size: 16px;
+        margin-top: 10px;
     }
 
     .cta h4 {
@@ -1446,40 +1431,18 @@ body {}
     }
 
     .cta__text .primary__btn {
-        font-size: 10px;
         padding: 6px 20px;
-    }
-
-    .week-heading h2 {
-        font-size: 21px;
-        line-height: 40px;
-    }
-
-    .section-tag {
-        font-size: 8px;
-    }
-
-    .week-heading .section-desc {
-        font-size: 14px;
-        line-height: 21px;
-    }
-
-    .week-menu__wrapper {
-        margin-top: 20px;
-    }
-
-    .week {
-        padding: 28px;
     }
 
     /* Video Section */
     .video__wrapper {
-        height: 144px;
+        height: 156px;
     }
 
     .video p {
-        font-size: 17px;
-        margin-top: -12px;
+        margin-top: 8px;
+        font-size: 24px;
+        line-height: 30px;
     }
 
     .video-content svg {
@@ -1493,12 +1456,7 @@ body {}
         padding: 32px 0;
     }
 
-    .news-title__wrapper .section-title {
-        font-size: 25px;
-    }
-
     .news-title__wrapper .section-desc {
-        font-size: 12px;
         line-height: 20px;
     }
 
@@ -1512,7 +1470,7 @@ body {}
 
     .card img {
         width: 100%;
-        height: 174px;
+        height: 256px;
     }
 
     .card__content {
@@ -1520,18 +1478,38 @@ body {}
     }
 
     .card-tag {
-        font-size: 12px;
         line-height: 4px;
     }
 
     .card-title {
-        font-size: 20px;
         line-height: 28px;
+    }
+
+    .card-desc {
+        margin-bottom: 18px;
+        line-height: 24px;
+    }
+
+    /* Footer Starts */
+
+    .section-info {
+        width: 40%;
       }
 
-      .card-desc {
-        font-size: 15px;
-        margin-bottom: 18px;
-        line-height: 0px;
+      .section-rooms {
+        width: 39%;
+        margin-bottom: 14px;
       }
+
+      .footer__top img {
+        width: 88px;
+        height: 36px;
+      }
+
+      .footer__bottom {
+        font-size: 16px;
+       
+      }
+
+
 }
