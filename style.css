@@ -885,7 +885,9 @@ body {}
 
     /* Menu Ends */
     /* Banner Starts */
-
+    .banner__image {
+        height: auto;
+    }
 
     .banner-title {
         margin-bottom: 28px;
@@ -924,21 +926,10 @@ body {}
     /* About Ends */
 
     /* cta Starts */
-    .cta__wrapper {
-        height: 236px;
+    .cta__text {
+        width: 90%;
     }
 
-    .cta__text .section-title {
-        font-size: 29px;
-    }
-
-    .cta__text .section-desc {
-        font-size: 16px;
-    }
-
-    .cta button {
-        padding: 8px 36px;
-    }
 
     /* Cta Ends */
 
@@ -1024,10 +1015,30 @@ body {}
         padding: 52px 0;
     }
 
+    .card__content {
+        padding: 32px 20px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .card-desc {
+        margin-bottom: 16px;
+        line-height: 28px;
+    }
+
     /* News Ends */
 
+    .footer__top {
+        margin-bottom: 32px;
+        gap: 8px;
+    }
+
     .section-info p {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .section-rooms ul {
@@ -1040,17 +1051,47 @@ body {}
     }
 
     .contact-desc {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .contactus .section-phone {
         font-size: 16px;
         font-family: Nunito;
-        line-height: 22px;
+        line-height: 20px;
     }
 
     .contactus {
         margin-bottom: 9px;
+    }
+
+    .contact-title {
+        font-size: 26px;
+    }
+
+    .section-rooms li::before {
+        content: "";
+        width: 4px;
+        height: 1px;
+        margin-right: 8px;
+    }
+
+    .section-info .infobar-social {
+        padding: 16px 0;
+    }
+
+    .section-info img {
+        margin-bottom: 12px;
+        height: 32px;
+    }
+
+    .section-phone {
+        margin-bottom: 12px;
+        gap: 6px;
+    }
+
+    .section-phone svg {
+        height: 10px;
+        width: 10px;
     }
 
     .footer__bottom {
