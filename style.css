@@ -193,9 +193,10 @@ body {}
     font-family: Cardo;
     font-size: 54px;
     font-weight: 700;
-    line-height: 66px;
+    line-height: 40px;
     margin-bottom: 40px;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .banner__buttons {
@@ -234,7 +235,7 @@ body {}
 
 .about-left__wrapper .section-desc {
     text-align: left;
-  }
+}
 
 .about-left__wrapper {
     width: calc((100% - 50px)/2);
@@ -481,7 +482,6 @@ body {}
     height: 100%;
     width: 100%;
     object-fit: cover;
-
 }
 
 .video-content {
@@ -492,6 +492,7 @@ body {}
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .video-content svg {
@@ -786,7 +787,7 @@ body {}
 
     .about-right__wrapper img {
         object-fit: cover;
-      }
+    }
 
     /* About Ends */
 
@@ -794,10 +795,10 @@ body {}
     .cta h4 {
         margin-bottom: 4px;
     }
-    
+
     .cta h4 {
         font-size: 36px;
-      }
+    }
 
     /* Cta Ends  */
 
@@ -808,14 +809,14 @@ body {}
 
     .section-desc {
         text-align: center;
-      }
+    }
 
     .meal-info {
-        margin-right: 12px;
+        margin-right: 2px;
     }
 
     .meal__items:nth-child(2n) .meal-info {
-        margin-left: 12px;
+        margin-left: 2px;
     }
 
     .meal-name {
@@ -852,11 +853,21 @@ body {}
         padding-top: 48px;
     }
 
+    .section-rooms {
+        width: calc(30% - 50px);
+    }
+
+
     /* Footer Ends */
 }
 
 /* Dimensions 992px */
 @media screen and (max-width: 992px) {
+
+    .infoBar {
+        display: none;
+    }
+
     .container {
         padding-left: 55px;
         padding-right: 55px;
@@ -874,10 +885,7 @@ body {}
 
     /* Menu Ends */
     /* Banner Starts */
-    .banner__image {
-        height: 408px;
-        width: 991px;
-    }
+
 
     .banner-title {
         margin-bottom: 28px;
@@ -887,22 +895,17 @@ body {}
 
     /* About Starts  */
     .about__wrapper {
-        flex-direction: column-reverse;
         padding: 60px 0px;
         gap: 28px;
     }
 
     .about-left__wrapper {
-        width: 100%;
-    }
-
-    .about-right__wrapper {
-        height: 550px;
-        width: 900px;
+        width: 50%;
     }
 
     .about-right__wrapper img {
         width: 100%;
+        object-fit: cover;
     }
 
     .about h2 {
@@ -1388,7 +1391,7 @@ body {}
 
     .about h2 {
         line-height: 36px;
-      }
+    }
 
     .banner-title {
         line-height: 28px;
@@ -1454,7 +1457,7 @@ body {}
 
     .cta__text .primary__btn {
         padding: 2px 12px;
-      }
+    }
 
     /* Video Section */
     .video__wrapper {
