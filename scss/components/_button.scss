@@ -1,0 +1,22 @@
+.primary__btn {
+    background-color: var(--primary-color);
+    padding: 12px 24px;
+    font-size: 16px;
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .secondary-btn {
+    background-color: transparent;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: var(--white-color);
+    border: 1px solid white;
+    cursor: pointer;
+    text-decoration: none;
+  }

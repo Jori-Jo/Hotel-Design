@@ -11,19 +11,18 @@
 @import "./base/_reset";
 
 //components
-@import "./components/_buttons";
+@import "./components/_button";
 
 //layouts
-@import "./layouts/_about";
-@import "_/layouts/_banner";
-@import "_/layouts/_cta";
-@import "_/layouts/_header";
-@import "_/layouts/_infobar";
-@import "_/layouts/_menubar";
-@import "_/layouts/_news";
-@import "_/layouts/_video";
-@import "_/layouts/_week";
-
+@import "./layouts/about";
+@import "./layouts/_banner"; 
+@import "./layouts/_cta";
+@import "./layouts/_header";
+@import "./layouts/_infobar";
+@import "./layouts/_menubar";
+@import "./layouts/_news";
+@import "./layouts/_video";
+@import "./layouts/_week";
 
 
 
