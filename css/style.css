@@ -1,3 +1,25 @@
-body {
-  background-color: red;
+.primary__btn {
+  padding: 13px 40px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #AF9065;
+  border: none;
+  font-family: "Nunito", sans-serif;
+  color: white;
+}
+
+.secondary-btn {
+  padding: 13px 40px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 1px solid black;
+  font-family: "Nunito", sans-serif;
+  color: var(--white-color);
 }/*# sourceMappingURL=style.css.map */
