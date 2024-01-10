@@ -1,19 +1,22 @@
-.primary__btn {
+.container {
+  padding: 0 85px;
+}
+
+.btn {
   padding: 13px 40px;
-  border: 1px solid #ccc;
   cursor: pointer;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
+}
+.btn__primary {
   background-color: #AF9065;
   border: none;
   font-family: "Nunito", sans-serif;
   color: white;
 }
-
-.secondary-btn {
+.btn__secondary {
   padding: 13px 40px;
-  border: 1px solid #ccc;
   cursor: pointer;
   text-decoration: none;
   font-size: 16px;
@@ -22,4 +25,25 @@
   border: 1px solid black;
   font-family: "Nunito", sans-serif;
   color: var(--white-color);
+}
+
+.header {
+  background-color: black;
+}
+.header__wrapper {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header__left {
+  display: flex;
+}
+.header__address {
+  display: flex;
+}
+.header__right {
+  display: flex;
+}
+.header__social {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

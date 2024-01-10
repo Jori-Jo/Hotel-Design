@@ -1,29 +1,25 @@
 @mixin buttonStyles {
-  padding: 13px 40px;
-  border: 1px solid #ccc;
+  padding:13px 40px;
   cursor: pointer;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-
-
 }
 
-.primary__btn {
+.btn {
   @include buttonStyles;
+  &__primary {
     background-color: $primary-color;
     border: none;
     font-family: $secondary-font;
     color: white;
-
   }
 
-  .secondary-btn {
+  &__secondary {
     @include buttonStyles;
     background-color: transparent;
     border: 1px solid black;
     font-family: $secondary-font;
-        color: var(--white-color);
-
-
+    color: var(--white-color);
   }
+}

@@ -1,0 +1,32 @@
+.header {
+    background-color: black;
+    &__wrapper {
+        padding: 10px 0;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        color:white;
+        text-decoration: none;
+    }
+
+
+    &__address{
+        display: flex;  
+        &-name{
+            color:white;
+            text-decoration: none;
+        }     
+    }
+
+    &__right{
+        display:flex;
+    }
+
+    &__social{
+        display:flex;
+    }
+
+}
