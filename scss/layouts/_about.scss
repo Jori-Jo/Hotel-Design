@@ -1,0 +1,39 @@
+.about {
+    &__wrapper {
+        padding: 100px 0;
+        display: flex;
+
+        &-left {
+            width: calc((100% - 50px)/2);
+            margin-right: 50px;
+        }
+
+        &-right {
+            width: calc((100% - 50px)/2);
+            display: flex;
+            gap:50px;
+
+            img{
+                width: 100%;
+                object-fit: none;
+            }
+        }
+
+    }
+
+    .section-tag {
+        @include section-tag;
+        color: $primary-color;
+        margin-bottom: 10px;
+    }
+
+    .common-title {
+        @include common-title;
+        margin-bottom: 30px;
+    }
+
+    .common-desc {
+        @include common-desc;
+        margin-bottom: 50px;
+    }
+}

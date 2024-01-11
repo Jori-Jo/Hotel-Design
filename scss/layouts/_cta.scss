@@ -1,0 +1,41 @@
+.cta {
+    position: relative;
+    padding: 0 85px;
+    height: 300px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: $black-color;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.6;
+    }   
+
+    img {
+        @include image-length;
+
+    }
+
+    &__wrapper {
+        @include image-position;
+        text-align: center;
+
+    }
+
+    .common-title {
+        @include common-title;
+        color: $white-color;
+        text-align: center;
+        line-height: 58px;
+    }
+
+    .common-desc {
+        @include common-desc;
+        text-align: center;
+        color: $white-color;
+    }
+
+}

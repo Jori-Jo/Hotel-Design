@@ -1,0 +1,31 @@
+.banner {
+    position: relative;
+
+    &__image {
+        height: 650px;
+        left: 0px;
+        top: 0px;
+        img {
+           @include image-length;
+        }
+    }
+
+    &__text {
+       @include image-position;
+    }
+
+    &__title {
+        font-family: $primary-font;
+        font-size: 54px;
+        @extend %bold;
+        line-height: 66px;
+        color: $white-color;
+        margin-bottom: 40px;
+    }
+
+    &__buttons{
+        display: flex;
+        gap: 15px;  
+        justify-content: center;
+        }
+}

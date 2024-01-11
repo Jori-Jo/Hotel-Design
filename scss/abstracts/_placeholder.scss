@@ -1,41 +1,33 @@
 //Font weight
-%bolder{
+%bolder {
     font-weight: 800;
 }
 
-%bold{
+%bold {
     font-weight: 700;
 }
 
-%semi-bold{
+%semi-bold {
     font-weight: 600;
 }
 
-%medium{
+%medium {
     font-weight: 500;
 }
 
-%regular{
+%regular {
     font-weight: 400;
 }
 
-%light{
+%light {
     font-weight: 300;
 }
 
-%uppercase{
+%uppercase {
     text-transform: uppercase;
-}
-
-%relative{
-    position: relative;
-}
-
-%absolute{
-    position: absolute;
 }
 
 %content {
     content: "";
-  }
+}
 

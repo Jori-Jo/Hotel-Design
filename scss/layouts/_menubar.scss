@@ -1,0 +1,45 @@
+.menubar {
+    &__wrapper {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    &__right {
+        display:flex;
+
+        .list-style {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+    }
+
+    &__text-style {
+        color: $black-color;
+        text-decoration: none;
+        font-family: $secondary-font;
+        font-size: 16px;
+        @extend %semi-bold;
+        line-height: 22px;
+    }
+
+    &__logo {
+
+        height: 60px;
+
+        img {
+            @include image-length;
+        }
+
+    }
+
+    &__rooms-dropdown svg{
+        justify-content: center;
+    }
+
+    &__hamburger-menu{
+        display: none;
+    }
+}

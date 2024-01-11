@@ -1,0 +1,93 @@
+.week {
+    $self:&;
+    background-color: $secondary-color;
+    padding: 100px 0;
+
+    &__heading {
+        text-align: center;
+
+        .section-tag {
+            @include section-tag;
+        }
+
+        .common-title {
+            @include common-title;
+        }
+
+        .common-desc {
+            @include common-desc;
+        }
+    }
+
+    &__menu-wrapper {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        padding: 50px 0;
+    }
+
+    &__meal-items {
+        width: calc((100% - 50px)/2);
+        background-color: $white-color;
+        padding: 20px 37px;
+        display: flex;
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+            #{$self}__meal-title {
+                flex-direction: row-reverse;
+        }
+    }
+}
+
+    &__meal-title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    
+    }
+
+    &__meal-price {
+        color: $primary-color;
+        font-family: $primary-font;
+        font-size: 22px;
+        @extend %bold;
+        line-height: 34px
+    }
+
+    &__meal-name {
+        font-family: $primary-font;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 34px;
+    }
+
+    &__menu-info {
+        margin-right: 36px;
+
+        &:nth-child(even) {
+            margin-left: 36px;
+        }
+    }
+
+    &__meal-desc {
+        color: $black-color;
+        text-align: right;
+        font-family: $secondary-font;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+
+    }
+
+    &__meal-image {
+        height: 90px;
+        width: 90px;
+
+        img {
+            @include image-length;
+            object-fit: contain;
+        }
+    }
+
+}

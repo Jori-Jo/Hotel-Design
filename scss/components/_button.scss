@@ -7,8 +7,8 @@
 }
 
 .btn {
-  @include buttonStyles;
   &__primary {
+    @include buttonStyles;
     background-color: $primary-color;
     border: none;
     font-family: $secondary-font;
@@ -18,8 +18,9 @@
   &__secondary {
     @include buttonStyles;
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid white;
     font-family: $secondary-font;
     color: var(--white-color);
+    color: $white-color;
   }
 }

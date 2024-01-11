@@ -4,6 +4,7 @@
 @import "./abstracts/_global";
 @import "./abstracts/_placeholder";
 @import "./abstracts/_responsive";
+@import "./abstracts/_mixin";
 
 //base
 @import "./base/_base";
@@ -14,7 +15,7 @@
 @import "./components/_button";
 
 //layouts
-@import "./layouts/about";
+@import "./layouts/_about";
 @import "./layouts/_banner"; 
 @import "./layouts/_cta";
 @import "./layouts/_header";
