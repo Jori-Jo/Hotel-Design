@@ -1,6 +1,5 @@
 .cta {
     position: relative;
-    padding: 0 85px;
     height: 300px;
 
     &::before {
@@ -16,7 +15,6 @@
 
     img {
         @include image-length;
-
     }
 
     &__wrapper {

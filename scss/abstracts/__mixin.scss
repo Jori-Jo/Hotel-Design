@@ -34,3 +34,10 @@
     font-weight: 400;
     line-height: 32px
 }
+
+@mixin social-media {
+    display: flex;
+    gap: 15px;
+    margin-right: 30px;
+    align-items: center
+}

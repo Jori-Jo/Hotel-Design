@@ -1,0 +1,110 @@
+.news {
+    padding: 100px 0;
+    background-color: $secondary-color;
+    text-align: center;
+
+    &__heading {
+        margin: 0 auto;
+        width: 56%;
+    }
+
+    .common-title {
+        @include common-title;
+        text-align: center;
+    }
+
+    .common-desc {
+        @include common-desc;
+        text-align: center;
+    }
+
+    .section-tag {
+        @include section-tag;
+        text-align: center;
+    }
+
+    .section-tag::before {
+        content: "";
+        height: 2px;
+        background-color: $primary-color;
+        display: inline-block;
+        vertical-align: middle;
+        width: 30px;
+    }
+
+    .section-tag::after {
+        content: "";
+        height: 2px;
+        background-color: $primary-color;
+        display: inline-block;
+        vertical-align: middle;
+        width: 30px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 50px;
+        padding: 50px 0;
+    }
+}
+
+.card {
+    width: calc((100% - 50px)/3);
+    background-color: $white-color;
+    text-align: left;
+
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    &__info {
+        padding: 42px 26px;
+    }
+
+    &__tag {
+        color: $primary-color;
+        font-family: $secondary-font;
+        font-size: 16px;
+        @extend %semi-bold;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-family: $primary-color;
+        font-size: 22px;
+        @extend %bold;
+        line-height: 34px;
+        margin-bottom: 15px;
+    }
+
+    &__desc {
+        color: $text-color;
+        font-family: $secondary-font;
+        font-size: 18px;
+        @extend %regular;
+        line-height: 32px;
+        margin-bottom: 22px;
+    }
+
+    &__link {
+        color: $primary-color;
+        font-family: $primary-font;
+        font-size: 15px;
+        @extend %bold;
+        line-height: 20px;
+        text-decoration: none;
+
+        &::after {
+            content: "";
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.219421 0.601684C0.251571 0.569452 0.289765 0.543879 0.331815 0.52643C0.373864 0.508982 0.418943 0.5 0.464469 0.5C0.509995 0.5 0.555073 0.508982 0.597123 0.52643C0.639172 0.543879 0.677366 0.569452 0.709517 0.601684L4.86288 4.75504C4.89511 4.78719 4.92068 4.82539 4.93813 4.86744C4.95558 4.90949 4.96456 4.95456 4.96456 5.00009C4.96456 5.04562 4.95558 5.09069 4.93813 5.13274C4.92068 5.17479 4.89511 5.21299 4.86288 5.24514L0.709517 9.3985C0.644526 9.46349 0.55638 9.5 0.464469 9.5C0.372558 9.5 0.284411 9.46349 0.219421 9.3985C0.15443 9.33351 0.117918 9.24536 0.117918 9.15345C0.117918 9.06154 0.15443 8.97339 0.219421 8.9084L4.12842 5.00009L0.219421 1.09178C0.187188 1.05963 0.161616 1.02144 0.144167 0.979386C0.126718 0.937337 0.117737 0.892258 0.117737 0.846732C0.117737 0.801206 0.126718 0.756128 0.144167 0.714078C0.161616 0.672029 0.187188 0.633835 0.219421 0.601684Z' fill='%23AF9065'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.37278 0.601684C4.40493 0.569452 4.44312 0.543879 4.48517 0.52643C4.52722 0.508982 4.5723 0.5 4.61783 0.5C4.66335 0.5 4.70843 0.508982 4.75048 0.52643C4.79253 0.543879 4.83072 0.569452 4.86288 0.601684L9.01623 4.75504C9.04847 4.78719 9.07404 4.82539 9.09149 4.86744C9.10894 4.90949 9.11792 4.95456 9.11792 5.00009C9.11792 5.04562 9.10894 5.09069 9.09149 5.13274C9.07404 5.17479 9.04847 5.21299 9.01623 5.24514L4.86288 9.3985C4.79788 9.46349 4.70974 9.5 4.61783 9.5C4.52592 9.5 4.43777 9.46349 4.37278 9.3985C4.30779 9.33351 4.27128 9.24536 4.27128 9.15345C4.27128 9.06154 4.30779 8.97339 4.37278 8.9084L8.28178 5.00009L4.37278 1.09178C4.34055 1.05963 4.31497 1.02144 4.29753 0.979386C4.28008 0.937337 4.2711 0.892258 4.2711 0.846732C4.2711 0.801206 4.28008 0.756128 4.29753 0.714078C4.31497 0.672029 4.34055 0.633835 4.37278 0.601684Z' fill='%23AF9065'/%3E%3C/svg%3E");
+            height: 9px;
+            width: 10px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            margin-left: 12px;
+        }
+    }
+}

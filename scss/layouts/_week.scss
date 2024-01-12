@@ -1,10 +1,13 @@
-.week {
-    $self:&;
+.menu {
+    $self: &;
     background-color: $secondary-color;
     padding: 100px 0;
+    text-align: center;
 
     &__heading {
         text-align: center;
+        margin: 0 auto;
+        width: 56%;
 
         .section-tag {
             @include section-tag;
@@ -19,14 +22,14 @@
         }
     }
 
-    &__menu-wrapper {
+    &__meals {
         display: flex;
         gap: 50px;
         flex-wrap: wrap;
         padding: 50px 0;
     }
 
-    &__meal-items {
+    &__meal {
         width: calc((100% - 50px)/2);
         background-color: $white-color;
         padding: 20px 37px;
@@ -34,35 +37,51 @@
 
         &:nth-child(even) {
             flex-direction: row-reverse;
+
             #{$self}__meal-title {
                 flex-direction: row-reverse;
+            }
+
+            .menu__meal-desc {
+                text-align: right;
+            }
+
+            .menu__meal-info {
+                margin-left: 36px;
+            }
+
+            .menu__meal-name {
+                text-align: left;
+            }
+
+
         }
     }
-}
 
     &__meal-title {
         display: flex;
         justify-content: space-between;
         margin-bottom: 10px;
-    
+
     }
 
     &__meal-price {
         color: $primary-color;
         font-family: $primary-font;
-        font-size: 22px;
+        font-size: 20px;
         @extend %bold;
         line-height: 34px
     }
 
     &__meal-name {
         font-family: $primary-font;
-        font-size: 22px;
-        font-weight: 700;
+        font-size: 20px;
+        @extend %bold;
         line-height: 34px;
+        text-align: right;
     }
 
-    &__menu-info {
+    &__meal-info {
         margin-right: 36px;
 
         &:nth-child(even) {
@@ -72,12 +91,11 @@
 
     &__meal-desc {
         color: $black-color;
-        text-align: right;
+        text-align: left;
         font-family: $secondary-font;
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 16px;
+        @extend %regular;
         line-height: 32px;
-
     }
 
     &__meal-image {

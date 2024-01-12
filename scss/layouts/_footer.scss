@@ -1,0 +1,115 @@
+.footer {
+    background-color: $brown-color;
+    padding: 70px 0 16px 0;
+
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    .common-title {
+        @include common-title;
+        color: $white-color;
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+
+    &__top {
+        display: flex;
+        gap: 50px;
+        padding-bottom: 70px;
+    }
+
+    .social-media {
+        @include social-media;
+        margin: 30px 0;
+        list-style: none;
+    }
+
+    &__info {
+        width: 34%;
+
+        .common-desc {
+            @include common-desc;
+            margin-top: 20px;
+            color: $white-color;
+            font-size: 16px;
+        }
+    }
+
+    &__rooms {
+        width: 18%;
+
+        li::before {
+            content: "";
+            width: 8px;
+            height: 2px;
+            background-color: $white-color;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .common-desc {
+            @include common-desc;
+            color: $white-color;
+            font-size: 16px;
+            list-style: none;
+        }
+    }
+
+    &__contact {
+        width: 30%;
+
+        &-info {
+            display: flex;
+            align-items: center;
+            @include common-desc;
+            color: $white-color;
+            font-size: 16px;
+            text-decoration: none;
+            margin-bottom: 10px;
+
+        }
+
+        .common-desc {
+            @include common-desc;
+            color: $white-color;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        svg {
+            margin-right: 15px;
+        }
+    }
+
+    &__line{
+            top: 0;
+            left: 0;
+            height: 1px;
+            color: $white-color;
+       
+    }
+
+    &__bottom{
+        margin-top: 14px;
+        display:flex;
+        justify-content: space-between;
+        @include common-desc;
+        color: $white-color;
+        font-size: 16px;
+    }
+
+    &__store{
+        display: flex;
+        gap: 14px;
+        height: 40px;
+
+        img {
+            width: 36%;
+            height: 84%;
+          }
+    }
+}

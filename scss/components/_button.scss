@@ -10,9 +10,16 @@
   &__primary {
     @include buttonStyles;
     background-color: $primary-color;
-    border: none;
     font-family: $secondary-font;
     color: white;
+    border: none;
+    transition: 0.3s all ease-in-out;
+
+    &:hover{
+      background: transparent;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+    }
   }
 
   &__secondary {
@@ -22,5 +29,11 @@
     font-family: $secondary-font;
     color: var(--white-color);
     color: $white-color;
+
+    &:hover{
+      background: $white-color;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+    }
   }
 }
