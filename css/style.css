@@ -112,6 +112,7 @@
 
 .banner {
   position: relative;
+  text-align: center;
 }
 .banner__image {
   height: 650px;
@@ -175,7 +176,13 @@
   text-align: center;
   line-height: 58px;
 }
-.cta .common-desc {
+@media screen and (max-width: 992px) {
+  .cta .common-title {
+    font-size: 35px;
+    margin-bottom: 4px;
+  }
+}
+.cta .common-title .common-desc {
   color: #474A57;
   font-family: Nunito;
   font-size: 18px;

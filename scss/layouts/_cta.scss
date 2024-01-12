@@ -28,7 +28,11 @@
         color: $white-color;
         text-align: center;
         line-height: 58px;
-    }
+
+        @include desktop-mini{
+                font-size: 35px;
+                margin-bottom: 4px;
+        }
 
     .common-desc {
         @include common-desc;
@@ -36,4 +40,5 @@
         color: $white-color;
     }
 
+    }
 }
