@@ -36,10 +36,14 @@
             color: $white-color;
             font-size: 16px;
         }
+
+        @include desktop-mini{
+            width:30%
+        }
     }
 
     &__rooms {
-        width: 18%;
+        width: 20%;
 
         li::before {
             content: "";
@@ -83,6 +87,10 @@
         svg {
             margin-right: 15px;
         }
+
+        @include desktop-mini{
+            width:20%
+        }
     }
 
     &__line{
@@ -108,8 +116,9 @@
         height: 40px;
 
         img {
-            width: 36%;
-            height: 84%;
+            width: auto;
+            height: auto;
+            
           }
     }
 }   

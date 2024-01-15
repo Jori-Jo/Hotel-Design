@@ -276,8 +276,13 @@
   color: rgb(255, 255, 255);
   font-size: 16px;
 }
+@media screen and (max-width: 992px) {
+  .footer__info {
+    width: 30%;
+  }
+}
 .footer__rooms {
-  width: 18%;
+  width: 20%;
 }
 .footer__rooms li::before {
   content: "";
@@ -327,6 +332,11 @@
 .footer__contact svg {
   margin-right: 15px;
 }
+@media screen and (max-width: 992px) {
+  .footer__contact {
+    width: 20%;
+  }
+}
 .footer__line {
   top: 0;
   left: 0;
@@ -351,8 +361,8 @@
   height: 40px;
 }
 .footer__store img {
-  width: 36%;
-  height: 84%;
+  width: auto;
+  height: auto;
 }
 
 .menubar__wrapper {
