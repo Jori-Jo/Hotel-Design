@@ -6,13 +6,23 @@
         height: 650px;
         left: 0px;
         top: 0px;
+
+        @include desktop-mini {
+            height: 500px;
+        }
+
+        @include tablet {
+            height: 396px;
+        }
+
         img {
-           @include image-length;
+            @include image-length;
+            object-fit: cover;
         }
     }
 
     &__text {
-       @include image-position;
+        @include image-position;
     }
 
     &__title {
@@ -22,11 +32,24 @@
         line-height: 66px;
         color: $white-color;
         margin-bottom: 40px;
+
+        @include tablet {
+            line-height: 44px;
+            margin-bottom: 20px;
+        }
     }
 
-    &__buttons{
+    &__buttons {
         display: flex;
-        gap: 15px;  
+        gap: 15px;
         justify-content: center;
-        }
+    }
+
+    .btn__primary {
+        padding: 8px 20px;
+    }
+
+    .btn__secondary {
+        padding: 8px 20px;
+    }
 }

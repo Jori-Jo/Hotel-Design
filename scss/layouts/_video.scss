@@ -34,6 +34,10 @@
             margin-bottom: 20px;
         
         }
+
+        @include desktop-mini{
+            width: 70%;
+        }
     }
 
     .common-title{

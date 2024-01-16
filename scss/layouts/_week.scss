@@ -4,6 +4,14 @@
     padding: 100px 0;
     text-align: center;
 
+    @include desktop-mini {
+        padding: 72px 0;
+    }
+
+    @include tablet {
+        padding: 52px 0;
+    }
+
     &__heading {
         text-align: center;
         margin: 0 auto;
@@ -20,6 +28,21 @@
         .common-desc {
             @include common-desc;
         }
+
+        @include desktop-mini {
+            .common-title {
+                margin-bottom: 4px;
+            }
+
+            .common-desc {
+                line-height: 28px;
+                margin-bottom: 16px;
+            }
+        }
+
+        @include tablet {
+            width: 76%;
+        }
     }
 
     &__meals {
@@ -27,6 +50,14 @@
         gap: 50px;
         flex-wrap: wrap;
         padding: 50px 0;
+
+        @include desktop-mini {
+            padding: 32px 0;
+        }
+
+        @include desktop-mini {
+            gap: 32px;
+        }
     }
 
     &__meal {
@@ -34,6 +65,7 @@
         background-color: $white-color;
         padding: 20px 37px;
         display: flex;
+
 
         &:nth-child(even) {
             flex-direction: row-reverse;
@@ -48,13 +80,23 @@
 
             .menu__meal-info {
                 margin-left: 36px;
+
+                @include desktop-mini {
+                    margin-left: 16px;
+                }
             }
 
             .menu__meal-name {
                 text-align: left;
             }
+        }
 
+        @include desktop-mini {
+            padding: 20px 28px;
+        }
 
+        @include tablet {
+            width: 100%;
         }
     }
 
@@ -63,6 +105,12 @@
         justify-content: space-between;
         margin-bottom: 10px;
 
+        @include desktop-mini {
+            margin-bottom: 8px;
+        }
+
+
+
     }
 
     &__meal-price {
@@ -70,7 +118,12 @@
         font-family: $primary-font;
         font-size: 20px;
         @extend %bold;
-        line-height: 34px
+        line-height: 34px;
+
+        @include desktop-mini {
+            font-size: 18px;
+            line-height: 20px;
+        }
     }
 
     &__meal-name {
@@ -79,10 +132,20 @@
         @extend %bold;
         line-height: 34px;
         text-align: right;
+
+
+        @include desktop-mini {
+            font-size: 18px;
+            line-height: 20px;
+        }
     }
 
     &__meal-info {
         margin-right: 36px;
+
+        @include desktop-mini {
+            margin-right: 16px;
+        }
 
         &:nth-child(even) {
             margin-left: 36px;
@@ -96,6 +159,11 @@
         font-size: 16px;
         @extend %regular;
         line-height: 32px;
+
+
+        @include desktop-mini {
+            line-height: 24px;
+        }
     }
 
     &__meal-image {

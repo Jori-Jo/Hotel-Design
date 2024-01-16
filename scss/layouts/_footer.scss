@@ -2,6 +2,10 @@
     background-color: $brown-color;
     padding: 70px 0 16px 0;
 
+    @include desktop-mini{
+        padding: 52px 0 16px 0;
+    }
+
 
     li {
         margin-bottom: 10px;
@@ -19,6 +23,10 @@
         display: flex;
         gap: 50px;
         padding-bottom: 70px;
+
+        @include desktop-mini{
+            padding-bottom: 52px;
+        }
     }
 
     .social-media {
@@ -38,6 +46,10 @@
         }
 
         @include desktop-mini{
+            width:30%
+        }
+
+         @include desktop-mini{
             width:30%
         }
     }
