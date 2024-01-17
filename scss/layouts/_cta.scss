@@ -34,10 +34,7 @@
     &__wrapper {
         @include image-position;
         text-align: center;
-
-        @include tablet{
-            width: 80%;
-        }
+        width: 82%;
     }
 
     .common-title {

@@ -1,31 +1,45 @@
 .header {
     background-color: black;
 
-    @include tablet{
+    @include tablet {
         display: none;
     }
 
     &__wrapper {
         padding: 10px 0;
-        display:flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include desktop-mini {
+            padding: 4px 0;
+        }
     }
 
     &__left {
-        display:flex;
+        display: flex;
         color: white;
         text-decoration: none;
         gap: 50px;
+
+        @include desktop-mini {
+            gap: 12px;
+        }
     }
 
     &__address {
-        display:flex;
+        display: flex;
+
         &-name {
-                color: $white-color;
-                text-decoration: none;
-                margin-left: 10px;
+            color: $white-color;
+            text-decoration: none;
+            margin-left: 10px;
+
+            @include desktop-mini {
+                margin-left: 4px;
+                font-size: 14px;
             }
+        }
     }
 
     &__mail {
@@ -33,18 +47,34 @@
             color: $white-color;
             text-decoration: none;
             margin-left: 10px;
+
+            @include desktop-mini {
+                margin-left: 4px;
+                font-size: 14px;
+            }
         }
     }
 
     &__right {
-        display:flex;
+        display: flex;
     }
 
     &__social {
         @include social-media;
 
+        @include desktop-mini{
+            margin-right: 20px; 
+        }
+
         .btn__primary {
             padding: 10px 30px;
+            
+        }
+    }
+
+    .btn__primary{
+        @include desktop-mini{
+            font-size: 14px;
         }
     }
 }

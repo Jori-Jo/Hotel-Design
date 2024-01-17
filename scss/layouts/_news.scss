@@ -74,9 +74,11 @@
     background-color: $white-color;
     text-align: left;
 
-    // @include tablet{
-    //     width:50%
-    // }
+    @include tablet{
+        flex-wrap: wrap;
+        width:50%
+
+    }
 
     img {
         width: 100%;

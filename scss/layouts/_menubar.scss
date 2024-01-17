@@ -27,7 +27,7 @@
 
     &__logo {
 
-        height: 60px;
+        height: 40px;
 
         img {
             @include image-length;
@@ -40,6 +40,7 @@
     }
 
     &__hamburger-menu{
+        
         display: none;
     }
 }
