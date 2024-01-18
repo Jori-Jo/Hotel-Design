@@ -9,13 +9,16 @@
 
   @include desktop-mini {
     max-width: 960px;
+    padding: 0px 50px;
   }
 
   @include tablet {
     max-width: 750px;
+    padding: 0 32px;
   }
 
   @include mobile {
+    padding: 0 15px;
     max-width: 540px;
   }
 
