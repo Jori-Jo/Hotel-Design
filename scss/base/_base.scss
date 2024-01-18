@@ -1,14 +1,10 @@
 .container {
   padding: 0 85px;
-  max-width: 1400px;
+  max-width: 1366px;
   margin: 0 auto;
 
   @include fullhd {
-    max-width: 1320px;
-  }
-
-  @include laptop {
-    max-width: 1170px;
+    max-width: 1200x;
   }
 
   @include desktop-mini {
