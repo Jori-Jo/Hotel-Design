@@ -29,21 +29,24 @@
 }
 @media screen and (max-width: 1440px) {
   .container {
-    max-width: 1200x;
+    max-width: 1200px;
   }
 }
 @media screen and (max-width: 992px) {
   .container {
     max-width: 960px;
+    padding: 0px 50px;
   }
 }
 @media screen and (max-width: 768px) {
   .container {
     max-width: 750px;
+    padding: 0 32px;
   }
 }
 @media screen and (max-width: 576px) {
   .container {
+    padding: 0 15px;
     max-width: 540px;
   }
 }
@@ -63,7 +66,7 @@
   background-color: #AF9065;
   font-family: "Nunito", sans-serif;
   color: white;
-  border: none;
+  border: 1px solid #AF9065;
   transition: 0.3s all ease-in-out;
 }
 .btn__primary:hover {
@@ -239,12 +242,6 @@
   display: flex;
   gap: 15px;
   justify-content: center;
-}
-.banner .btn__primary {
-  padding: 8px 20px;
-}
-.banner .btn__secondary {
-  padding: 8px 20px;
 }
 
 .cta {

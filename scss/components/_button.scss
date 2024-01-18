@@ -1,5 +1,5 @@
 @mixin buttonStyles {
-  padding:13px 40px;
+  padding: 13px 40px;
   cursor: pointer;
   text-decoration: none;
   font-size: 16px;
@@ -12,14 +12,18 @@
     background-color: $primary-color;
     font-family: $secondary-font;
     color: white;
-    border: none;
+    border: 1px solid $primary-color;
     transition: 0.3s all ease-in-out;
 
-    &:hover{
+    &:hover {
       background: transparent;
       color: $primary-color;
       border: 1px solid $primary-color;
     }
+
+    // &--banner {
+    //   padding: 8px 20px;
+    // }
   }
 
   &__secondary {
@@ -30,7 +34,7 @@
     color: var(--white-color);
     color: $white-color;
 
-    &:hover{
+    &:hover {
       background: $white-color;
       color: $primary-color;
       border: 1px solid $primary-color;
