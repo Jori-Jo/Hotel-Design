@@ -15,13 +15,13 @@
         left: 0px;
         top: 0px;
 
-        @include desktop-mini {
-            height: 500px;
-        }
+        // @include desktop-mini {
+        //     height: 500px;
+        // }
 
-        @include tablet {
-            height: 396px;
-        }
+        // @include tablet {
+        //     height: 396px;
+        // }
 
         img {
             @include image-length;
@@ -42,15 +42,15 @@
         margin-bottom: 40px;
         text-align: center;
 
-        @include desktop-mini {
-            line-height: 48px;
-            margin-bottom: 30px;
-        }
+        // @include desktop-mini {
+        //     line-height: 48px;
+        //     margin-bottom: 30px;
+        // }
 
-        @include tablet {
-            line-height: 44px;
-            margin-bottom: 20px;
-        }
+        // @include tablet {
+        //     line-height: 44px;
+        //     margin-bottom: 20px;
+        // }
     }
 
     &__buttons {
@@ -58,5 +58,4 @@
         gap: 15px;
         justify-content: center;
     }
-
 }

@@ -2,20 +2,6 @@
     position: relative;
     height: 300px;
 
-    @include desktop-mini {
-        height: 262px;
-
-        .common-desc {
-            line-height: 20px;
-            color: $white-color;
-            margin-bottom: 20px;
-        }
-    }
-
-    @include tablet {
-        height: 262px;
-    }
-
     &::before {
         content: "";
         position: absolute;
@@ -42,21 +28,12 @@
         color: $white-color;
         text-align: center;
         line-height: 58px;
-
-        @include desktop-mini {
-            font-size: 35px;
-            margin-bottom: 4px;
-        }
-        
-        @include tablet {
-            line-height: 40px;
-        }
     }
 
-        .common-desc {
-            @include common-desc;
-            text-align: center;
-            color: $white-color;
-        }
-
+    .common-desc {
+        @include common-desc;
+        text-align: center;
+        color: $white-color;
     }
+
+}

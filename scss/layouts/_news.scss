@@ -6,33 +6,16 @@
     &__heading {
         margin: 0 auto;
         width: 56%;
-
-        @include tablet{
-            width: 82%;
-        }
-    }
-
-    @include desktop-mini {
-        padding: 72px 0;
     }
 
     .common-title {
         @include common-title;
         text-align: center;
-
-        @include desktop-mini {
-            margin-bottom: 8px;
-        }
     }
 
     .common-desc {
         @include common-desc;
         text-align: center;
-
-        @include desktop-mini {
-            line-height: 28px;
-            margin-bottom: 32px;
-        }
     }
 
     .section-tag {
@@ -62,10 +45,6 @@
         display: flex;
         gap: 50px;
         padding: 50px 0;
-
-        @include desktop-mini {
-            padding: 28px 0;
-        }
     }
 }
 
@@ -73,12 +52,6 @@
     width: calc((100% - 50px)/3);
     background-color: $white-color;
     text-align: left;
-
-    @include tablet{
-        flex-wrap: wrap;
-        width:50%
-
-    }
 
     img {
         width: 100%;
@@ -88,11 +61,6 @@
 
     &__info {
         padding: 42px 26px;
-
-        @include desktop-mini {
-            padding: 28px 24px;
-        }
-
     }
 
     &__tag {
@@ -102,10 +70,6 @@
         @extend %semi-bold;
         line-height: 22px;
         margin-bottom: 10px;
-
-        @include desktop-mini {
-            line-height: 16px;
-        }
     }
 
     &__title {
@@ -114,12 +78,6 @@
         @extend %bold;
         line-height: 34px;
         margin-bottom: 15px;
-
-        @include desktop-mini {
-            font-size: 20px;
-            line-height: 28px;
-            margin-bottom: 12px;
-        }
     }
 
     &__desc {
@@ -129,12 +87,6 @@
         @extend %regular;
         line-height: 32px;
         margin-bottom: 22px;
-
-        @include desktop-mini {
-            font-size: 16px;
-            line-height: 28px;
-            margin-bottom: 16px;
-        }
     }
 
 

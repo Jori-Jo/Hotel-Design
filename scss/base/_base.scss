@@ -2,6 +2,8 @@
   padding: 0 85px;
   max-width: 1366px;
   margin: 0 auto;
+  box-sizing: border-box;
+
 
   @include fullhd {
     max-width: 1200px;
@@ -27,5 +29,4 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }

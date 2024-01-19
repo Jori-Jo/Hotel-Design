@@ -1,19 +1,12 @@
 .header {
     background-color: black;
 
-    @include tablet {
-        display: none;
-    }
-
     &__wrapper {
         padding: 10px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        @include desktop-mini {
-            padding: 4px 0;
-        }
     }
 
     &__left {
@@ -22,9 +15,6 @@
         text-decoration: none;
         gap: 50px;
 
-        @include desktop-mini {
-            gap: 12px;
-        }
     }
 
     &__address {
@@ -35,10 +25,6 @@
             text-decoration: none;
             margin-left: 10px;
 
-            @include desktop-mini {
-                margin-left: 4px;
-                font-size: 14px;
-            }
         }
     }
 
@@ -48,10 +34,6 @@
             text-decoration: none;
             margin-left: 10px;
 
-            @include desktop-mini {
-                margin-left: 4px;
-                font-size: 14px;
-            }
         }
     }
 
@@ -62,19 +44,8 @@
     &__social {
         @include social-media;
 
-        @include desktop-mini{
-            margin-right: 20px; 
-        }
-
         .btn__primary {
             padding: 10px 30px;
-            
-        }
-    }
-
-    .btn__primary{
-        @include desktop-mini{
-            font-size: 14px;
         }
     }
 }
