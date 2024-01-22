@@ -1,6 +1,6 @@
 .footer {
     background-color: $brown-color;
-    padding: 70px 0 16px 0;
+    padding: 32px 0 4px 0;
 
     li {
         margin-bottom: 10px;
@@ -16,8 +16,9 @@
 
     &__top {
         display: flex;
-        gap: 50px;
-        padding-bottom: 70px;
+        gap: 16px;
+        padding-bottom: 28px;
+        flex-wrap: wrap
     }
 
     .social-media {
@@ -27,7 +28,7 @@
     }
 
     &__info {
-        width: 34%;
+        width: calc((100% - 20px)/2);
 
         .common-desc {
             @include common-desc;
@@ -39,7 +40,7 @@
     }
 
     &__rooms {
-        width: 20%;
+        width: calc((100% - 20px)/2);
 
         li::before {
             content: "";
@@ -85,24 +86,25 @@
         }
     }
 
-    &__line{
-            top: 0;
-            left: 0;
-            height: 1px;
-            color: $white-color;
-       
+    &__line {
+        top: 0;
+        left: 0;
+        height: 1px;
+        color: $white-color;
+
     }
 
-    &__bottom{
+    &__bottom {
         margin-top: 14px;
-        display:flex;
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
         @include common-desc;
         color: $white-color;
         font-size: 16px;
     }
 
-    &__store{
+    &__store {
         display: flex;
         gap: 14px;
         height: 40px;
@@ -110,7 +112,7 @@
         img {
             width: auto;
             height: auto;
-            
-          }
+
+        }
     }
-}   
+}

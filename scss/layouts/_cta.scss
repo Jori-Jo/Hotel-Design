@@ -1,6 +1,6 @@
 .cta {
     position: relative;
-    height: 300px;
+    height: 276px;
 
     &::before {
         content: "";
@@ -20,20 +20,22 @@
     &__wrapper {
         @include image-position;
         text-align: center;
-        width: 82%;
+        width: 90%;
     }
 
     .common-title {
         @include common-title;
         color: $white-color;
         text-align: center;
-        line-height: 58px;
+        line-height: 36px;
     }
 
     .common-desc {
         @include common-desc;
         text-align: center;
         color: $white-color;
+        margin-bottom: 8px;
+        margin-bottom: 12px;
     }
 
 }

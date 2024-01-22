@@ -1,28 +1,28 @@
 .container {
-  padding: 0 85px;
-  max-width: 1366px;
+  padding: 0 15px;
+    max-width: 540px;
   margin: 0 auto;
   box-sizing: border-box;
 
 
-  @include fullhd {
-    max-width: 1200px;
-  }
+  // @include fullhd {
+  //   max-width: 1200px;
+  // }
 
-  @include desktop-mini {
-    max-width: 960px;
-    padding: 0px 50px;
-  }
+  // @include desktop-mini {
+  //   max-width: 960px;
+  //   padding: 0px 50px;
+  // }
 
-  @include tablet {
-    max-width: 750px;
-    padding: 0 32px;
-  }
+  // @include tablet {
+  //   max-width: 750px;
+  //   padding: 0 32px;
+  // }
 
-  @include mobile {
-    padding: 0 15px;
-    max-width: 540px;
-  }
+  // @include mobile {
+  //   padding: 0 15px;
+  //   max-width: 540px;
+  // }
 
 }
 

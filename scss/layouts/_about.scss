@@ -1,21 +1,27 @@
 .about {
     &__wrapper {
-        padding: 100px 0;
+        padding: 32px 0;
         display: flex;
+        flex-direction: column-reverse;
 
         &-left {
-            width: calc((100% - 50px)/2);
+            width: 100%;
             margin-right: 50px;
         }
 
         &-right {
-            width: calc((100% - 50px)/2);
+            width: 100%;
             display: flex;
             gap: 50px;
+            height: 400px;
 
             img {
                 width: 100%;
                 object-fit: cover;
+            }
+
+            img:nth-child(2) {
+                display: none;
             }
 
         }
@@ -25,17 +31,18 @@
     .section-tag {
         @include section-tag;
         color: $primary-color;
-        margin-bottom: 10px;
+        margin-top: 4px;
+        margin-bottom: 4px;
     }
 
     .common-title {
         @include common-title;
-        margin-bottom: 30px;
+        margin-bottom: 8px;
+    }
 
+    .common-desc {
+        @include common-desc;
+        margin-bottom: 36px;
     }
 }
 
-.common-desc {
-    @include common-desc;
-    margin-bottom: 50px;
-}

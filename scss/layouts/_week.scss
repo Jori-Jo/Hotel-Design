@@ -1,40 +1,42 @@
 .menu {
     $self: &;
     background-color: $secondary-color;
-    padding: 100px 0;
+    padding: 32px 0;
     text-align: center;
 
     &__heading {
         text-align: center;
         margin: 0 auto;
         width: 72%;
+
         .section-tag {
             @include section-tag;
         }
 
         .common-title {
             @include common-title;
+            line-height: 36px;
         }
 
         .common-desc {
             @include common-desc;
         }
 
-        
+
     }
 
     &__meals {
         display: flex;
-        gap: 50px;
+        gap: 20px;
         flex-wrap: wrap;
-        padding: 50px 0;
+        padding: 28px 0;
     }
 
     &__meal {
-        width: calc((100% - 50px)/2);
+        width: 100;
         background-color: $white-color;
-        padding: 20px 37px;
-        display: flex;
+        padding: 8px 20px;
+                display: flex;
 
 
         &:nth-child(even) {
@@ -61,13 +63,12 @@
     &__meal-title {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 10px;
     }
 
     &__meal-price {
         color: $primary-color;
         font-family: $primary-font;
-        font-size: 20px;
+        font-size: 18px;
         @extend %bold;
         line-height: 34px;
 
@@ -75,16 +76,17 @@
 
     &__meal-name {
         font-family: $primary-font;
-        font-size: 20px;
+        font-size: 18px;
         @extend %bold;
         line-height: 34px;
         text-align: right;
     }
 
     &__meal-info {
-        margin-right: 36px;
+        margin-right: 20px;
+
         &:nth-child(even) {
-            margin-left: 36px;
+            margin-left: 20px;
         }
     }
 

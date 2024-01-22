@@ -4,24 +4,17 @@
 
     p {
         font-family: $secondary-font;
-        font-size: 14px;
+        font-size: 10px;
         line-height: normal;
         text-transform: uppercase;
         margin-bottom: 15px;
     }
 
     &__image {
-        height: 650px;
+        height: 280px;
+        // height: 650px;
         left: 0px;
         top: 0px;
-
-        // @include desktop-mini {
-        //     height: 500px;
-        // }
-
-        // @include tablet {
-        //     height: 396px;
-        // }
 
         img {
             @include image-length;
@@ -35,27 +28,17 @@
 
     &__title {
         font-family: $primary-font;
-        font-size: 54px;
+        font-size: 40px;
+        line-height: 32px;
         @extend %bold;
-        line-height: 66px;
         color: $white-color;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         text-align: center;
-
-        // @include desktop-mini {
-        //     line-height: 48px;
-        //     margin-bottom: 30px;
-        // }
-
-        // @include tablet {
-        //     line-height: 44px;
-        //     margin-bottom: 20px;
-        // }
     }
 
     &__buttons {
         display: flex;
-        gap: 15px;
-        justify-content: center;
+        gap: 10px;
+        text-align: center;
     }
 }

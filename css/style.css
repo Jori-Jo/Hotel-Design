@@ -23,33 +23,10 @@
 }
 
 .container {
-  padding: 0 85px;
-  max-width: 1366px;
+  padding: 0 15px;
+  max-width: 540px;
   margin: 0 auto;
   box-sizing: border-box;
-}
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .container {
-    max-width: 960px;
-    padding: 0px 50px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 750px;
-    padding: 0 32px;
-  }
-}
-@media screen and (min-width: 576px) {
-  .container {
-    padding: 0 15px;
-    max-width: 540px;
-  }
 }
 
 * {
@@ -58,7 +35,7 @@
 }
 
 .btn__primary {
-  padding: 13px 40px;
+  padding: 8px 20px;
   cursor: pointer;
   text-decoration: none;
   font-size: 16px;
@@ -75,7 +52,7 @@
   border: 1px solid #AF9065;
 }
 .btn__secondary {
-  padding: 13px 40px;
+  padding: 8px 20px;
   cursor: pointer;
   text-decoration: none;
   font-size: 16px;
@@ -93,48 +70,53 @@
 }
 
 .about__wrapper {
-  padding: 100px 0;
+  padding: 32px 0;
   display: flex;
+  flex-direction: column-reverse;
 }
 .about__wrapper-left {
-  width: calc((100% - 50px) / 2);
+  width: 100%;
   margin-right: 50px;
 }
 .about__wrapper-right {
-  width: calc((100% - 50px) / 2);
+  width: 100%;
   display: flex;
   gap: 50px;
+  height: 400px;
 }
 .about__wrapper-right img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
+.about__wrapper-right img:nth-child(2) {
+  display: none;
+}
 .about .section-tag {
   color: #AF9065;
   font-family: Nunito;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 1.68px;
   text-transform: uppercase;
   color: #AF9065;
-  margin-bottom: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 .about .common-title {
   color: #000;
   font-family: Cardo;
-  font-size: 44px;
+  font-size: 28px;
   font-weight: 700;
-  margin-bottom: 15px;
-  margin-bottom: 30px;
+  line-height: 40px;
+  margin-bottom: 8px;
 }
-
-.common-desc {
+.about .common-desc {
   color: #474A57;
   font-family: Nunito;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 32px;
-  margin-bottom: 50px;
+  margin-bottom: 36px;
 }
 
 .banner {
@@ -143,13 +125,13 @@
 }
 .banner p {
   font-family: "Nunito", sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
 .banner__image {
-  height: 650px;
+  height: 280px;
   left: 0px;
   top: 0px;
 }
@@ -167,21 +149,21 @@
 }
 .banner__title {
   font-family: "Cardo", serif;
-  font-size: 54px;
-  line-height: 66px;
+  font-size: 40px;
+  line-height: 32px;
   color: rgb(255, 255, 255);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: center;
 }
 .banner__buttons {
   display: flex;
-  gap: 15px;
-  justify-content: center;
+  gap: 10px;
+  text-align: center;
 }
 
 .cta {
   position: relative;
-  height: 300px;
+  height: 276px;
 }
 .cta::before {
   content: "";
@@ -203,29 +185,32 @@
   transform: translateY(-50%) translateX(-50%);
   left: 50%;
   text-align: center;
-  width: 82%;
+  width: 90%;
 }
 .cta .common-title {
   color: #000;
   font-family: Cardo;
-  font-size: 44px;
+  font-size: 28px;
   font-weight: 700;
-  margin-bottom: 15px;
+  line-height: 40px;
   color: rgb(255, 255, 255);
   text-align: center;
-  line-height: 58px;
+  line-height: 36px;
 }
 .cta .common-desc {
   color: #474A57;
   font-family: Nunito;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 32px;
   text-align: center;
   color: rgb(255, 255, 255);
+  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .header {
+  display: none;
   background-color: black;
 }
 .header__wrapper {
@@ -268,7 +253,7 @@
 
 .footer {
   background-color: rgb(65, 53, 37);
-  padding: 70px 0 16px 0;
+  padding: 32px 0 4px 0;
 }
 .footer li {
   margin-bottom: 10px;
@@ -276,9 +261,9 @@
 .footer .common-title {
   color: #000;
   font-family: Cardo;
-  font-size: 44px;
+  font-size: 28px;
   font-weight: 700;
-  margin-bottom: 15px;
+  line-height: 40px;
   color: rgb(255, 255, 255);
   font-size: 28px;
   line-height: 38px;
@@ -286,8 +271,9 @@
 }
 .footer__top {
   display: flex;
-  gap: 50px;
-  padding-bottom: 70px;
+  gap: 16px;
+  padding-bottom: 28px;
+  flex-wrap: wrap;
 }
 .footer .social-media {
   display: flex;
@@ -298,12 +284,12 @@
   list-style: none;
 }
 .footer__info {
-  width: 34%;
+  width: calc((100% - 20px) / 2);
 }
 .footer__info .common-desc {
   color: #474A57;
   font-family: Nunito;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 32px;
   margin-top: 20px;
@@ -311,7 +297,7 @@
   font-size: 16px;
 }
 .footer__rooms {
-  width: 20%;
+  width: calc((100% - 20px) / 2);
 }
 .footer__rooms li::before {
   content: "";
@@ -325,7 +311,7 @@
 .footer__rooms .common-desc {
   color: #474A57;
   font-family: Nunito;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 32px;
   color: rgb(255, 255, 255);
@@ -340,7 +326,7 @@
   align-items: center;
   color: #474A57;
   font-family: Nunito;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 32px;
   color: rgb(255, 255, 255);
@@ -351,7 +337,7 @@
 .footer__contact .common-desc {
   color: #474A57;
   font-family: Nunito;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 32px;
   color: rgb(255, 255, 255);
@@ -370,10 +356,11 @@
 .footer__bottom {
   margin-top: 14px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   color: #474A57;
   font-family: Nunito;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 32px;
   color: rgb(255, 255, 255);
@@ -393,10 +380,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 12px 0;
 }
 .menubar__right {
-  display: flex;
+  display: none;
 }
 .menubar__right .list-style {
   list-style: none;
@@ -411,7 +398,7 @@
   line-height: 22px;
 }
 .menubar__logo {
-  height: 40px;
+  height: 32px;
 }
 .menubar__logo img {
   height: 100%;
@@ -420,9 +407,16 @@
 .menubar__rooms-dropdown svg {
   justify-content: center;
 }
+.menubar .bar {
+  width: 20px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  margin-top: 4px;
+  cursor: pointer;
+}
 
 .news {
-  padding: 100px 0;
+  padding: 32px 0;
   background-color: #e5e5e5;
   text-align: center;
 }
@@ -433,15 +427,15 @@
 .news .common-title {
   color: #000;
   font-family: Cardo;
-  font-size: 44px;
+  font-size: 28px;
   font-weight: 700;
-  margin-bottom: 15px;
+  line-height: 40px;
   text-align: center;
 }
 .news .common-desc {
   color: #474A57;
   font-family: Nunito;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 32px;
   text-align: center;
@@ -449,7 +443,7 @@
 .news .section-tag {
   color: #AF9065;
   font-family: Nunito;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 1.68px;
   text-transform: uppercase;
   text-align: center;
@@ -472,12 +466,13 @@
 }
 .news__wrapper {
   display: flex;
-  gap: 50px;
-  padding: 50px 0;
+  gap: 20px;
+  padding: 28px 0;
+  flex-wrap: wrap;
 }
 
 .card {
-  width: calc((100% - 50px) / 3);
+  width: calc((100% - 20px) / 2);
   background-color: rgb(255, 255, 255);
   text-align: left;
 }
@@ -488,27 +483,26 @@
      object-fit: cover;
 }
 .card__info {
-  padding: 42px 26px;
+  padding: 12px 20px;
 }
 .card__tag {
   color: #AF9065;
   font-family: "Nunito", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 22px;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 .card__title {
   font-family: #AF9065;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 34px;
-  margin-bottom: 15px;
 }
 .card__desc {
   color: #474A57;
   font-family: "Nunito", sans-serif;
-  font-size: 18px;
-  line-height: 32px;
-  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 12px;
 }
 .card__link {
   color: #AF9065;
@@ -529,7 +523,7 @@
 
 .video__wrapper {
   position: relative;
-  height: 300px;
+  height: 276px;
   left: 0px;
   top: 0px;
 }
@@ -555,26 +549,26 @@
   transform: translateY(-50%) translateX(-50%);
   left: 50%;
   text-align: center;
+  width: 90%;
 }
 .video__content svg {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
 }
 .video .common-title {
   color: #000;
   font-family: Cardo;
-  font-size: 44px;
+  font-size: 28px;
   font-weight: 700;
-  margin-bottom: 15px;
+  line-height: 40px;
   color: rgb(255, 255, 255);
   justify-content: center;
-  font-size: 36px;
 }
 
 .menu {
   background-color: #e5e5e5;
-  padding: 100px 0;
+  padding: 32px 0;
   text-align: center;
 }
 .menu__heading {
@@ -585,34 +579,35 @@
 .menu__heading .section-tag {
   color: #AF9065;
   font-family: Nunito;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 1.68px;
   text-transform: uppercase;
 }
 .menu__heading .common-title {
   color: #000;
   font-family: Cardo;
-  font-size: 44px;
+  font-size: 28px;
   font-weight: 700;
-  margin-bottom: 15px;
+  line-height: 40px;
+  line-height: 36px;
 }
 .menu__heading .common-desc {
   color: #474A57;
   font-family: Nunito;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 32px;
 }
 .menu__meals {
   display: flex;
-  gap: 50px;
+  gap: 20px;
   flex-wrap: wrap;
-  padding: 50px 0;
+  padding: 28px 0;
 }
 .menu__meal {
-  width: calc((100% - 50px) / 2);
+  width: 100;
   background-color: rgb(255, 255, 255);
-  padding: 20px 37px;
+  padding: 8px 20px;
   display: flex;
 }
 .menu__meal:nth-child(even) {
@@ -633,25 +628,24 @@
 .menu__meal-title {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
 }
 .menu__meal-price {
   color: #AF9065;
   font-family: "Cardo", serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 34px;
 }
 .menu__meal-name {
   font-family: "Cardo", serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 34px;
   text-align: right;
 }
 .menu__meal-info {
-  margin-right: 36px;
+  margin-right: 20px;
 }
 .menu__meal-info:nth-child(even) {
-  margin-left: 36px;
+  margin-left: 20px;
 }
 .menu__meal-desc {
   color: rgb(0, 0, 0);

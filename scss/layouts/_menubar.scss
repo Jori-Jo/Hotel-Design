@@ -1,13 +1,12 @@
 .menubar {
     &__wrapper {
-        display:flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 0;
-    }
+        padding: 12px 0;    }
 
     &__right {
-        display:flex;
+        display: none;
 
         .list-style {
             list-style: none;
@@ -26,21 +25,23 @@
     }
 
     &__logo {
-
-        height: 40px;
+        height: 32px;
 
         img {
             @include image-length;
         }
-
     }
 
-    &__rooms-dropdown svg{
+    &__rooms-dropdown svg {
         justify-content: center;
     }
 
-    // &__hamburger-menu{
-        
-    //     display: none;
-    // }
+    .bar {
+        width: 20px;
+        height: 2px;
+        background-color: $black-color;
+        margin-top: 4px;
+        cursor: pointer;
+    }
+
 }
