@@ -7,7 +7,7 @@
     &__heading {
         text-align: center;
         margin: 0 auto;
-        width: 72%;
+        width: 84%;
 
         .section-tag {
             @include section-tag;
@@ -30,34 +30,38 @@
         gap: 20px;
         flex-wrap: wrap;
         padding: 28px 0;
+
+        @include tablet{
+            padding: 28px 52px;
+        }
     }
 
     &__meal {
-        width: 100;
+        width: 100%;
         background-color: $white-color;
         padding: 8px 20px;
-                display: flex;
+        display: flex;
 
 
-        &:nth-child(even) {
-            flex-direction: row-reverse;
+        // &:nth-child(even) {
+        //     flex-direction: row-reverse;
 
-            #{$self}__meal-title {
-                flex-direction: row-reverse;
-            }
+        //     #{$self}__meal-title {
+        //         flex-direction: row-reverse;
+        //     }
 
-            .menu__meal-desc {
-                text-align: right;
-            }
+        //     .menu__meal-desc {
+        //         text-align: right;
+        //     }
 
-            .menu__meal-info {
-                margin-left: 36px;
-            }
+        //     .menu__meal-info {
+        //         margin-left: 36px;
+        //     }
 
-            .menu__meal-name {
-                text-align: left;
-            }
-        }
+        //     .menu__meal-name {
+        //         text-align: left;
+        //     }
+        // }
     }
 
     &__meal-title {
@@ -85,9 +89,9 @@
     &__meal-info {
         margin-right: 20px;
 
-        &:nth-child(even) {
-            margin-left: 20px;
-        }
+        // &:nth-child(even) {
+        //     margin-left: 20px;
+        // }
     }
 
     &__meal-desc {
@@ -96,7 +100,7 @@
         font-family: $secondary-font;
         font-size: 16px;
         @extend %regular;
-        line-height: 32px;
+        line-height: 28px;
     }
 
     &__meal-image {

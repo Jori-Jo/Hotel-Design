@@ -5,7 +5,7 @@
 
     &__heading {
         margin: 0 auto;
-        width: 56%;
+        width: 84%;
     }
 
     .common-title {
@@ -42,17 +42,24 @@
     }
 
     &__wrapper {
-        display: flex;
-        gap: 20px;
         padding: 28px 0;
-        flex-wrap: wrap;
+
+        @include tablet {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
     }
 }
 
 .card {
-    width: calc((100% - 20px)/2);
+    width: 100%;
     background-color: $white-color;
     text-align: left;
+
+    @include tablet{
+        width: calc((100% - 20px)/2);
+    }
 
     img {
         width: 100%;

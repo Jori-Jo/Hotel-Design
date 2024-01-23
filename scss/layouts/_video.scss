@@ -27,7 +27,7 @@
     &__content {
         @include image-position;
         text-align: center;
-        width: 90%;
+        width: 92%;
 
         svg {
             width: 40px;
@@ -37,9 +37,9 @@
     }
 
 
-.common-title {
-    @include common-title;
-    color: $white-color;
-    justify-content: center;
-}
+    .common-title {
+        @include common-title;
+        color: $white-color;
+        justify-content: center;
+    }
 }

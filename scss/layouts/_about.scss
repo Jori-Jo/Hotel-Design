@@ -22,6 +22,10 @@
 
             img:nth-child(2) {
                 display: none;
+
+                @include tablet {
+                    display: block;
+                }
             }
 
         }
