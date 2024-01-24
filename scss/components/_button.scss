@@ -21,6 +21,12 @@
       border: 1px solid $primary-color;
     }
 
+    @include desktop-mini {
+      padding: 13px 40px;
+      font-size: 16px;
+      line-height: 22px;
+  }
+
     // &--banner {
     //   padding: 8px 20px;
     // }
@@ -40,5 +46,11 @@
       color: $primary-color;
       border: 1px solid $primary-color;
     }
+
+    @include desktop-mini {
+      padding: 13px 40px;
+      font-size: 16px;
+      line-height: 22px;
+  }
   }
 }

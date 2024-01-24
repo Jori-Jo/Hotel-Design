@@ -1,7 +1,11 @@
 .header {
 
-    display:  none;
+    display: none;
     background-color: black;
+
+    @include desktop-mini {
+        display: block;
+    }
 
     &__wrapper {
         padding: 10px 0;
@@ -48,6 +52,8 @@
 
         .btn__primary {
             padding: 10px 30px;
+
+           
         }
     }
 }

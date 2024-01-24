@@ -21,6 +21,11 @@
         @include image-position;
         text-align: center;
         width: 90%;
+
+        @include desktop-mini {
+            width: 78%;
+        }
+
     }
 
     .common-title {
@@ -28,6 +33,10 @@
         color: $white-color;
         text-align: center;
         line-height: 36px;
+
+        @include desktop-mini {
+            margin-bottom: 15px
+        }
     }
 
     .common-desc {
@@ -36,6 +45,10 @@
         color: $white-color;
         margin-bottom: 8px;
         margin-bottom: 12px;
+
+        @include desktop-mini{
+            margin-bottom: 15px
+        }
     }
 
 }

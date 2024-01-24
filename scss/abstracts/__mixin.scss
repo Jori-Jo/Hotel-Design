@@ -10,6 +10,13 @@
     width: 100%
 }
 
+@mixin social-media {
+    display: flex;
+    gap: 15px;
+    margin-right: 30px;
+    align-items: center
+}
+
 @mixin section-tag {
     color: #AF9065;
     font-family: Nunito;
@@ -17,6 +24,10 @@
     @extend %bold;
     letter-spacing: 1.68px;
     text-transform: uppercase;
+
+    @include desktop-mini {
+        font-size: 14px;
+    }
 }
 
 @mixin common-title {
@@ -25,6 +36,11 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 40px;
+
+    @include desktop-mini {
+        font-size: 44px;
+        line-height: 58px
+    }
 }
 
 @mixin common-desc {
@@ -33,11 +49,9 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-}
 
-@mixin social-media {
-    display: flex;
-    gap: 15px;
-    margin-right: 30px;
-    align-items: center
+    @include desktop-mini {
+        font-size: 18px;
+        line-height: 32px;
+    }
 }
