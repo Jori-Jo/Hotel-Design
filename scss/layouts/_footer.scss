@@ -28,8 +28,10 @@
     }
 
     &__top {
-
+        display: flex;
+        flex-wrap: wrap;
         padding-bottom: 28px;
+        gap: 16px;
 
         @include tablet {
             display: flex;
@@ -97,7 +99,8 @@
         width: 48%;
 
         @include desktop-mini {
-            width: 28%;        }
+            width: 28%;
+        }
 
         &-info {
             display: flex;
@@ -144,6 +147,10 @@
         display: flex;
         gap: 14px;
         height: 24px;
+
+        @include desktop-mini {
+            height: 56px;
+        }
 
         img {
             width: auto;

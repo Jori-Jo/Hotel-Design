@@ -58,6 +58,20 @@
   box-sizing: border-box;
 }
 
+#modal-overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#modal-overlay #modal {
+  max-width: 650px;
+  width: 100%;
+  background: white;
+  height: 400px;
+}
+
 .btn__primary {
   padding: 4px 10px;
   cursor: pointer;
@@ -422,7 +436,10 @@
   }
 }
 .footer__top {
+  display: flex;
+  flex-wrap: wrap;
   padding-bottom: 28px;
+  gap: 16px;
 }
 @media screen and (min-width: 768px) {
   .footer__top {
@@ -580,6 +597,11 @@
   display: flex;
   gap: 14px;
   height: 24px;
+}
+@media screen and (min-width: 992px) {
+  .footer__store {
+    height: 56px;
+  }
 }
 .footer__store img {
   width: auto;
