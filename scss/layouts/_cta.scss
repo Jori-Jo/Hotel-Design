@@ -1,0 +1,54 @@
+.cta {
+    position: relative;
+    height: 276px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: $black-color;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.6;
+    }
+
+    img {
+        @include image-length;
+    }
+
+    &__wrapper {
+        @include image-position;
+        text-align: center;
+        width: 90%;
+
+        @include desktop-mini {
+            width: 78%;
+        }
+
+    }
+
+    .common-title {
+        @include common-title;
+        color: $white-color;
+        text-align: center;
+        line-height: 36px;
+
+        @include desktop-mini {
+            margin-bottom: 15px
+        }
+    }
+
+    .common-desc {
+        @include common-desc;
+        text-align: center;
+        color: $white-color;
+        margin-bottom: 8px;
+        margin-bottom: 12px;
+
+        @include desktop-mini{
+            margin-bottom: 15px
+        }
+    }
+
+}

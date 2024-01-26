@@ -1,0 +1,54 @@
+@mixin buttonStyles {
+  padding: 4px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn {
+  &__primary {
+    @include buttonStyles;
+    background-color: $primary-color;
+    font-family: $secondary-font;
+    color: white;
+    border: 1px solid $primary-color;
+    transition: 0.3s all ease-in-out;
+
+    &:hover {
+      background: transparent;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+    }
+
+    @include desktop-mini {
+      padding: 13px 40px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    
+  }
+
+  &__secondary {
+    @include buttonStyles;
+    background-color: transparent;
+    border: 1px solid white;
+    font-family: $secondary-font;
+    color: var(--white-color);
+    color: $white-color;
+    transition: 0.3s all ease-in-out;
+
+    &:hover {
+      background: $white-color;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+    }
+
+    @include desktop-mini {
+      padding: 13px 40px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}

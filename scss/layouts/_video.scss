@@ -1,0 +1,45 @@
+.video {
+
+    &__wrapper {
+        position: relative;
+        height: 276px;
+        left: 0px;
+        top: 0px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: black;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.5;
+        }
+    }
+
+    &__content {
+        @include image-position;
+        text-align: center;
+        width: 92%;
+
+        svg {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+    }
+
+
+    .common-title {
+        @include common-title;
+        color: $white-color;
+        justify-content: center;
+    }
+}

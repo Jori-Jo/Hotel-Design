@@ -1,0 +1,45 @@
+.container {
+  padding: 0 16px;
+  max-width: 540px;
+  margin: 0 auto;
+
+  @include mobile {
+    max-width: 750px;
+    padding: 0 32px;
+  }
+
+  @include tablet {
+    max-width: 960px;
+    padding: 0px 48px;
+  }
+
+  @include desktop-mini {
+    max-width: 1200px;
+    padding: 0 64px;
+  }
+
+  @include laptop {
+    max-width: 1400px;
+    padding: 0 85px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// #modal-overlay {
+//   width: 100%;
+//   height: 100vh;
+//   position: absolute;
+//   background: rgba(0, 0, 0, 0.7);
+// }
+
+// #modal-overlay #modal {
+//   max-width: 650px;
+//   width: 100%;
+//   background: white;
+//   height: 400px;
+// }

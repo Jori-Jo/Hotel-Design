@@ -1,0 +1,59 @@
+.banner {
+    position: relative;
+    text-align: center;
+
+    p {
+        font-family: $secondary-font;
+        font-size: 10px;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    &__image {
+        height: 280px;
+        left: 0px;
+        top: 0px;
+
+        @include tablet {
+            height: 420px;
+        }
+
+        @include desktop-mini {
+            height: 650px;
+        }
+
+        img {
+            @include image-length;
+            object-fit: cover;
+        }
+    }
+
+    &__text {
+        @include image-position;
+        width: 100%;
+    }
+
+    &__title {
+        font-family: $primary-font;
+        font-size: 40px;
+        line-height: 32px;
+        @extend %bold;
+        color: $white-color;
+        margin-bottom: 20px;
+        text-align: center;
+
+        @include desktop-mini {
+            font-size: 54px;
+            line-height: 66px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 10px;
+        text-align: center;
+        justify-content: center;
+    }
+}

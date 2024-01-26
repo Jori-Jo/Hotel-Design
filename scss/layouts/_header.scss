@@ -1,0 +1,59 @@
+.header {
+
+    display: none;
+    background-color: black;
+
+    @include desktop-mini {
+        display: block;
+    }
+
+    &__wrapper {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__left {
+        display: flex;
+        color: white;
+        text-decoration: none;
+        gap: 50px;
+
+    }
+
+    &__address {
+        display: flex;
+
+        &-name {
+            color: $white-color;
+            text-decoration: none;
+            margin-left: 10px;
+
+        }
+    }
+
+    &__mail {
+        &-name {
+            color: $white-color;
+            text-decoration: none;
+            margin-left: 10px;
+
+        }
+    }
+
+    &__right {
+        display: flex;
+    }
+
+    &__social {
+        @include social-media;
+
+        .btn__primary {
+            padding: 10px 30px;
+
+           
+        }
+    }
+}

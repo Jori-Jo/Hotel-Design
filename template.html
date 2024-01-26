@@ -1,22 +1,26 @@
 <!DOCTYPE html>
+
 <head>
-    <title>Template</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Design Template</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Nunito:wght@300&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <!-- infobar starts -->
-    <div></div>
+
     <div class="infoBar">
         <div class="container">
-            <div class="infoBar__wrapper">
-                <div class="infobar__left">
-                    <div class="infobar__address">
+            <div class="header__wrapper">
+                <div class="header__left">
+                    <div class="header__address">
+
                         <span class="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14"
                                 fill="none">
@@ -28,28 +32,26 @@
                                     stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </span>
-                        <a href="#" class="infobar-name__address">28 Street, New York City, USA</a>
+                        <a href="#" class="header__address-name">28 Street, New York City, USA</a>
+
                     </div>
 
-                    <div class="infobar__mail">
-                        <span class="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14"
-                                fill="none">
-                                <path
-                                    d="M0.68222 2.5C0.68222 2.10218 0.840256 1.72064 1.12156 1.43934C1.40286 1.15804 1.7844 1 2.18222 1H14.1822C14.58 1 14.9616 1.15804 15.2429 1.43934C15.5242 1.72064 15.6822 2.10218 15.6822 2.5V11.5C15.6822 11.8978 15.5242 12.2794 15.2429 12.5607C14.9616 12.842 14.58 13 14.1822 13H2.18222C1.7844 13 1.40286 12.842 1.12156 12.5607C0.840256 12.2794 0.68222 11.8978 0.68222 11.5V2.5Z"
-                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M0.68222 4L6.30797 8.50075C6.83994 8.92638 7.50093 9.15828 8.18222 9.15828C8.86351 9.15828 9.5245 8.92638 10.0565 8.50075L15.6822 4"
-                                    stroke="white" stroke-linejoin="round" />
-                            </svg>
-                        </span>
-                        <a href="#" class="infobar-name__mail"> emerald@gmail.com
+                    <div class="header__mail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
+                            <path
+                                d="M0.68222 2.5C0.68222 2.10218 0.840256 1.72064 1.12156 1.43934C1.40286 1.15804 1.7844 1 2.18222 1H14.1822C14.58 1 14.9616 1.15804 15.2429 1.43934C15.5242 1.72064 15.6822 2.10218 15.6822 2.5V11.5C15.6822 11.8978 15.5242 12.2794 15.2429 12.5607C14.9616 12.842 14.58 13 14.1822 13H2.18222C1.7844 13 1.40286 12.842 1.12156 12.5607C0.840256 12.2794 0.68222 11.8978 0.68222 11.5V2.5Z"
+                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M0.68222 4L6.30797 8.50075C6.83994 8.92638 7.50093 9.15828 8.18222 9.15828C8.86351 9.15828 9.5245 8.92638 10.0565 8.50075L15.6822 4"
+                                stroke="white" stroke-linejoin="round" />
+                        </svg>
+                        <a href="#" class="header__mail-name">
+                            emerald@gmail.com
                         </a>
                     </div>
                 </div>
-                <div class="infobar__right">
-
-                    <ul class="infobar-social">
+                <div class="header__right">
+                    <ul class="header__social">
                         <li><a href="#" class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12"
                                     fill="none">
@@ -80,69 +82,70 @@
                                         fill="white" />
                                 </svg>
                             </a></li>
-                        <li><a href="#" class="">
+                        <li>
+                            <a href="#" class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12"
                                     fill="none">
                                     <path
                                         d="M19.9252 3.91632C20.1626 2.89783 20.9177 1.87872 20.9177 1.87872H17.5318C15.6297 0.648816 13.3244 0 10.7664 0C8.1161 0 5.72276 0.658944 3.83328 1.89897H0.662628C0.662628 1.89897 1.40703 2.901 1.64756 3.91252C1.03166 4.76326 0.662628 5.78871 0.662628 6.91606C0.662628 9.71135 2.94076 11.987 5.73605 11.987C7.33562 11.987 8.75226 11.2381 9.68909 10.0848L10.7633 11.7002L11.8545 10.0646C12.3465 10.6977 12.9844 11.2024 13.7136 11.5356C14.9435 12.0927 16.3247 12.1553 17.5907 11.6869C20.2119 10.7146 21.5532 7.78706 20.5911 5.16648C20.4256 4.7177 20.1955 4.29548 19.9081 3.91315L19.9252 3.91632ZM17.2476 10.7305C16.7494 10.9171 16.219 11.0025 15.6874 10.9816C15.1558 10.9607 14.6337 10.834 14.1517 10.6089C13.466 10.291 12.8843 9.78564 12.4736 9.15116C12.3014 8.89796 12.1571 8.62387 12.0482 8.3308C11.9223 7.99721 11.8634 7.65477 11.8305 7.30535C11.7678 6.60337 11.8666 5.89442 12.1698 5.23484C12.3926 4.75078 12.7088 4.31549 13.1003 3.95398C13.4918 3.59247 13.9508 3.31185 14.4511 3.12824C16.552 2.35663 18.882 3.43461 19.6536 5.52791C20.4284 7.62185 19.3504 9.95316 17.2603 10.7279H17.2476V10.7305ZM9.08838 9.18217C8.71754 9.73054 8.21806 10.1798 7.63359 10.4906C7.04911 10.8014 6.39741 10.9644 5.73542 10.9653C3.50413 10.9653 1.68364 9.14546 1.68364 6.9167C1.68364 4.68793 3.50413 2.86492 5.73542 2.86492C7.96798 2.86492 9.78403 4.68793 9.78403 6.9167C9.78403 7.05532 9.76125 7.18002 9.74416 7.32181C9.67516 8.00481 9.45741 8.65109 9.08838 9.19483V9.18217ZM3.15978 6.86353C3.15978 8.24851 4.28714 9.36954 5.66896 9.36954C7.05078 9.36954 8.17497 8.24851 8.17497 6.86353C8.17497 6.19889 7.91094 5.56148 7.44098 5.09151C6.97101 4.62154 6.33359 4.35751 5.66896 4.35751C5.00432 4.35751 4.36691 4.62154 3.89694 5.09151C3.42697 5.56148 3.16294 6.19889 3.16294 6.86353H3.15978ZM13.3307 6.86353C13.3302 7.35898 13.4767 7.84345 13.7516 8.25562C14.0265 8.6678 14.4176 8.98915 14.8752 9.17901C15.3328 9.36887 15.8365 9.41871 16.3225 9.32222C16.8084 9.22573 17.2549 8.98725 17.6052 8.63696C17.9556 8.28666 18.1942 7.8403 18.2908 7.35435C18.3875 6.86841 18.3377 6.36472 18.148 5.90704C17.9582 5.44936 17.637 5.05826 17.2249 4.78322C16.8128 4.50818 16.3284 4.36157 15.8329 4.36194C15.1692 4.36261 14.5329 4.62624 14.0632 5.09511C13.5935 5.56398 13.3287 6.19986 13.3269 6.86353H13.3307ZM4.02761 6.86353C4.02777 6.42936 4.19989 6.01293 4.50629 5.70533C4.8127 5.39774 5.22846 5.22402 5.66263 5.22218C6.55958 5.22218 7.30777 5.96088 7.30777 6.86353C7.30777 7.30026 7.13428 7.71912 6.82546 8.02794C6.51663 8.33676 6.09778 8.51025 5.66105 8.51025C5.22431 8.51025 4.80545 8.33676 4.49663 8.02794C4.18781 7.71912 4.01432 7.30026 4.01432 6.86353H4.02761ZM14.1852 6.86353C14.1852 6.42821 14.3581 6.01073 14.666 5.70292C14.9738 5.39511 15.3913 5.22218 15.8266 5.22218C16.2569 5.23178 16.6663 5.40979 16.9669 5.71798C17.2674 6.02617 17.435 6.43994 17.4338 6.8704C17.4325 7.30085 17.2625 7.71365 16.9602 8.0201C16.6579 8.32654 16.2475 8.50219 15.8171 8.5093C15.6009 8.50955 15.3868 8.46715 15.187 8.38453C14.9872 8.30192 14.8057 8.1807 14.6528 8.02782C14.4999 7.87495 14.3787 7.69342 14.2961 7.49363C14.2134 7.29385 14.171 7.07972 14.1713 6.86353H14.1852ZM10.7626 0.886188C12.5857 0.886188 14.2314 1.21281 15.6753 1.86606C15.126 1.88058 14.5825 1.98294 14.0656 2.16926C13.4388 2.39655 12.8638 2.74704 12.3746 3.20005C11.8854 3.65305 11.4918 4.19942 11.2171 4.80694C10.9538 5.36397 10.8152 5.95392 10.762 6.55083C10.6685 5.28902 10.108 4.1074 9.18978 3.23686C8.2716 2.36633 7.06181 1.86943 5.79682 1.84327C7.24067 1.22357 8.9162 0.886821 10.7259 0.886821L10.7626 0.886188Z"
                                         fill="white" />
                                 </svg>
-                            </a></li>
+                            </a>
+                        </li>
                     </ul>
-
-                    <a href="#" class="primary__btn">Book now</a>
+                    <a href=# class="btn__primary"><span>Book now</span></a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- infobar ends -->
+    <!-- header ends -->
 
-    <!-- menu-bar starts -->
+    <!-- menubar starts -->
 
     <div class="menubar">
         <div class="container">
-                <div class="menubar__wrapper">
-                    <div class="menubar__left">
-                        <img src="images/new-hotel-logo 1.png" class="menubar__image" />
-                    </div>
-                    <nav class="menubar__right" id="nav-menu">
-                        <ul class="myLinks">
-                            <li class="">
-                                <a href="#" class="text__style">Home</a>
-                            </li>
-                            <li class="">
-                                <a href="#" class="text__style">About</a>
-                            </li>
-                            <li class="">
-                                <a href="#" class="text__style">Hotels</a>
-                            </li>
-                            <div class="rooms-dropdown">
-                                <li class="">
-                                    <a href="#" class="text__style">Rooms</a>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="4" viewBox="0 0 7 4"
-                                        fill="none">
-                                        <path
-                                            d="M3.76225 4L6.99996 0.76229L6.23875 0L3.76225 2.47811L1.28629 0L0.524536 0.761751L3.76225 4Z"
-                                            fill="black" />
-                                    </svg>
-                                </li>
-                            </div>
-                            <li class="">
-                                <a href="#" class="text__style">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="menubar__right-mobile" id="mobile-menu">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                    </div>
+            <div class="menubar__wrapper">
+                <div class="menubar__logo">
+                    <img src="images/new-hotel-logo 1.png" class="menubar__image" />
                 </div>
+                <div class="menubar__right">
+                    <ul class="list-style">
+                        <li class="">
+                            <a href="#" class="menubar__text-style">Home</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="menubar__text-style">About</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="menubar__text-style">Hotels</a>
+                        </li>
+                        <div class="menubar__rooms-dropdown">
+                            <li class="">
+                                <a href="#" class="menubar__text-style">Rooms</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="4" viewBox="0 0 7 4"
+                                    fill="none">
+                                    <path
+                                        d="M3.76225 4L6.99996 0.76229L6.23875 0L3.76225 2.47811L1.28629 0L0.524536 0.761751L3.76225 4Z"
+                                        fill="black" />
+                                </svg>
+                            </li>
+                        </div>
+                        <li class="">
+                            <a href="#" class="menubar__text-style">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menubar__hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- menu-bar ends -->
+    <!-- menubar ends -->
 
     <!-- banner starts -->
 
@@ -150,12 +153,15 @@
         <div class="banner__image">
             <img src="images/Rectangle 1.png">
             <div class="banner__text">
-                <div class="banner-title">
-                    <h6>World Class Accomodation</h6>
+                <div class="banner__title">
+                    <p>V</p>
+                    <h5>World Class Accomodation</h5>
                 </div>
                 <div class="banner__buttons">
-                    <a href="#"><button class="primary__btn">Take a Tour</button></a>
-                    <a href="#"><button class="secondary-btn">Learn More</button></a>
+                    <!-- <div id="modal-overlay"> -->
+                        <a href=# class="btn__primary" id="open-modal"><span>Take a Tour</span></a>
+                    <!-- </div>     -->
+                    <a href=# class="btn__secondary"><span>Learn More</span></a>
                 </div>
             </div>
         </div>
@@ -167,29 +173,24 @@
     <div class="about">
         <div class="container">
             <div class="about__wrapper">
-                <div class="about-left__wrapper">
+                <div class="about__wrapper-left">
                     <p class="section-tag">
                         About Us
                     </p>
-                    <h2 class="section-title">
+                    <h2 class="common-title">
                         Delicious Interior With
                         The Pinch Of Everything
                     </h2>
-                    <p class="section-desc">
+                    <p class="common-desc">
                         Lore issue dolor sit met, consectetuer adipiscing elit. Mauris ferme ntum
-
                         dictum magna. Sedlaoreet aliquam leo. Ut tellus dolor, dapibus eget,
-
                         elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam
-
-
                         erat volutpat. Duis ac turpis.
                     </p>
-                    <a href="#">
-                        <button class="primary__btn">Learn More</button>
-                    </a>
+                    <a href=# class="btn__primary"><span>Learn More</span></a>
+
                 </div>
-                <div class="about-right__wrapper">
+                <div class="about__wrapper-right">
                     <img src="images/Rectangle 2.png" alt="" class="">
                     <img src="images/Rectangle 3.png" alt="" class="">
 
@@ -200,130 +201,125 @@
     <!-- about ends -->
 
     <!-- cta starts -->
-    <div class="cta">
-        <div class="container">
+    <div class="container">
+        <div class="cta">
+            <img src="images/Booking-rapper.png" alt="">
             <div class="cta__wrapper">
-                <img src="images/Booking-rapper.png" alt="">
-                <div class="cta__text">
-                    <h4 class="section-title">Make room for adventure.</h4>
-                    <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id parturient
-                        aliquam egestas auctor in volutpat nulla purus.</p>
-
-                    <button class="primary__btn">Online Booking</button>
-                </div>
-
+                <h4 class="common-title">Make room for adventure.</h4>
+                <p class="common-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id parturient
+                    aliquam egestas auctor in volutpat nulla purus.</p>
+                    <a href=# class="btn__primary"><span>Online Booking</span></a>
             </div>
         </div>
+
     </div>
     <!-- cta ends -->
 
-    <!-- week section starts -->
+    <!-- menu starts -->
 
-    <div class="week">
+    <div class="menu">
         <div class="container">
-            <div class="week__wrapper">
-                <div class="week-heading">
+            <div class="menu__wrapper">
+                <div class="menu__heading">
                     <p class="section-tag">
                         This week’s specials
                     </p>
-                    <h2 class="section-title">
+                    <h2 class="common-title">
                         From Our Menu
                     </h2>
-                    <p class="section-desc">
+                    <p class="common-desc">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere augue amet placerat
                         suspendisse consequat sodales turpis nisl lectus.
                     </p>
                 </div>
-                <div class="week-menu__wrapper">
-                    <div class="meal__items">
-                        <div class="meal-info">
-                            <div class="meal-title">
-                                <p class="meal-price">$55.00</p>
-                                <p class="meal-name">Beef Burger Meal</p>
+                <div class="menu__meals">
+                    <div class="menu__meal">
+                        <div class="menu__meal-info">
+                            <div class="menu__meal-title">
+                                <p class="menu__meal-price">$55.00</p>
+                                <p class="menu__meal-name">Beef Burger Meal</p>
                             </div>
-                            <p class="meal-desc">A small river named Duden flows by their place and supplies</p>
+                            <p class="menu__meal-desc">A small river named Duden flows by their place and supplies</p>
                         </div>
-                        <div class="meal-image">
+                        <div class="menu__meal-image">
                             <img src="images/burger.png" alt="" class="">
                         </div>
-
                     </div>
-                    <div class="meal__items">
-                        <div class="meal-info">
-                            <div class="meal-title">
-                                <p class="meal-price">$65.00</p>
-                                <p class="meal-name">Celeriac and Truffle Ravioli</p>
+                    <div class="menu__meal">
+                        <div class="menu__meal-info">
+                            <div class="menu__meal-title">
+                                <p class="menu__meal-price">$65.00</p>
+                                <p class="menu__meal-name">Celeriac and Truffle Ravioli</p>
                             </div>
-                            <p class="meal-desc">A small river named Duden flows by their place and supplies</p>
+                            <p class="menu__meal-desc">A small river named Duden flows by their place and supplies</p>
                         </div>
-                        <div class="meal-image">
+                        <div class="menu__meal-image">
                             <img src="images/celeriac.png" alt="" class="">
                         </div>
                     </div>
-                    <div class="meal__items">
-                        <div class="meal-info">
-                            <div class="meal-title">
-                                <p class="meal-price">$75.00</p>
-                                <p class="meal-name">Grilled Beef with potatoes</p>
+                    <div class="menu__meal">
+                        <div class="menu__meal-info">
+                            <div class="menu__meal-title">
+                                <p class="menu__meal-price">$75.00</p>
+                                <p class="menu__meal-name">Grilled Beef with potatoes</p>
                             </div>
-                            <p class="meal-desc">A small river named Duden flows by their place and supplies</p>
+                            <p class="menu__meal-desc">A small river named Duden flows by their place and supplies</p>
                         </div>
-                        <div class="meal-image">
+                        <div class="menu__meal-image">
 
                             <img src="images/beef.png" alt="" class="">
                         </div>
                     </div>
-                    <div class="meal__items">
-                        <div class="meal-info">
-                            <div class="meal-title">
-                                <p class="meal-price">$82.00</p>
-                                <p class="meal-name">Grilled Veal Filet Mignon</p>
+                    <div class="menu__meal">
+                        <div class="menu__meal-info">
+                            <div class="menu__meal-title">
+                                <p class="menu__meal-price">$82.00</p>
+                                <p class="menu__meal-name">Grilled Veal Filet Mignon</p>
                             </div>
-                            <p class="meal-desc">A small river named Duden flows by their place and supplies</p>
+                            <p class="menu__meal-desc">A small river named Duden flows by their place and supplies</p>
                         </div>
-                        <div class="meal-image">
+                        <div class="menu__meal-image">
                             <img src="images/filet.png" alt="" class="">
                         </div>
                     </div>
-                    <div class="meal__items">
-                        <div class="meal-info">
-                            <div class="meal-title">
-                                <p class="meal-price">$155.00</p>
-                                <p class="meal-name">Celeriac and Truffle Ravioli</p>
+                    <div class="menu__meal">
+                        <div class="menu__meal-info">
+                            <div class="menu__meal-title">
+                                <p class="menu__meal-price">$155.00</p>
+                                <p class="menu__meal-name">Celeriac and Truffle Ravioli</p>
                             </div>
-                            <p class="meal-desc">A small river named Duden flows by their place and supplies</p>
+                            <p class="menu__meal-desc">A small river named Duden flows by their place and supplies</p>
                         </div>
-                        <div class="meal-image">
+                        <div class="menu__meal-image">
                             <img src="images/egg.png" alt="" class="">
                         </div>
                     </div>
-                    <div class="meal__items">
-                        <div class="meal-info">
-                            <div class="meal-title">
-                                <p class="meal-price">$99.10</p>
-                                <p class="meal-name">Cod Filet Cooked on One</p>
+                    <div class="menu__meal">
+                        <div class="menu__meal-info">
+                            <div class="menu__meal-title">
+                                <p class="menu__meal-price">$99.10</p>
+                                <p class="menu__meal-name">Cod Filet Cooked on One</p>
                             </div>
-                            <p class="meal-desc">A small river named Duden flows by their place and supplies</p>
+                            <p class="menu__meal-desc">A small river named Duden flows by their place and supplies</p>
                         </div>
-                        <div class="meal-image">
+                        <div class="menu__meal-image">
                             <img src="images/cod.png" alt="" class="">
                         </div>
                     </div>
                 </div>
             </div>
+            <a href=# class="btn__primary"><span>View All Menu</span></a>
+
         </div>
     </div>
 
-    <!-- week section ends -->
-
-
-
+    <!-- menu section ends -->
 
     <!-- video section starts -->
     <div class="video">
         <div class="video__wrapper">
             <img src="images/text.png" alt="" class="">
-            <div class="video-content">
+            <div class="video__content">
                 <a href="#" class="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
                         <path
@@ -334,76 +330,69 @@
                             fill="white" />
                     </svg>
                 </a>
-                <p class="section-title">Relax & Enjoy with us your holidays</p>
-
+                <p class="common-title">Relax & Enjoy with us your holidays</p>
             </div>
         </div>
-
-
-
     </div>
 
     <!-- video section ends  -->
 
-
     <!-- news starts -->
     <div class="news">
         <div class="container">
-            <div class="news-title__wrapper">
+            <div class="news__heading">
                 <p class="section-tag">
                     Offers
                 </p>
-                <h2 class="section-title">
+                <h2 class="common-title">
                     Our Exclusive Offers
                 </h2>
-                <p class="section-desc">
+                <p class="common-desc">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere augue amet placerat
-                </p>
-                <p class="section-desc">
                     suspendisse consequat sodales turpis nisl lectus.
                 </p>
             </div>
             <div class="news__wrapper">
                 <div class="card">
                     <img src="images/1st.png" alt="">
-                    <div class="card__content">
-                        <h6 class="card-tag">UP TO 30% OFF</h6>
-                        <h5 class="card-title">$5 Breakfast Package</h5>
-                        <p class="card-desc">There are many variations of passages of Lorem Ipsum available</p>
-                        <a href="#" class="card-link">Know More</a>
+                    <div class="card__info">
+                        <h6 class="card__tag">UP TO 30% OFF</h6>
+                        <h5 class="card__title">$5 Breakfast Package</h5>
+                        <p class="card__desc">There are many variations of passages of Lorem Ipsum available
+                        </p>
+                        <a href="#" class="card__link">Know More</a>
                     </div>
 
                 </div>
 
                 <div class="card">
-                    <img src="images/1st.png" alt="">
-                    <div class="card__content">
-                        <h6 class="card-tag">UP TO 30% OFF</h6>
-                        <h5 class="card-title">$5 Breakfast Package</h5>
-                        <p class="card-desc">There are many variations of passages of Lorem Ipsum available</p>
-                        <a href="#" class="card-link">Know More</a>
+                    <img src="images/2nd.png" alt="">
+                    <div class="card__info">
+                        <h6 class="card__tag">UP TO 30% OFF</h6>
+                        <h5 class="card__title">$5 Breakfast Package</h5>
+                        <p class="card__desc">There are many variations of passages of Lorem Ipsum available
+                        </p>
+                        <a href="#" class="card__link">Know More</a>
                     </div>
 
                 </div>
 
                 <div class="card">
-                    <img src="images/1st.png" alt="">
-                    <div class="card__content">
-                        <h6 class="card-tag">UP TO 30% OFF</h6>
-                        <h5 class="card-title">$5 Breakfast Package</h5>
-                        <p class="card-desc">There are many variations of passages of Lorem Ipsum available</p>
-                        <a href="#" class="card-link">Know More</a>
+                    <img src="images/3rd.png" alt="">
+                    <div class="card__info">
+                        <h6 class="card__tag">UP TO 30% OFF</h6>
+                        <h5 class="card__title">$5 Breakfast Package</h5>
+                        <p class="card__desc">There are many variations of passages of Lorem Ipsum available
+                        </p>
+                        <a href="#" class="card__link">Know More</a>
                     </div>
-
                 </div>
             </div>
-            <div class="news-button">
-                <a href="#" class="primary__btn">View More</a>
-
-            </div>
-
-
         </div>
+        <a href=# class="btn__primary"><span>View More</span></a>
+
+    </div>
+    </div>
     </div>
     <!-- news ends -->
 
@@ -413,15 +402,15 @@
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__top">
-                    <div class="section-info">
+                    <div class="footer__info">
                         <img src="images/hotel-logo 1.png" alt="" class="">
-                        <p class="">
+                        <p class="common-desc">
                             Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Mus fringilla aliquet volutpat
                             lectus porttitor consequat.Dui nam gravida duis i
                             n amet sit rhoncus.
                         </p>
-                        <ul class="infobar-social">
+                        <ul class="social-media">
                             <li><a href="#" class="">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12"
                                         fill="none">
@@ -461,32 +450,32 @@
                                     </svg>
                                 </a></li>
                         </ul>
-                        <div class="section-store">
+                        <div class="footer__store">
                             <img src="images/playstore.png" alt="" class="section-download">
                             <img src="images/appstore.png" alt="" class="">
                         </div>
                     </div>
-                    <div class="section-rooms">
-                        <p class="">Rooms</p>
-                        <ul class="">
-                            <li class="section-rooms-gap">Deluxe Room</li>
-                            <li class="section-rooms-gap">Junior Suite</li>
+                    <div class="footer__rooms">
+                        <p class="common-title">Rooms</p>
+                        <ul class="common-desc">
+                            <li class="">Deluxe Room</li>
+                            <li class="">Junior Suite</li>
                             <li class="">Queen Room</li>
                         </ul>
                     </div>
-                    <div class="section-rooms">
-                        <p class="">Others</p>
-                        <ul class="">
-                            <li class="section-rooms-gap">Accomodations</li>
-                            <li class="section-rooms-gap">About</li>
+                    <div class="footer__rooms">
+                        <p class="common-title">Others</p>
+                        <ul class="common-desc">
+                            <li class="">Accomodations</li>
+                            <li class="">About</li>
                             <li class="">Amenities</li>
                         </ul>
                     </div>
-                    <div class="contactus">
-                        <p class="contact-title">Contact Us</p>
-                        <p class="contact-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="footer__contact">
+                        <p class="common-title">Contact Us</p>
+                        <p class="common-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-                        <a href="" class="section-phone">
+                        <a href="" class="footer__contact-info">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                 fill="none">
                                 <path
@@ -496,7 +485,7 @@
                             (704) 555-0127
                         </a>
 
-                        <a href="" class="section-phone">
+                        <a href="" class="footer__contact-info">
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16"
                                 fill="none">
                                 <path
@@ -509,7 +498,7 @@
                             emerald@gmail.com
                         </a>
 
-                        <a href="" class="section-phone">
+                        <a href="" class="footer__contact-info">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"
                                 fill="none">
                                 <path
@@ -524,8 +513,7 @@
 
                     </div>
                 </div>
-                <div class="full-line"></div>
-
+                <hr class="footer__line">
                 <div class="footer__bottom">
                     <div class="footer__left">
                         Copyright ©2021. All Rights Reserved by Emerald Hotel | Powered by
@@ -538,7 +526,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- footer ends -->
 </body>

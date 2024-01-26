@@ -1,0 +1,148 @@
+.menu {
+    $self: &;
+    background-color: $secondary-color;
+    padding: 32px 0;
+    text-align: center;
+
+    @include desktop-mini {
+        padding: 72px 0;
+    }
+
+    @include laptop {
+        padding: 100px 0;
+    }
+
+    &__heading {
+        text-align: center;
+        margin: 0 auto;
+        width: 82%;
+
+        .section-tag {
+            @include section-tag;
+        }
+
+        .common-title {
+            @include common-title;
+            line-height: 36px;
+        }
+
+        .common-desc {
+            @include common-desc;
+        }
+    }
+
+    &__meals {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 28px 0;
+
+        @include laptop {
+            padding: 50px 0;
+        }
+
+    }
+
+    &__meal {
+        width: 100%;
+        background-color: $white-color;
+        padding: 8px 20px;
+        display: flex;
+
+        @include tablet {
+            width: calc((100% - 20px)/2);
+        }
+
+        &:nth-child(even) {
+
+            @include tablet {
+                flex-direction: row-reverse;
+
+                .menu__meal-title {
+                    flex-direction: row-reverse;
+                }
+
+                .menu__meal-desc {
+                    text-align: right;
+                }
+
+                .menu__meal-info {
+                    margin-left: 36px;
+                }
+
+                .menu__meal-name {
+                    text-align: left;
+                }
+            }
+        }
+
+    }
+
+    &__meal-title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    &__meal-price {
+        color: $primary-color;
+        font-family: $primary-font;
+        font-size: 18px;
+        @extend %bold;
+        line-height: 34px;
+
+        @include laptop {
+            font-size: 22px;
+        }
+
+    }
+
+    &__meal-name {
+        font-family: $primary-font;
+        font-size: 18px;
+        @extend %bold;
+        line-height: 34px;
+        text-align: right;
+
+        @include laptop {
+            font-size: 22px;
+        }
+
+    }
+
+    &__meal-info {
+        margin-right: 20px;
+
+        @include tablet {
+            &:nth-child(even) {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &__meal-desc {
+        color: $black-color;
+        text-align: left;
+        font-family: $secondary-font;
+        font-size: 16px;
+        @extend %regular;
+        line-height: 28px;
+
+        @include laptop {
+            font-size: 18px;
+            line-height: 32px
+        }
+
+    }
+
+    &__meal-image {
+        height: 90px;
+        width: 90px;
+
+        img {
+            @include image-length;
+            object-fit: contain;
+        }
+    }
+
+}
