@@ -1,12 +1,18 @@
-const openModalButton = document.getElementById("open-modal"); 
-const modalWindowOverlay = document.getElementById("modal-overlay");
-
-const showModalWindow = () => { modalWindowOverlay.style.display = 'flex'; } 
+const openModalButton = document.getElementById("open-modal");
+const modalWindowOverlay = document.querySelector(".popup");
+const showModalWindow = () => {
+    modalWindowOverlay.classList.add('active');
+}
 openModalButton.addEventListener("click", showModalWindow);
 
-const closeModalButton = document.getElementById("close-modal"); const hideModalWindow = () => { modalWindowOverlay.style.display = 'none'; } 
-closeModalButton.addEventListener("click", hideModalWindow);
 
-modalWindowOverlay.addEventListener("click", hideModalWindowOnBlur);
+const closeModalButton = document.getElementById("close-modal");
+const closeModalWindow = () => {
+    modalWindowOverlay.classList.remove('active');
+}
+closeModalButton.addEventListener("click", closeModalWindow);
 
-const hideModalWindowOnBlur = (e) => { if(e.target === e.currentTarget) { hideModalWindow(); } }
+
+
+
+
