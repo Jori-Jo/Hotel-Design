@@ -67,7 +67,6 @@
   z-index: 2;
 }
 .popup__wrapper {
-  padding: 20px 40px;
   max-width: 650px;
   width: 100%;
   background: white;
@@ -76,6 +75,20 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.popup .common-title {
+  color: #000;
+  font-family: Cardo;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .popup .common-title {
+    font-size: 44px;
+    line-height: 58px;
+  }
 }
 
 .active {

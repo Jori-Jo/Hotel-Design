@@ -39,7 +39,6 @@
   z-index: 2;
 
   &__wrapper {
-    padding: 52px 60px;
     max-width: 650px;
     width: 100%;
     background: white;
@@ -49,6 +48,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  // &__header{
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+
+  
+  .common-title {
+    @include common-title;
+    text-align: center;
+}
+
 }
 
 .active {
