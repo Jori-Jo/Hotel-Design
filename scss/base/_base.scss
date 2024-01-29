@@ -39,26 +39,47 @@
   z-index: 2;
 
   &__wrapper {
+    padding: 20px 28px;
     max-width: 650px;
     width: 100%;
-    background: white;
+    background: #faf0e6;
+    // background-image: url("../images/text.png");
+    // background-size: cover;
+    // background-position: center;
     height: 400px;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   }
 
-  // &__header{
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
+  &__text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 82%;
+  }
 
-  
+
   .common-title {
     @include common-title;
     text-align: center;
-}
+    // color: $white-color;
+    margin-bottom: 10px;
+  }
+
+  .common-desc {
+    @include common-desc;
+    // color: $white-color;
+  }
+
 
 }
 

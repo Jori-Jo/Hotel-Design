@@ -12,22 +12,48 @@
     <script src="template.js" defer></script>
 </head>
 
-<body id="popup-overlay">
+<body>
 
     <div class="popup">
-        <img src="images/1st.png">
-
         <div class="popup__wrapper">
-            <button id="close-modal">Close</button>
-            <div class="popup__header">
-                <h2 class="common-title">Popup in Vanilla JS</h2>
+            <button id="close-modal"> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="popup__text">
+                <h2 class="common-title">Take a Tour</h2>
+                <p class="common-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eius aspernatur
+                    quo porro quam
+                    tempora,
+                    repellat aliquid modi asperiores id saepe eveniet atque odio. Facere nulla eum suscipit commodi
+                    aliquam.
+                </p>
             </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eius aspernatur quo porro quam tempora,
-                repellat aliquid modi asperiores id saepe eveniet atque odio. Facere nulla eum suscipit commodi aliquam.
-            </p>
 
-            <div class="popup__footer">
+        </div>
+    </div>
+    <div class="popup">
+        <div class="popup__wrapper">
+            <button id="close-modal1"> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="popup__text">
+                <h2 class="common-title">Learn More</h2>
+                <p class="common-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eius aspernatur
+                    quo porro quam
+                    tempora,
+                    repellat aliquid modi asperiores id saepe eveniet atque odio. Facere nulla eum suscipit commodi
+                    aliquam.
+                </p>
             </div>
+
         </div>
     </div>
     <!-- header starts -->
@@ -176,8 +202,9 @@
                 </div>
                 <div class="banner__buttons">
                     <button class="btn__primary" id="open-modal">Take a Tour</button>
+                    <button class="btn__secondary" id="open-modal1">Learn More</button>
                     <!-- <a href=# class="btn__primary" id="open-modal"><span>Take a Tour</span></a> -->
-                    <a href=# class="btn__secondary"><span>Learn More</span></a>
+                    <!-- <a href=# class="btn__secondary"><span>Learn More</span></a> -->
                 </div>
             </div>
         </div>
