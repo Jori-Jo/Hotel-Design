@@ -63,6 +63,8 @@ modalWindowOverlay1.addEventListener("click", popupOverlay1);
 
 openModalButton2.addEventListener("click", showModalWindow2);
 closeModalButton2.addEventListener("click", closeModalWindow2);
+modalWindowOverlay2.addEventListener("click", popupOverlay2);
+
 
 
 // const openModalButtons = document.querySelectorAll(".open-modal");
