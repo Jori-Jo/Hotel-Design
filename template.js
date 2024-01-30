@@ -8,7 +8,7 @@
 
 // const closeModalWindow = () => {
 //     modalWindowOverlay.classList.remove('active');
-// }
+// }    
 
 // const popupOverlay = (event) =>{
 //     if (event.target === modalWindowOverlay) {
@@ -20,42 +20,49 @@
 // modalWindowOverlay.addEventListener("click", popupOverlay);
 
 
-const modalWindowOverlay = document.querySelector(".popup");
-
-const openModalButton = document.getElementById("open-modal");
-const closeModalButton = document.getElementById("close-modal");
+const modalWindowOverlay1 = document.getElementById("popup1");
+const modalWindowOverlay2 = document.getElementById("popup2");
 
 const openModalButton1 = document.getElementById("open-modal1");
 const closeModalButton1 = document.getElementById("close-modal1");
 
-const showModalWindow = () => {
-    modalWindowOverlay.classList.add('active');
-}
-
-const closeModalWindow = () => {
-    modalWindowOverlay.classList.remove('active');
-}
+const openModalButton2 = document.getElementById("open-modal2");
+const closeModalButton2 = document.getElementById("close-modal2");
 
 const showModalWindow1 = () => {
-    modalWindowOverlay.classList.add('active');
+    modalWindowOverlay1.style.display='block';
 }
 
 const closeModalWindow1 = () => {
-    modalWindowOverlay.classList.remove('active');
+    modalWindowOverlay1.style.display='none';
 }
 
+const showModalWindow2 = () => {
+    modalWindowOverlay2.style.display='block';
+}
 
-const popupOverlay = (event) =>{
-    if (event.target === modalWindowOverlay) {
-        modalWindowOverlay.classList.remove('active');
+const closeModalWindow2 = () => {
+    modalWindowOverlay2.style.display='none';
+}
+
+const popupOverlay1 = (event) =>{
+    if (event.target === modalWindowOverlay1) {
+        modalWindowOverlay1.style.display='none';
     }
 }
-openModalButton.addEventListener("click", showModalWindow);
-closeModalButton.addEventListener("click", closeModalWindow);
-modalWindowOverlay.addEventListener("click", popupOverlay);
+
+const popupOverlay2 = (event) =>{
+    if (event.target === modalWindowOverlay2) {
+        modalWindowOverlay2.style.display='none';
+    }
+}
 
 openModalButton1.addEventListener("click", showModalWindow1);
 closeModalButton1.addEventListener("click", closeModalWindow1);
+modalWindowOverlay1.addEventListener("click", popupOverlay1);
+
+openModalButton2.addEventListener("click", showModalWindow2);
+closeModalButton2.addEventListener("click", closeModalWindow2);
 
 
 // const openModalButtons = document.querySelectorAll(".open-modal");
