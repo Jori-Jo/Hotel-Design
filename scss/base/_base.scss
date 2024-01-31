@@ -56,6 +56,11 @@
       position: absolute;
       top: 0;
       right: 0;
+      background-color: #8E8983;
+      border: none;
+      cursor: pointer;
+      padding: 5px 5px;
+    
     }
   }
 
@@ -66,7 +71,6 @@
     position: absolute;
     width: 82%;
   }
-
 
   .common-title {
     @include common-title;
@@ -79,8 +83,6 @@
     @include common-desc;
     // color: $white-color;
   }
-
-
 }
 
 .active {

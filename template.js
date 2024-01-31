@@ -116,7 +116,7 @@ closeWindow.addEventListener('click', () => {
 
 popup.addEventListener('click', function (event) {
     if (event.target === popup) {
-        popup.classList.remove('active');
+        removeActive(popup);
     }
 });
 
