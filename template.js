@@ -73,7 +73,7 @@
             const cacheDOM = () => {
                 DOM.button = document.querySelectorAll('.button')
                 DOM.popup = document.querySelector('.popup')
-                DOM.closeWindow = document.querySelector('.close-modal')
+                DOM.closeWindow = document.querySelectorAll('.close-modal')
             }
 
             const evenListeners = () => {
@@ -85,16 +85,21 @@
                 })
 
                 // add event to close popup
-                DOM.closeWindow.addEventListener('click', () => {
-                    removeActive();
+                DOM.closeWindow.forEach((closeBtn) => {
+                    closeBtn.addEventListener('click', () => {
+                        removeActive();
+                    })
                 })
+                // DOM.closeWindow.addEventListener('click', () => {
+                //     removeActive();
+                // })
 
                 //add event to close popup on outside click
-                DOM.popup.addEventListener('click', function (event) {
-                    if (event.target === DOM.popup) {
-                        removeActive();
-                    }
-                });
+                // DOM.popup.addEventListener('click', function (event) {
+                //     if (event.target === DOM.popup) {
+                //         removeActive();
+                //     }
+                // });
 
             }
             const init = () => {
