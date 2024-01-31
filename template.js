@@ -1,51 +1,4 @@
 
-// /*Popup in Vanilla JS for buttons using ID*/
-// const modalWindowOverlay1 = document.getElementById("popup1");
-// const modalWindowOverlay2 = document.getElementById("popup2");
-
-// const openModalButton1 = document.getElementById("open-modal1");
-// const closeModalButton1 = document.getElementById("close-modal1");
-
-// const openModalButton2 = document.getElementById("open-modal2");
-// const closeModalButton2 = document.getElementById("close-modal2");
-
-// const showModalWindow1 = () => {
-//     modalWindowOverlay1.style.display='block';
-// }
-
-// const closeModalWindow1 = () => {
-//     modalWindowOverlay1.style.display='none';
-// }
-
-// const showModalWindow2 = () => {
-//     modalWindowOverlay2.style.display='block';
-// }
-
-// const closeModalWindow2 = () => {
-//     modalWindowOverlay2.style.display='none';
-// }
-
-// const popupOverlay1 = (event) =>{
-//     if (event.target === modalWindowOverlay1) {
-//         modalWindowOverlay1.style.display='none';
-//     }
-// }
-
-// const popupOverlay2 = (event) =>{
-//     if (event.target === modalWindowOverlay2) {
-//         modalWindowOverlay2.style.display='none';
-//     }
-// }
-
-// openModalButton1.addEventListener("click", showModalWindow1);
-// closeModalButton1.addEventListener("click", closeModalWindow1);
-// modalWindowOverlay1.addEventListener("click", popupOverlay1);
-
-// openModalButton2.addEventListener("click", showModalWindow2);
-// closeModalButton2.addEventListener("click", closeModalWindow2);
-// modalWindowOverlay2.addEventListener("click", popupOverlay2);
-
-
 
 /*Popup in Vanilla JS for one button*/
 // const modalWindowOverlay = document.querySelector(".popup");
@@ -69,55 +22,91 @@
 // closeModalButton.addEventListener("click", closeModalWindow);
 // modalWindowOverlay.addEventListener("click", popupOverlay);
 
-/*2*/
-// document.addEventListener('DOMContentLoaded', function () {
-//     const showPopupBtn = document.getElementById('open-modal');
-//     const popupOverlay = document.querySelector(".popup");
-//     const closePopupBtn = document.getElementById('close-modal');
 
-//     showPopupBtn.addEventListener('click', function () {
-//         popupOverlay.style.display = 'flex';
-//     });
+// Popup in Vanilla  JS for two buttons
+// const button = document.querySelectorAll('.button')
+// const popup = document.querySelector('.popup')
+// const closeWindow = document.querySelector('.close-modal')
 
-//     closePopupBtn.addEventListener('click', function () {
-//         popupOverlay.style.display = 'none';
-//     });
+// function addActive(element) {
+//     element.classList.add('active');
+// }
 
-//     popupOverlay.addEventListener('click', function (event) {
-//         if (event.target === popupOverlay) {
-//             popupOverlay.style.display = 'none';
-//         }
-//     });
+// function removeActive(element){
+//     element.classList.remove('active');
+// }
 
+// button.forEach((btn) => {
+//     btn.addEventListener('click', () => {
+//         addActive(popup);
+//     })
+// })
+
+// closeWindow.addEventListener('click', () => {
+//     removeActive(popup);
+// })
+
+// popup.addEventListener('click', function (event) {
+//     if (event.target === popup) {
+//         removeActive(popup);
+//     }
 // });
 
+/*Popup in Vanila JS in IIFE*/
 
-const button = document.querySelectorAll('.button')
-const popup = document.querySelector('.popup')
-const closeWindow = document.querySelector('.close-modal')
+    (function () {
+        const popup = () => {
+            const DOM = {
+                button: null, //.button
+                popup: null, //.popup
+                closeWindow: null // .close-modal
+            }
 
-function addActive(element) {
-    element.classList.add('active');
-}
+            const addActive = () => {
+                DOM.popup.classList.add('active');
+            }
 
-function removeActive(element){
-    element.classList.remove('active');
-}
+            const removeActive = () => {
+                DOM.popup.classList.remove('active');
+            }
 
-button.forEach((btn) => {
-    btn.addEventListener('click', () => {
-        addActive(popup);
-    })
-})
+            const cacheDOM = () => {
+                DOM.button = document.querySelectorAll('.button')
+                DOM.popup = document.querySelector('.popup')
+                DOM.closeWindow = document.querySelector('.close-modal')
+            }
 
-closeWindow.addEventListener('click', () => {
-    removeActive(popup);
-})
+            const evenListeners = () => {
+                //add event 'click' for all the buttons with class button
+                DOM.button.forEach((btn) => {
+                    btn.addEventListener('click', () => {
+                        addActive();
+                    })
+                })
 
-popup.addEventListener('click', function (event) {
-    if (event.target === popup) {
-        removeActive(popup);
-    }
-});
+                // add event to close popup
+                DOM.closeWindow.addEventListener('click', () => {
+                    removeActive();
+                })
+
+                //add event to close popup on outside click
+                DOM.popup.addEventListener('click', function (event) {
+                    if (event.target === DOM.popup) {
+                        removeActive();
+                    }
+                });
+
+            }
+            const init = () => {
+                cacheDOM()
+                evenListeners()
+            }
+            return { init }
+        }
+
+        document.addEventListener('DOMContentLoaded', popup().init)
+    })()
+
+
 
 
