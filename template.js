@@ -54,64 +54,65 @@
 
 /*Popup in Vanila JS in IIFE*/
 
-    (function () {
-        const popup = () => {
-            const DOM = {
-                button: null, //.button
-                popup: null, //.popup
-                closeWindow: null // .close-modal
-            }
-
-            const addActive = () => {
-                DOM.popup.classList.add('active');
-            }
-
-            const removeActive = () => {
-                DOM.popup.classList.remove('active');
-            }
-
-            const cacheDOM = () => {
-                DOM.button = document.querySelectorAll('.button')
-                DOM.popup = document.querySelector('.popup')
-                DOM.closeWindow = document.querySelectorAll('.close-modal')
-            }
-
-            const evenListeners = () => {
-                //add event 'click' for all the buttons with class button
-                DOM.button.forEach((btn) => {
-                    btn.addEventListener('click', () => {
-                        addActive();
-                    })
-                })
-
-                // add event to close popup
-                DOM.closeWindow.forEach((closeBtn) => {
-                    closeBtn.addEventListener('click', () => {
-                        removeActive();
-                    })
-                })
-                // DOM.closeWindow.addEventListener('click', () => {
-                //     removeActive();
-                // })
-
-                //add event to close popup on outside click
-                // DOM.popup.addEventListener('click', function (event) {
-                //     if (event.target === DOM.popup) {
-                //         removeActive();
-                //     }
-                // });
-
-            }
-            const init = () => {
-                cacheDOM()
-                evenListeners()
-            }
-            return { init }
+(function () {
+    const popup = () => {
+        const DOM = {
+            openWindow: null, //.button
+            popups: null, //.popup
+            closeWindow: null // .close-modal
         }
 
-        document.addEventListener('DOMContentLoaded', popup().init)
-    })()
+        const openPopup1 = () => {
+            DOM.popups[0].classList.add('active');
+        }
+        const openPopup2 = () => {
+            DOM.popups[1].classList.add('active');
+        }
 
+        const closePopup = () => {
+            DOM.popups.forEach((popup)=>{
+                popup.classList.remove('active')
+            })
+        }
+        const cacheDOM = () => {
+            DOM.openWindow = document.querySelectorAll('.button')
+            DOM.popups = document.querySelectorAll('.popup')
+            DOM.closeWindow = document.querySelectorAll('.close-modal')
+        }
+
+        const evenListeners = () => {
+
+            DOM.openWindow[0].addEventListener('click', openPopup1)
+            DOM.openWindow[1].addEventListener('click', openPopup2)
+
+            DOM.closeWindow.forEach((closeBtn) => {
+                closeBtn.addEventListener('click', closePopup)
+            });
+
+            
+            DOM.popups.forEach((popup) =>{
+                popup.addEventListener('click', function(event){
+                    if(event.target === popup){
+                        closePopup();
+                    }
+                })
+            })
+
+            // DOM.popups[0].addEventListener('click', function (event) {
+            //     if (event.target === DOM.popups[0]) {
+            //         DOM.popups[0].classList.remove('active');
+            //     }
+            // });
+        }
+        const init = () => {
+            cacheDOM()
+            evenListeners()
+        }
+        return { init }
+    }
+
+    document.addEventListener('DOMContentLoaded', popup().init)
+})()
 
 
 
