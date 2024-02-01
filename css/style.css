@@ -708,6 +708,22 @@
     display: none;
   }
 }
+@media screen and (min-width: 576px) {
+  .menubar .hamburger {
+    display: none;
+  }
+}
+.menubar .hamburger li:hover {
+  background-color: #AF9065; /* Change the color on hover as needed */
+}
+.menubar .hamburger .list-style {
+  list-style: none;
+  text-align: right;
+}
+.menubar .hamburger .menubar__text-style {
+  font-size: 20px;
+  line-height: 32px;
+}
 
 .news {
   padding: 32px 0;

@@ -70,7 +70,7 @@
         }
 
         const closePopup = () => {
-            DOM.popups.forEach((popup)=>{
+            DOM.popups.forEach((popup) => {
                 popup.classList.remove('active')
             })
         }
@@ -89,20 +89,15 @@
                 closeBtn.addEventListener('click', closePopup)
             });
 
-            
-            DOM.popups.forEach((popup) =>{
-                popup.addEventListener('click', function(event){
-                    if(event.target === popup){
+
+            DOM.popups.forEach((popup) => {
+                popup.addEventListener('click', function (event) {
+                    if (event.target === popup) {
                         closePopup();
                     }
                 })
             })
 
-            // DOM.popups[0].addEventListener('click', function (event) {
-            //     if (event.target === DOM.popups[0]) {
-            //         DOM.popups[0].classList.remove('active');
-            //     }
-            // });
         }
         const init = () => {
             cacheDOM()
@@ -110,7 +105,6 @@
         }
         return { init }
     }
-
     document.addEventListener('DOMContentLoaded', popup().init)
 })()
 
