@@ -52,31 +52,5 @@
         }
     }
 
-    .hamburger {
-        
-
-        @include mobile{
-            display: none   ;
-        }
-        // li{
-        //     border-bottom: 1px solid $primary-color;
-        //     }
-            li:hover{
-                background-color: $primary-color; /* Change the color on hover as needed */
-            }
-            .list-style {
-
-                list-style: none;
-                text-align: right;
-                
-            }
-
-            .menubar__text-style {
-                font-size: 20px;
-                line-height: 32px;
-              
-            }
-
-        }
     
 }

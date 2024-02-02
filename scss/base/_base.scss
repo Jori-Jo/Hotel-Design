@@ -60,7 +60,7 @@
       border: none;
       cursor: pointer;
       padding: 5px 5px;
-    
+
     }
   }
 
@@ -87,4 +87,64 @@
 
 .active {
   display: block;
+}
+
+.box {
+  width: fit-content;
+  height: 100vh;
+  background-color: $white-color;
+  position: relative;
+  text-align: left;
+}
+
+.menu_icon_box {
+  width: fit-content;
+  height: auto;
+  background-color: $white-color;
+  margin: 30px;
+  position: absolute;
+  border-radius: 4px;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 40px;
+  height: 4px;
+  background-color: $black-color;
+  border-radius: 50px;
+  margin: 10px 8px;
+}
+
+.active .line1 {
+  transform: translate(0px, 15px)rotate(45deg);
+}
+
+.active .line2 {
+  opacity: 0;
+}
+
+.active .line3 {
+  transform: translate(0px, -15px)rotate(-45deg);
+}
+
+nav{
+  padding-top: 100px;
+}
+
+nav ul{
+  margin: 0px 30px;
+}
+
+nav ul li{
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+nav ul li a{
+  color: $black-color;
+  font-size: 28px;
+  padding: 10px 30px;
+  display: block;
+  text-decoration: none;
 }
