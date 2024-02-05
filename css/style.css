@@ -742,14 +742,29 @@ nav ul li a {
   }
 }
 .menubar .menu-bar {
-  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  top: 56px;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
 }
 .menubar .show {
-  display: block;
+  transform: translateX(0%);
+}
+@media screen and (min-width: 576px) {
+  .menubar .show {
+    display: none;
+  }
 }
 .menubar .menu-bar li {
   list-style: none;
-  text-align: right;
+  text-align: center;
+  position: relative;
+  z-index: 2;
 }
 .menubar .menu-bar li:hover {
   background-color: #AF9065;

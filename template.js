@@ -58,7 +58,7 @@
         const DOM = {
             openButton: null, //menu button
             showMenu: null //show menu
-        };
+        };  
 
         const displayMenu = () => {
             DOM.showMenu.classList.toggle('show');
