@@ -6,20 +6,39 @@
         padding: 12px 0;
     }
 
-    &__right {
-        .list-style {
-            display: none;
+    &__list {
+        display: none;
 
-            @include mobile {
-                list-style: none;
-                display: flex;
-                gap: 30px;
-            }
+        @include mobile {
+            list-style: none;
+            display: flex;
+            gap: 30px;
         }
-
     }
 
-    &__text-style {
+   .menu-bar{
+    display: none;
+   }
+
+   .show{
+    display: block;
+   }
+
+   .menu-bar li{
+    list-style: none;
+    text-align: right;
+   }
+
+   .menu-bar li:hover{
+    background-color: $primary-color;
+   }
+
+   .menu-bar .menubar__text{
+    font-size: 18px;
+    line-height: 28px;
+   }
+
+    &__text {
         color: $black-color;
         text-decoration: none;
         font-family: $secondary-font;
@@ -40,17 +59,19 @@
         justify-content: center;
     }
 
+    .bars {
+        cursor: pointer;
+        @include mobile {
+            display: none;
+        }
+    }
+
     .bar {
         width: 20px;
         height: 2px;
         background-color: $black-color;
         margin-top: 4px;
         cursor: pointer;
-
-        @include mobile {
-            display: none;
-        }
     }
 
-    
 }

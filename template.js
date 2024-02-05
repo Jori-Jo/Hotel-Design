@@ -56,16 +56,60 @@
 
 /*HAmburger menu*/
 
-const openButton = document.querySelector('.menu-bar');
-const showMenu = document.querySelector('.hamburger');
-// const closeButton = document.querySelector('.close-button')
+// const openButton = document.querySelector('.bars');
+// const showMenu = document.querySelector('.menu-bar');
 
-const openMenu = () =>{
-    showMenu.classList.add('active');
-}
 
-openButton.addEventListener("click", openMenu);
-// const closeMenu = () =>{
-//     showMenu.classList.remove('active');
+// const openMenu = () => {
+//     showMenu.classList.toggle('show');
 // }
+// const closeMenu = () => {
+//     showMenu.classList.remove('show');
+// }
+
+// openButton.addEventListener("click", openMenu);
+
+
+var hamburgerMenu = (function () {
+    const menubar = () => {
+
+        const DOM = {
+            openButton: null, //menu button
+            showMenu: null //show menu
+        };
+
+        const displayMenu = () => {
+            DOM.showMenu.classList.toggle('show');
+        };
+
+        // const hideMenu = () => {
+        //     DOM.showMenu.classList.remove('show')
+        // }
+
+        const cacheDOM = () => {
+            DOM.openButton = document.querySelector('.bars')
+            DOM.showMenu = document.querySelector('.menu-bar')
+        };
+
+        const eventListeners = () => {
+            DOM.openButton.addEventListener('click', displayMenu)
+            // DOM.showMenu.addEventListener('click', function (event) {
+            //     if (event.target === DOM.showMenu) {
+            //         hideMenu();
+            //     }
+            // })
+        }
+
+        const init = () => {
+            cacheDOM()
+            eventListeners()
+        }
+
+        return { init }
+    }
+
+    document.addEventListener('DOMContentLoaded', menubar().init)
+})()
+
+hamburgerMenu();
 

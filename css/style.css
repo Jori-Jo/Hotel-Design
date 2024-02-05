@@ -2,7 +2,7 @@
   font-weight: 700;
 }
 
-.card__tag, .menubar__text-style {
+.card__tag, .menubar__text {
   font-weight: 600;
 }
 
@@ -14,7 +14,7 @@
   font-weight: 700;
 }
 
-.card__tag, .menubar__text-style {
+.card__tag, .menubar__text {
   font-weight: 600;
 }
 
@@ -124,6 +124,68 @@
 
 .active {
   display: block;
+}
+
+.box {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  text-align: left;
+}
+
+.menu_icon_box {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  margin: 30px;
+  position: absolute;
+  border-radius: 4px;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 40px;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+  margin: 10px 8px;
+}
+
+.active .line1 {
+  transform: translate(0px, 15px) rotate(45deg);
+}
+
+.active .line2 {
+  opacity: 0;
+}
+
+.active .line3 {
+  transform: translate(0px, -15px) rotate(-45deg);
+}
+
+nav {
+  padding-top: 100px;
+}
+
+nav ul {
+  margin: 0px 30px;
+}
+
+nav ul li {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  padding: 10px 30px;
+  display: block;
+  text-decoration: none;
 }
 
 .btn__primary {
@@ -669,17 +731,34 @@
   align-items: center;
   padding: 12px 0;
 }
-.menubar__right .list-style {
+.menubar__list {
   display: none;
 }
 @media screen and (min-width: 576px) {
-  .menubar__right .list-style {
+  .menubar__list {
     list-style: none;
     display: flex;
     gap: 30px;
   }
 }
-.menubar__text-style {
+.menubar .menu-bar {
+  display: none;
+}
+.menubar .show {
+  display: block;
+}
+.menubar .menu-bar li {
+  list-style: none;
+  text-align: right;
+}
+.menubar .menu-bar li:hover {
+  background-color: #AF9065;
+}
+.menubar .menu-bar .menubar__text {
+  font-size: 18px;
+  line-height: 28px;
+}
+.menubar__text {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-family: "Nunito", sans-serif;
@@ -696,33 +775,20 @@
 .menubar__rooms-dropdown svg {
   justify-content: center;
 }
+.menubar .bars {
+  cursor: pointer;
+}
+@media screen and (min-width: 576px) {
+  .menubar .bars {
+    display: none;
+  }
+}
 .menubar .bar {
   width: 20px;
   height: 2px;
   background-color: rgb(0, 0, 0);
   margin-top: 4px;
   cursor: pointer;
-}
-@media screen and (min-width: 576px) {
-  .menubar .bar {
-    display: none;
-  }
-}
-@media screen and (min-width: 576px) {
-  .menubar .hamburger {
-    display: none;
-  }
-}
-.menubar .hamburger li:hover {
-  background-color: #AF9065; /* Change the color on hover as needed */
-}
-.menubar .hamburger .list-style {
-  list-style: none;
-  text-align: right;
-}
-.menubar .hamburger .menubar__text-style {
-  font-size: 20px;
-  line-height: 32px;
 }
 
 .news {
