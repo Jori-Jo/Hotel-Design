@@ -52,25 +52,7 @@
         return { init }
     }
     document.addEventListener('DOMContentLoaded', popup().init)
-})()
 
-/*HAmburger menu*/
-
-// const openButton = document.querySelector('.bars');
-// const showMenu = document.querySelector('.menu-bar');
-
-
-// const openMenu = () => {
-//     showMenu.classList.toggle('show');
-// }
-// const closeMenu = () => {
-//     showMenu.classList.remove('show');
-// }
-
-// openButton.addEventListener("click", openMenu);
-
-
-var hamburgerMenu = (function () {
     const menubar = () => {
 
         const DOM = {
@@ -111,5 +93,22 @@ var hamburgerMenu = (function () {
     document.addEventListener('DOMContentLoaded', menubar().init)
 })()
 
-hamburgerMenu();
+/*HAmburger menu*/
+
+// const openButton = document.querySelector('.bars');
+// const showMenu = document.querySelector('.menu-bar');
+
+
+// const openMenu = () => {
+//     showMenu.classList.toggle('show');
+// }
+// const closeMenu = () => {
+//     showMenu.classList.remove('show');
+// }
+
+// openButton.addEventListener("click", openMenu);
+
+
+
+
 
