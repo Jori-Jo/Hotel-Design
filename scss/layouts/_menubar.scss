@@ -23,19 +23,17 @@
         position: fixed;
         z-index: 1;
         background-color: $white-color;
-        top: 56px;
+        top: 0;
         left: 0;
         transform: translateX(-100%);
-        // transform: translateY(100%);
-        // right: 0;
-        // bottom: -56px;
         transition: all .3s ease;
     }
 
     .show {
         // display: block;
         transform: translateX(0%);
-        // transform: translateY(0%);
+        padding: 24px;
+
         @include mobile {
             display: none;
         }
@@ -43,18 +41,26 @@
 
     .menu-bar li {
         list-style: none;
-        text-align: center;
-        position: relative;
         z-index: 2;
-    }
-
-    .menu-bar li:hover {
-        background-color: $primary-color;
     }
 
     .menu-bar .menubar__text {
         font-size: 18px;
         line-height: 28px;
+    }
+
+    .menu-bar .menubar__text:hover {
+        color: $primary-color;
+    }
+
+    .closeBtn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background-color: $primary-color;
+        border: none;
+        cursor: pointer;
+        padding: 5px 5px;
     }
 
     &__text {
@@ -74,7 +80,7 @@
         }
     }
 
-    &__rooms-dropdown svg {
+    &__dropdown svg {
         justify-content: center;
     }
 
@@ -93,5 +99,17 @@
         margin-top: 4px;
         cursor: pointer;
     }
+}
 
+.show-submenu{
+    display: none;
+    color: $black-color;
+    font-family: $secondary-font;
+    font-size: 16px;
+    @extend %medium;
+    line-height: 20px;
+}
+
+.active-menu{
+    display: block;
 }

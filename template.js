@@ -1,6 +1,6 @@
-/*Popup in Vanila JS in IIFE*/
-
 (function () {
+
+    /*Popup in Vanila JS in IIFE*/
     const popup = () => {
         const DOM = {
             openWindow: null, //.button
@@ -53,33 +53,51 @@
     }
     document.addEventListener('DOMContentLoaded', popup().init)
 
+
+    /*Hamburger Menu */
     const menubar = () => {
 
         const DOM = {
+            /*Menu*/
             openButton: null, //menu button
-            showMenu: null //show menu
-        };  
+            showMenu: null, //show menu
+            closeButton: null, //close menu
 
-        const displayMenu = () => {
-            DOM.showMenu.classList.toggle('show');
+            /*Sub-menu*/
+            subBtn: null, //About Button
+            showSubMenu: null  //SubMenu SHow
+
         };
 
-        // const hideMenu = () => {
-        //     DOM.showMenu.classList.remove('show')
-        // }
+        const displayMenu = () => {
+            DOM.showMenu.classList.add('show')
+        };
+
+        const hideMenu = () => {
+            DOM.showMenu.classList.remove('show');
+        }
+
+        /*Show Submenu*/
+        const displayabout = () => {
+            DOM.showSubMenu[0].classList.toggle('menu-sub')
+        }
+
+        const displayrooms = () => {
+            DOM.showSubMenu[1].classList.toggle('menu-sub')
+        }
 
         const cacheDOM = () => {
             DOM.openButton = document.querySelector('.bars')
             DOM.showMenu = document.querySelector('.menu-bar')
+            DOM.closeButton = document.querySelector('.closeBtn')
+
+            DOM.subBtn = document.querySelectorAll('.open-sub')
+            DOM.showSubMenu = document.querySelectorAll('.show-submenu')
         };
 
         const eventListeners = () => {
             DOM.openButton.addEventListener('click', displayMenu)
-            // DOM.showMenu.addEventListener('click', function (event) {
-            //     if (event.target === DOM.showMenu) {
-            //         hideMenu();
-            //     }
-            // })
+            DOM.closeButton.addEventListener('click', hideMenu)
         }
 
         const init = () => {
@@ -91,22 +109,47 @@
     }
 
     document.addEventListener('DOMContentLoaded', menubar().init)
+
+    const submenu = () => {
+
+        const DOM = {
+            subBtn: null, //About Button
+            showSubMenu: null  //SubMenu SHow
+        }
+
+        const displaySubMenu = () => {
+            DOM.showSubMenu.classList.toggle('active-menu')
+          
+        }
+        const cacheDOM = () => {
+
+            DOM.subBtn = document.querySelectorAll('.open-sub')
+            DOM.showSubMenu = document.querySelectorAll('.show-submenu')
+        };
+
+        const eventListeners = () => {
+
+            // for( var i=0;i<(DOM.subBtn).length;i++){
+            //     (DOM.subBtn)[i].addEventListener("click", displaySubMenu);
+            // }
+
+            DOM.subBtn.forEach((subButton, index) => {
+                subButton.addEventListener('click', displaySubMenu())
+            })
+        }
+
+        const init = () => {
+            cacheDOM()
+            eventListeners()
+        }
+
+        return { init }
+    }
+    document.addEventListener('DOMContentLoaded', submenu().init)
+
 })()
 
-/*HAmburger menu*/
 
-// const openButton = document.querySelector('.bars');
-// const showMenu = document.querySelector('.menu-bar');
-
-
-// const openMenu = () => {
-//     showMenu.classList.toggle('show');
-// }
-// const closeMenu = () => {
-//     showMenu.classList.remove('show');
-// }
-
-// openButton.addEventListener("click", openMenu);
 
 
 

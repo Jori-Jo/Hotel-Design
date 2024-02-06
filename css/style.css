@@ -6,6 +6,10 @@
   font-weight: 600;
 }
 
+.show-submenu {
+  font-weight: 500;
+}
+
 .menu__meal-desc, .card__desc {
   font-weight: 400;
 }
@@ -16,6 +20,10 @@
 
 .card__tag, .menubar__text {
   font-weight: 600;
+}
+
+.show-submenu {
+  font-weight: 500;
 }
 
 .menu__meal-desc, .card__desc {
@@ -747,13 +755,14 @@ nav ul li a {
   position: fixed;
   z-index: 1;
   background-color: rgb(255, 255, 255);
-  top: 56px;
+  top: 0;
   left: 0;
   transform: translateX(-100%);
   transition: all 0.3s ease;
 }
 .menubar .show {
   transform: translateX(0%);
+  padding: 24px;
 }
 @media screen and (min-width: 576px) {
   .menubar .show {
@@ -762,16 +771,23 @@ nav ul li a {
 }
 .menubar .menu-bar li {
   list-style: none;
-  text-align: center;
-  position: relative;
   z-index: 2;
-}
-.menubar .menu-bar li:hover {
-  background-color: #AF9065;
 }
 .menubar .menu-bar .menubar__text {
   font-size: 18px;
   line-height: 28px;
+}
+.menubar .menu-bar .menubar__text:hover {
+  color: #AF9065;
+}
+.menubar .closeBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #AF9065;
+  border: none;
+  cursor: pointer;
+  padding: 5px 5px;
 }
 .menubar__text {
   color: rgb(0, 0, 0);
@@ -787,7 +803,7 @@ nav ul li a {
   height: 100%;
   width: 100%;
 }
-.menubar__rooms-dropdown svg {
+.menubar__dropdown svg {
   justify-content: center;
 }
 .menubar .bars {
@@ -804,6 +820,18 @@ nav ul li a {
   background-color: rgb(0, 0, 0);
   margin-top: 4px;
   cursor: pointer;
+}
+
+.show-submenu {
+  display: none;
+  color: rgb(0, 0, 0);
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.active-menu {
+  display: block;
 }
 
 .news {
