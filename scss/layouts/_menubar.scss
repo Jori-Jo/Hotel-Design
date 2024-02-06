@@ -82,11 +82,11 @@
 
     &__dropdown svg {
         justify-content: center;
+        cursor: pointer;
     }
 
     .bars {
         cursor: pointer;
-
         @include mobile {
             display: none;
         }
@@ -108,6 +108,10 @@
     font-size: 16px;
     @extend %medium;
     line-height: 20px;
+}
+
+.show-submenu li{
+    padding: 0 20px;
 }
 
 .active-menu{

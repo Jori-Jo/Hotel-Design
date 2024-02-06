@@ -99,7 +99,8 @@
 
         const DOM = {
             subBtn: null, //About Button
-            showSubMenu: null  //SubMenu SHow
+            showSubMenu: null,  //SubMenu SHow
+            showSvg:null//
         }
 
         const displaySubMenu = (event) => {
@@ -112,12 +113,17 @@
         const cacheDOM = () => {
             DOM.subBtn = document.querySelectorAll('.open-sub a')
             DOM.showSubMenu = document.querySelectorAll('.open-sub .show-submenu')
+            DOM.showSvg = document.querySelectorAll('.open-sub .open-svg');
         };
 
         const eventListeners = () => {
             DOM.subBtn.forEach((subButton) => {
                 subButton.addEventListener('click', displaySubMenu)
             })
+
+            DOM.showSvg.forEach((svg) => {
+                svg.addEventListener('click', displaySubMenu);
+            });
         }
 
         const init = () => {
