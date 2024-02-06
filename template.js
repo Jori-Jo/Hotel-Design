@@ -110,6 +110,7 @@
 
     document.addEventListener('DOMContentLoaded', menubar().init)
 
+    //Submenu//
     const submenu = () => {
 
         const DOM = {
@@ -117,24 +118,21 @@
             showSubMenu: null  //SubMenu SHow
         }
 
-        const displaySubMenu = () => {
-            DOM.showSubMenu.classList.toggle('active-menu')
-          
+        const displaySubMenu = (event) => {
+            event.preventDefault();
+            let parentEl = event.currentTarget.parentElement;
+            let childEl = parentEl.querySelector('.show-submenu');
+            childEl.classList.toggle('active-menu');
         }
+        
         const cacheDOM = () => {
-
-            DOM.subBtn = document.querySelectorAll('.open-sub')
-            DOM.showSubMenu = document.querySelectorAll('.show-submenu')
+            DOM.subBtn = document.querySelectorAll('.open-sub a')
+            DOM.showSubMenu = document.querySelectorAll('.open-sub .show-submenu')
         };
 
         const eventListeners = () => {
-
-            // for( var i=0;i<(DOM.subBtn).length;i++){
-            //     (DOM.subBtn)[i].addEventListener("click", displaySubMenu);
-            // }
-
-            DOM.subBtn.forEach((subButton, index) => {
-                subButton.addEventListener('click', displaySubMenu())
+            DOM.subBtn.forEach((subButton) => {
+                subButton.addEventListener('click', displaySubMenu)
             })
         }
 
