@@ -63,10 +63,6 @@
             showMenu: null, //show menu
             closeButton: null, //close menu
 
-            /*Sub-menu*/
-            subBtn: null, //About Button
-            showSubMenu: null  //SubMenu SHow
-
         };
 
         const displayMenu = () => {
@@ -77,22 +73,10 @@
             DOM.showMenu.classList.remove('show');
         }
 
-        /*Show Submenu*/
-        const displayabout = () => {
-            DOM.showSubMenu[0].classList.toggle('menu-sub')
-        }
-
-        const displayrooms = () => {
-            DOM.showSubMenu[1].classList.toggle('menu-sub')
-        }
-
         const cacheDOM = () => {
             DOM.openButton = document.querySelector('.bars')
             DOM.showMenu = document.querySelector('.menu-bar')
             DOM.closeButton = document.querySelector('.closeBtn')
-
-            DOM.subBtn = document.querySelectorAll('.open-sub')
-            DOM.showSubMenu = document.querySelectorAll('.show-submenu')
         };
 
         const eventListeners = () => {
