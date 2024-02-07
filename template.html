@@ -10,9 +10,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Nunito:wght@300&display=swap" rel="stylesheet">
     <script src="template.js" defer></script>
-</head> 
+</head>
 
 <body>
+    <!-- header starts -->
+
+    <div class="header">
+
+    <!-- Popup in Vanilla Js -->
+    <div class="popup">
+        <div class="popup__wrapper">
+            <button class="close-modal" id="close-modal1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="popup__text">
+                <h2 class="common-title">Take a Tour</h2>
+                <p class="common-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eius aspernatur
+                    quo porro quam
+                    tempora,
+                    repellat aliquid modi asperiores id saepe eveniet atque odio. Facere nulla eum suscipit commodi
+                    aliquam.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="popup__wrapper">
+            <button class="close-modal" id="close-modal1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="popup__text">
+                <h2 class="common-title">Learn More</h2>
+                <p class="common-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eius aspernatur
+                    quo porro quam
+                    tempora,
+                    repellat aliquid modi asperiores id saepe eveniet atque odio. Facere nulla eum suscipit commodi
+                    aliquam.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Popup Ends -->
+
     <!-- header starts -->
 
     <div class="header">
@@ -109,39 +156,83 @@
                 <div class="menubar__logo">
                     <img src="images/new-hotel-logo 1.png" class="menubar__image" />
                 </div>
-                <div class="menubar__right">
-                    <ul class="list-style">
-                        <li class="">
-                            <a href="#" class="menubar__text-style">Home</a>
-                        </li>
-                        <li class="">
-                            <a href="#" class="menubar__text-style">About</a>
-                        </li>
-                        <li class="">
-                            <a href="#" class="menubar__text-style">Hotels</a>
-                        </li>
-                        <div class="menubar__rooms-dropdown">
-                            <li class="">
-                                <a href="#" class="menubar__text-style">Rooms</a>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="4" viewBox="0 0 7 4"
-                                    fill="none">
-                                    <path
-                                        d="M3.76225 4L6.99996 0.76229L6.23875 0L3.76225 2.47811L1.28629 0L0.524536 0.761751L3.76225 4Z"
-                                        fill="black" />
-                                </svg>
-                            </li>
-                        </div>
-                        <li class="">
-                            <a href="#" class="menubar__text-style">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menubar__hamburger">
+                <div class="bars">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
                 </div>
+                <ul class="menubar__list">
+                    <li class="">
+                        <a href="#" class="menubar__text">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="menubar__text">About</a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="menubar__text">Hotels</a>
+                    </li>
+                    <div class="menubar__rooms-dropdown">
+                        <li class="">
+                            <a href="#" class="menubar__text">Rooms</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="4" viewBox="0 0 7 4" fill="none">
+                                <path
+                                    d="M3.76225 4L6.99996 0.76229L6.23875 0L3.76225 2.47811L1.28629 0L0.524536 0.761751L3.76225 4Z"
+                                    fill="black" />
+                            </svg>
+                        </li>
+                    </div>
+                    <li class="">
+                        <a href="#" class="menubar__text">Contact</a>
+                    </li>
+                </ul>
             </div>
+            <ul class="menu-bar">
+                <button class="closeBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <li class="">
+                    <a href="#" class="menubar__text">Home</a>
+                </li>
+                <li class="open-sub ">
+                    <a href="#" class="menubar__text about">About</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="open-svg" width="7" height="4" viewBox="0 0 7 4" fill="none">
+                        <path
+                            d="M3.76225 4L6.99996 0.76229L6.23875 0L3.76225 2.47811L1.28629 0L0.524536 0.761751L3.76225 4Z"
+                            fill="black" />
+                    </svg>
+                    <ul class="show-submenu">
+                        <li>About One</li>
+                        <li>About Two</li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#" class="menubar__text">Hotels</a>
+                    
+                </li>
+                <li class="open-sub ">
+                    <a href="#" class="menubar__text rooms">Rooms</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="open-svg" width="7" height="4" viewBox="0 0 7 4" fill="none">
+                        <path
+                            d="M3.76225 4L6.99996 0.76229L6.23875 0L3.76225 2.47811L1.28629 0L0.524536 0.761751L3.76225 4Z"
+                            fill="black" />
+                    </svg>
+                    <ul class="show-submenu">
+                        <li>Room One</li>
+                        <li>Room Two</li>
+                    </ul>
+                </li>
+                <li class="open-sub ">
+                    <a href="#" class="menubar__text contact">Contact</a>
+                    <ul class="show-submenu">
+                        <li>About One</li>
+                        <li>About Two</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -158,16 +249,18 @@
                     <h5>World Class Accomodation</h5>
                 </div>
                 <div class="banner__buttons">
-                    <a href=# class="btn__primary"><span id="open-modal">Take a Tour</span></a>
-                    <a href=# class="btn__secondary"><span>Learn More</span></a>
+                    <button class="button btn__primary" id="open-modal1">Take a Tour</button>
+                    <button class="button btn__secondary" id="open-modal2">Learn More</button>
+                    <!-- <a href=# class="btn__primary" id="open-modal"><span>Take a Tour</span></a> -->
+                    <!-- <a href=# class="btn__secondary"><span>Learn More</span></a> -->
                 </div>
             </div>
         </div>
     </div>
 
     </div>
-               
-            <!-- banner ends -->
+
+    <!-- banner ends -->
 
             <!-- about starts -->
             <div class="about">
@@ -200,6 +293,17 @@
             </div>
             <!-- about ends -->
 
+    <!-- cta starts -->
+    <div class="container">
+        <div class="cta">
+            <img src="images/Booking-rapper.png" alt="">
+            <div class="cta__wrapper">
+                <h4 class="common-title">Make room for adventure.</h4>
+                <p class="common-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id parturient
+                    aliquam egestas auctor in volutpat nulla purus.</p>
+                <a href=# class="btn__primary"><span>Online Booking</span></a>
+            </div>
+        </div>
             <!-- cta starts -->
             <div class="container">
                 <div class="cta">
@@ -270,51 +374,48 @@
                                 </div>
                                 <div class="menu__meal-image">
 
-                                    <img src="images/beef.png" alt="" class="">
-                                </div>
-                            </div>
-                            <div class="menu__meal">
-                                <div class="menu__meal-info">
-                                    <div class="menu__meal-title">
-                                        <p class="menu__meal-price">$82.00</p>
-                                        <p class="menu__meal-name">Grilled Veal Filet Mignon</p>
-                                    </div>
-                                    <p class="menu__meal-desc">A small river named Duden flows by their place and
-                                        supplies</p>
-                                </div>
-                                <div class="menu__meal-image">
-                                    <img src="images/filet.png" alt="" class="">
-                                </div>
-                            </div>
-                            <div class="menu__meal">
-                                <div class="menu__meal-info">
-                                    <div class="menu__meal-title">
-                                        <p class="menu__meal-price">$155.00</p>
-                                        <p class="menu__meal-name">Celeriac and Truffle Ravioli</p>
-                                    </div>
-                                    <p class="menu__meal-desc">A small river named Duden flows by their place and
-                                        supplies</p>
-                                </div>
-                                <div class="menu__meal-image">
-                                    <img src="images/egg.png" alt="" class="">
-                                </div>
-                            </div>
-                            <div class="menu__meal">
-                                <div class="menu__meal-info">
-                                    <div class="menu__meal-title">
-                                        <p class="menu__meal-price">$99.10</p>
-                                        <p class="menu__meal-name">Cod Filet Cooked on One</p>
-                                    </div>
-                                    <p class="menu__meal-desc">A small river named Duden flows by their place and
-                                        supplies</p>
-                                </div>
-                                <div class="menu__meal-image">
-                                    <img src="images/cod.png" alt="" class="">
-                                </div>
-                            </div>
+                            <img src="images/beef.png" alt="" class="">
                         </div>
                     </div>
-                    <a href=# class="btn__primary"><span>View All Menu</span></a>
+                    <div class="menu__meal">
+                        <div class="menu__meal-info">
+                            <div class="menu__meal-title">
+                                <p class="menu__meal-price">$82.00</p>
+                                <p class="menu__meal-name">Grilled Veal Filet Mignon</p>
+                            </div>
+                            <p class="menu__meal-desc">A small river named Duden flows by their place and supplies</p>
+                        </div>
+                        <div class="menu__meal-image">
+                            <img src="images/filet.png" alt="" class="">
+                        </div>
+                    </div>
+                    <div class="menu__meal">
+                        <div class="menu__meal-info">
+                            <div class="menu__meal-title">
+                                <p class="menu__meal-price">$155.00</p>
+                                <p class="menu__meal-name">Celeriac and Truffle Ravioli</p>
+                            </div>
+                            <p class="menu__meal-desc">A small river named Duden flows by their place and supplies</p>
+                        </div>
+                        <div class="menu__meal-image">
+                            <img src="images/egg.png" alt="" class="">
+                        </div>
+                    </div>
+                    <div class="menu__meal">
+                        <div class="menu__meal-info">
+                            <div class="menu__meal-title">
+                                <p class="menu__meal-price">$99.10</p>
+                                <p class="menu__meal-name">Cod Filet Cooked on One</p>
+                            </div>
+                            <p class="menu__meal-desc">A small river named Duden flows by their place and supplies</p>
+                        </div>
+                        <div class="menu__meal-image">
+                            <img src="images/cod.png" alt="" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href=# class="btn__primary"><span>View All Menu</span></a>
 
                 </div>
             </div>
@@ -535,6 +636,21 @@
 
     <!-- footer ends -->
 <!-- 
+    <div id="modal-overlay">
+        <div id="modal">
+            <div class="modal-header">
+                <h2>Modal Pop Up Window</h2>
+            </div>
+            <div class="modal-content">
+                <p>Modal Content</p>
+            </div>
+            <div class="modal-footer">
+                <button id="close-modal">Close</button>
+                <button>Save</button>
+            </div>
+        </div>
+        <div> -->
+    <!-- 
     <div id="modal-overlay">
         <div id="modal">
             <div class="modal-header">

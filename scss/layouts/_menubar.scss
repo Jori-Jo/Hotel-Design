@@ -6,20 +6,64 @@
         padding: 12px 0;
     }
 
-    &__right {
-        .list-style {
-            display: none;
+    &__list {
+        display: none;
 
-            @include mobile {
-                list-style: none;
-                display: flex;
-                gap: 30px;
-            }
+        @include mobile {
+            list-style: none;
+            display: flex;
+            gap: 30px;
         }
-
     }
 
-    &__text-style {
+    .menu-bar {
+        // display: none;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        background-color: $white-color;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: all .3s ease;
+    }
+
+    .show {
+        // display: block;
+        transform: translateX(0%);
+        padding: 24px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .menu-bar li {
+        list-style: none;
+        z-index: 2;
+    }
+
+    .menu-bar .menubar__text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .menu-bar .menubar__text:hover {
+        color: $primary-color;
+    }
+
+    .closeBtn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background-color: $primary-color;
+        border: none;
+        cursor: pointer;
+        padding: 5px 5px;
+    }
+
+    &__text {
         color: $black-color;
         text-decoration: none;
         font-family: $secondary-font;
@@ -36,8 +80,16 @@
         }
     }
 
-    &__rooms-dropdown svg {
+    &__dropdown svg {
         justify-content: center;
+        cursor: pointer;
+    }
+
+    .bars {
+        cursor: pointer;
+        @include mobile {
+            display: none;
+        }
     }
 
     .bar {
@@ -46,10 +98,22 @@
         background-color: $black-color;
         margin-top: 4px;
         cursor: pointer;
-
-        @include mobile {
-            display: none;
-        }
     }
+}
 
+.show-submenu{
+    display: none;
+    color: $black-color;
+    font-family: $secondary-font;
+    font-size: 16px;
+    @extend %medium;
+    line-height: 20px;
+}
+
+.show-submenu li{
+    padding: 0 20px;
+}
+
+.active-menu{
+    display: block;
 }
