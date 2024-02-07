@@ -16,53 +16,6 @@
         }
     }
 
-    .menu-bar {
-        // display: none;
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        z-index: 1;
-        background-color: $white-color;
-        top: 0;
-        left: 0;
-        transform: translateX(-100%);
-        transition: all .3s ease;
-    }
-
-    .show {
-        // display: block;
-        transform: translateX(0%);
-        padding: 24px;
-
-        @include mobile {
-            display: none;
-        }
-    }
-
-    .menu-bar li {
-        list-style: none;
-        z-index: 2;
-    }
-
-    .menu-bar .menubar__text {
-        font-size: 18px;
-        line-height: 28px;
-    }
-
-    .menu-bar .menubar__text:hover {
-        color: $primary-color;
-    }
-
-    .closeBtn {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        background-color: $primary-color;
-        border: none;
-        cursor: pointer;
-        padding: 5px 5px;
-    }
-
     &__text {
         color: $black-color;
         text-decoration: none;
@@ -70,6 +23,8 @@
         font-size: 16px;
         @extend %semi-bold;
         line-height: 22px;
+        padding: 12px;
+        display: block;
     }
 
     &__logo {
@@ -87,6 +42,7 @@
 
     .bars {
         cursor: pointer;
+
         @include mobile {
             display: none;
         }
@@ -101,7 +57,21 @@
     }
 }
 
-.show-submenu{
+//JS
+.menu-bar {
+    // display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: $white-color;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .3s ease;
+}
+
+.show-submenu {
     display: none;
     color: $black-color;
     font-family: $secondary-font;
@@ -110,10 +80,91 @@
     line-height: 20px;
 }
 
-.show-submenu li{
+.show-submenu li {
     padding: 0 20px;
 }
 
-.active-menu{
+.active-menu {
     display: block;
+}
+
+.show {
+    transform: translateX(0%);
+    padding: 24px;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.menu-bar li {
+    list-style: none;
+    z-index: 2;
+}
+
+.menu-bar .menubar__text {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.menu-bar .menubar__text:hover {
+    color: $primary-color;
+}
+
+.closeBtn {
+    position: relative;
+    top: 8px;
+    right: 8px;
+    background-color: $primary-color;
+    border: none;
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+//Megamenu
+.megamenu {
+    display: none;
+    padding: 16px 16px;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+.menubar__text:hover+.megamenu {
+    display: block;
+
+}
+
+.menubar__list li {
+    position: relative;
+}
+
+.menubar__list .megamenu {
+    position: absolute;
+    z-index: 3;
+    background-color: $white-color;
+    width: 552px;
+}
+
+.mega-menu {
+    width: calc(    100/3);
+    padding: 10px 10px;
+
+    &__title {
+        @include common-desc;
+    }
+
+    &__content {
+        display: grid;
+        @include common-desc;
+    }
+
+    a{
+        text-decoration: none;
+        color: $black-color         ;
+    }
 }
