@@ -854,18 +854,38 @@ nav ul li a {
   padding: 5px 5px;
 }
 
-.megamenu {
+.hotels {
   padding: 16px 16px;
   background: #fff;
+  display: flex;
+  gap: 20px;
+  position: relative;
 }
-.megamenu:hover {
+.hotels li {
+  list-style: none;
+  padding: 16px 16px;
+}
+.hotels a {
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  color: rgb(0, 0, 0);
+}
+.hotels a:hover {
+  color: red;
   display: block;
 }
-.megamenu__wrapper {
+.hotels__wrapper {
   display: flex;
+  gap: 20px;
+  padding: 20px 20px;
+}
+.hotels__services {
+  background-color: oldlace;
 }
 
-.menu-item:hover .megamenu {
+.menu-item:hover .hotels {
   transform: translateY(0);
 }
 
@@ -873,7 +893,7 @@ nav ul li a {
   position: relative;
 }
 
-.menubar__list .megamenu {
+.menubar__list .hotels {
   position: absolute;
   z-index: -1;
   background-color: rgb(255, 255, 255);
@@ -882,42 +902,43 @@ nav ul li a {
   transition: transform 0.3s ease-in-out;
 }
 
-.mega-menu {
-  padding: 10px 10px;
+.hotel-info {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  left: 224px;
+  top: 39px;
 }
-.mega-menu__title {
-  color: #474A57;
-  font-family: Nunito;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
+
+.hotels .hotel__services {
+  position: relative;
 }
-@media screen and (min-width: 992px) {
-  .mega-menu__title {
-    font-size: 18px;
-    line-height: 32px;
-  }
+
+.hotel-name:hover + .hotel-info {
+  display: block;
 }
-.mega-menu__content {
-  display: grid;
-  color: #474A57;
-  font-family: Nunito;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
+
+.hotel-info:hover {
+  display: block;
 }
-@media screen and (min-width: 992px) {
-  .mega-menu__content {
-    font-size: 18px;
-    line-height: 32px;
-  }
+
+.locations {
+  display: flex;
+  gap: 20px;
 }
-.mega-menu a {
+.locations img {
+  height: 200px;
+  width: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.locations p {
+  text-transform: uppercase;
+  font-size: 18px;
   text-decoration: none;
+  font-family: "Nunito", sans-serif;
   color: rgb(0, 0, 0);
-}
-.mega-menu h3 {
-  cursor: pointer;
+  font-size: 16px;
 }
 
 .news {

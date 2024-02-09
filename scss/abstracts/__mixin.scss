@@ -55,3 +55,11 @@
         line-height: 32px;
     }
 }
+
+@mixin sub-heading{
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: $secondary-font;
+    color: $black-color;
+}

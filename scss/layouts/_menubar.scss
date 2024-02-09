@@ -2,6 +2,7 @@
     position: relative;
     z-index: 1;
     background-color: $white-color;
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -125,29 +126,50 @@
     padding: 5px 5px;
 }
 
-//Megamenu
-.megamenu {
+//MegaMenu for hotels
+.hotels {
     padding: 16px 16px;
     background: #fff;
+    display: flex;
+    gap: 20px;
+    position: relative;
 
-    &:hover{
+    li {
+        list-style: none;
+        padding: 16px 16px;
+    }
+
+    a {
+        @include sub-heading;
+    }
+
+    a:hover {
+        color: red;
         display: block;
     }
-    
+
     &__wrapper {
         display: flex;
-        }
+        gap: 20px;
+        padding: 20px 20px;
+    }
+
+    &__services {
+        background-color: oldlace;
+    }
+
 }
 
-.menu-item:hover .megamenu {
+//Menu Level 1
+.menu-item:hover .hotels {
     transform: translateY(0);
 }
 
 .menubar__list .menu-item {
-    position: relative   ;
+    position: relative;
 }
 
-.menubar__list   .megamenu {
+.menubar__list .hotels {
     position: absolute;
     z-index: -1;
     background-color: $white-color;
@@ -156,24 +178,39 @@
     transition: transform .3s ease-in-out;
 }
 
-.mega-menu {
-    padding: 10px 10px;
+//Menu Level 2
+.hotel-info {
+    position: absolute;
+    background-color: $white-color;
+    display: none;
+    left: 224px;
+    top: 39px;
+  
+}
 
-    &__title {
-        @include common-desc;
+.hotels .hotel__services {
+    position: relative;
+}
+
+.hotel-name:hover+.hotel-info {
+    display: block;
+}
+
+.hotel-info:hover {
+    display: block;
+}
+
+.locations{
+    display: flex;
+    gap: 20px;
+    img{
+         height: 200px;
+         width: 200px;
+         object-fit: contain;
     }
 
-    &__content {
-        display: grid;
-        @include common-desc;
-    }
-
-    a{
-        text-decoration: none;
-        color: $black-color         ;
-    }
-
-    h3{
-        cursor: pointer;
+    p{
+        @include sub-heading;
+        font-size: 16px;
     }
 }
