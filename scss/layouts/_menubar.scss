@@ -1,10 +1,13 @@
 .menubar {
+    position: relative;
+    z-index: 1;
     background-color: $white-color;
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 12px 0;
+        background: #fff;
     }
 
     &__list {
@@ -125,6 +128,7 @@
 //Megamenu
 .megamenu {
     padding: 16px 16px;
+    background: #fff;
 
     &:hover{
         display: block;
@@ -135,13 +139,11 @@
         }
 }
 
-.menubar__text:hover+.megamenu {
-    display: block;
+.menu-item:hover .megamenu {
     transform: translateY(0);
-
 }
 
-.menubar__list .submenu {
+.menubar__list .menu-item {
     position: relative   ;
 }
 
