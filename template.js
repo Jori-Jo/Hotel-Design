@@ -154,7 +154,7 @@
 
         const moveParallaxTxt= () => {
             const scrollPosition = window.scrollY;
-            DOM.parallaxText.style.transform = 'translateY(' + scrollPosition * 0.1 + 'px)translate(-50%, -50%)';
+            DOM.parallaxText.style.transform = 'translateY(' + scrollPosition * (-0.2) + 'px)translate(-50%, -50%)';
         }
 
         const eventListeners = () => {

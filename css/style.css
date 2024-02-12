@@ -386,6 +386,7 @@ nav ul li a {
   left: 50%;
   width: 100%;
   z-index: 1;
+  min-width: 20vh;
 }
 .banner__title {
   font-family: "Cardo", serif;
