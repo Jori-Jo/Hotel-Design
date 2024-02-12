@@ -135,16 +135,54 @@
     }
     document.addEventListener('DOMContentLoaded', submenu().init)
 
+    const parallax = () => {
+
+        const DOM = {
+            parallaxImage: null, // About Parallax Image
+            parallaxText:null, //About Parallax Text
+        }
+
+        const cacheDOM = () => {
+            DOM.parallaxImage = document.getElementById('parallax-image');
+            DOM.parallaxText = document.getElementById('parallax-text');
+        }
+
+        const moveParallaxImg= () => {
+            const scrollPosition = window.scrollY;
+            DOM.parallaxImage.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+        }
+
+        const moveParallaxTxt= () => {
+            const scrollPosition = window.scrollY;
+            DOM.parallaxText.style.transform = 'translateY(' + scrollPosition * 0.1 + 'px)translate(-50%, -50%)';
+        }
+
+        const eventListeners = () => {
+            window.addEventListener('scroll', moveParallaxImg);
+                window.addEventListener('scroll', moveParallaxTxt);
+
+        }
+
+        const init = () => {
+            cacheDOM()
+            eventListeners()
+        }
+        return { init }
+    }
+
+    document.addEventListener('DOMContentLoaded', parallax().init)
+
+
 })()
 
-document.addEventListener('DOMContentLoaded', function () {
-    const parallaxLayer = document.getElementById('parallax-layer');
+// document.addEventListener('DOMContentLoaded', function () {
+//     const parallaxLayer = document.getElementById('parallax-layer');
 
-    window.addEventListener('scroll', function () {
-        const scrollPosition = window.scrollY;
-        parallaxLayer.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
-    });
-});
+//     window.addEventListener('scroll', function () {
+//         const scrollPosition = window.scrollY;
+//         parallaxLayer.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+//     });
+// });
 
 
 

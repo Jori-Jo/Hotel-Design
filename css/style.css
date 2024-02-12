@@ -64,7 +64,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 .popup {
@@ -355,8 +354,8 @@ nav ul li a {
   height: 280px;
   left: 0px;
   top: 0px;
+  width: 100%;
   position: relative;
-  height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -390,7 +389,7 @@ nav ul li a {
 }
 .banner__title {
   font-family: "Cardo", serif;
-  font-size: 40px;
+  fOnt-size: 40px;
   line-height: 32px;
   color: rgb(255, 255, 255);
   margin-bottom: 20px;
@@ -409,13 +408,21 @@ nav ul li a {
   text-align: center;
   justify-content: center;
 }
-.banner .parallax {
+.banner #parallax-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
+  background: url("../images/Rectangle 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100%;
+}
+.banner .parallax {
+  background-color: blue;
 }
 
 .cta {
@@ -891,7 +898,7 @@ nav ul li a {
   color: rgb(0, 0, 0);
 }
 .hotels a:hover {
-  color: red;
+  color: zzzzzzzzzzzzzzzzzzzzzzzzzz;
   display: block;
 }
 .hotels__wrapper {
