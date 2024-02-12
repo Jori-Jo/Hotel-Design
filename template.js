@@ -137,6 +137,15 @@
 
 })()
 
+document.addEventListener('DOMContentLoaded', function () {
+    const parallaxLayer = document.getElementById('parallax-layer');
+
+    window.addEventListener('scroll', function () {
+        const scrollPosition = window.scrollY;
+        parallaxLayer.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+    });
+});
+
 
 
 

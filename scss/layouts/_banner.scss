@@ -14,6 +14,14 @@
         height: 280px;
         left: 0px;
         top: 0px;
+        position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
         // z-index: 1;
 
         @include tablet {
@@ -33,6 +41,7 @@
     &__text {
         @include image-position;
         width: 100%;
+        z-index: 1;
     }
 
     &__title {
@@ -56,5 +65,14 @@
         gap: 10px;
         text-align: center;
         justify-content: center;
+    }
+
+    .parallax{
+        position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
     }
 }
