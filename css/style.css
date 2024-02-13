@@ -246,26 +246,6 @@ nav ul li a {
   }
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 20%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -20%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
 .about__wrapper {
   padding: 32px 0;
   display: flex;
@@ -306,7 +286,7 @@ nav ul li a {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  animation: fadeInDown 1s ease-in-out 0s forwards;
+  animation-duration: 1s;
 }
 .about__wrapper-right img:nth-child(2) {
   display: none;
@@ -314,7 +294,6 @@ nav ul li a {
 @media screen and (min-width: 576px) {
   .about__wrapper-right img:nth-child(2) {
     display: block;
-    animation: fadeInUp 1s ease-in-out 0s forwards;
   }
 }
 .about .section-tag {
@@ -359,6 +338,9 @@ nav ul li a {
     font-size: 18px;
     line-height: 32px;
   }
+}
+.about .animate__fadeInLeftBig {
+  animation-duration: 1.2s;
 }
 
 .banner {
@@ -1008,6 +990,9 @@ nav ul li a {
   margin: 0 auto;
   width: 84%;
 }
+.news__heading.animate__fadeInUp {
+  animation-duration: 2s;
+}
 @media screen and (min-width: 768px) {
   .news__heading {
     width: 68%;
@@ -1101,6 +1086,15 @@ nav ul li a {
   background-color: rgb(255, 255, 255);
   text-align: left;
 }
+.card.animate__fadeInUp {
+  animation-duration: 2s;
+}
+.card.animate__fadeInUp:nth-of-type(2) {
+  animation-duration: 2.5s;
+}
+.card.animate__fadeInUp:nth-of-type(3) {
+  animation-duration: 3s;
+}
 @media screen and (min-width: 576px) {
   .card {
     width: calc((100% - 20px) / 2);
@@ -1150,6 +1144,9 @@ nav ul li a {
   font-size: 15px;
   line-height: 20px;
   text-decoration: none;
+}
+.card__link.animate__zoomIn {
+  animation-duration: 2s;
 }
 .card__link::after {
   content: "";
@@ -1217,6 +1214,9 @@ nav ul li a {
   padding: 32px 0;
   text-align: center;
 }
+.menu.animate__bounceInUp {
+  animation-duration: 7s;
+}
 @media screen and (min-width: 992px) {
   .menu {
     padding: 72px 0;
@@ -1271,6 +1271,9 @@ nav ul li a {
     line-height: 32px;
   }
 }
+.menu__heading.animate__bounceInUp {
+  animation-duration: 2s;
+}
 .menu__meals {
   display: flex;
   gap: 20px;
@@ -1309,6 +1312,24 @@ nav ul li a {
   .menu__meal:nth-child(even) .menu__meal-name {
     text-align: left;
   }
+}
+.menu__meal.animate__bounceInUp {
+  animation-duration: 2s;
+}
+.menu__meal.animate__bounceInUp:nth-of-type(2) {
+  animation-duration: 2.2s;
+}
+.menu__meal.animate__bounceInUp:nth-of-type(3) {
+  animation-duration: 2.4s;
+}
+.menu__meal.animate__bounceInUp:nth-of-type(4) {
+  animation-duration: 2.6s;
+}
+.menu__meal.animate__bounceInUp:nth-of-type(5) {
+  animation-duration: 2.8s;
+}
+.menu__meal.animate__bounceInUp:nth-of-type(6) {
+  animation-duration: 3s;
 }
 .menu__meal-title {
   display: flex;
@@ -1367,4 +1388,7 @@ nav ul li a {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.menu span.animate__bounceInUp {
+  animation-duration: 2s;
 }/*# sourceMappingURL=style.css.map */

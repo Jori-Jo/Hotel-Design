@@ -140,7 +140,7 @@
         const DOM = {
             parallaxImage: null, // About Parallax Image
             parallaxText:null, //About Parallax Text
-        }
+        }   
 
         const cacheDOM = () => {
             DOM.parallaxImage = document.getElementById('parallax-image');
@@ -173,42 +173,6 @@
     document.addEventListener('DOMContentLoaded', parallax().init)
 
 
-    const parallaxImg = () =>{
-
-        const DOM = {
-            imgOne : null, // first image for about
-            imgSecond : null //second image for about
-        }
-
-        const cacheDOM = () =>{
-            DOM.imgOne = document.getElementById('parallax-img1');
-            DOM.imgSecond = document.getElementById('parallax-img2');
-        }
-
-        const showImg1 = () =>{
-            const scrollPosition = window.scrollY;
-            DOM.imgOne.style.transform = 'translateY(' + scrollPosition * (-0.5) + 'px)';
-        }
-
-        const showImg2 = () =>{
-            const scrollPosition = window.scrollY;
-            DOM.imgSecond.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
-        }
-
-        const eventListeners = () => {
-            window.addEventListener('scroll', showImg1)
-            window.addEventListener('scroll', showImg2)
-        } 
-
-        const init = () =>{
-            cacheDOM()
-            eventListeners()
-        }
-        return {init}
-
-    }
-
-    document.addEventListener('DOMContentLoaded',parallaxImg().init)
 
 
 })()
@@ -221,6 +185,8 @@
 //         parallaxLayer.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
 //     });
 // });
+
+
 
 
 

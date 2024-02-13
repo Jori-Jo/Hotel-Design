@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Design Template</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Nunito:wght@300&display=swap" rel="stylesheet">
@@ -307,19 +308,19 @@
     <div class="banner">
         <div class="banner__image">
             <div id="parallax-image">
-            <!-- <img src="images/Rectangle 1.png"> -->
-            <div class="banner__text" id="parallax-text">
-                <div class="banner__title">
-                    <p>V</p>
-                    <h5>World Class Accomodation</h5>
+                <!-- <img src="images/Rectangle 1.png"> -->
+                <div class="banner__text" id="parallax-text">
+                    <div class="banner__title">
+                        <p>V</p>
+                        <h5>World Class Accomodation</h5>
+                    </div>
+                    <div class="banner__buttons">
+                        <button class="button btn__primary" id="open-modal1">Take a Tour</button>
+                        <button class="button btn__secondary" id="open-modal2">Learn More</button>
+                        <!-- <a href=# class="btn__primary" id="open-modal"><span>Take a Tour</span></a> -->
+                        <!-- <a href=# class="btn__secondary"><span>Learn More</span></a> -->
+                    </div>
                 </div>
-                <div class="banner__buttons">
-                    <button class="button btn__primary" id="open-modal1">Take a Tour</button>
-                    <button class="button btn__secondary" id="open-modal2">Learn More</button>
-                    <!-- <a href=# class="btn__primary" id="open-modal"><span>Take a Tour</span></a> -->
-                    <!-- <a href=# class="btn__secondary"><span>Learn More</span></a> -->
-                </div>
-            </div>
             </div>
         </div>
     </div>
@@ -329,10 +330,10 @@
     <!-- banner ends -->
 
     <!-- about starts -->
-    <div class="about">
+    <div class="about   ">
         <div class="container">
             <div class="about__wrapper">
-                <div class="about__wrapper-left">
+                <div class="about__wrapper-left animate__fadeInLeftBig">
                     <p class="section-tag">
                         About Us
                     </p>
@@ -350,10 +351,9 @@
 
                 </div>
                 <div class="about__wrapper-right">
-                    <!-- <div id="parallax-img1"></div>
-                    <div id="parallax-img2"></div> -->
-                    <img src="images/Rectangle 2.png" alt="" class="">
-                    <img src="images/Rectangle 3.png" alt="" class="">
+
+                    <img src="images/Rectangle 2.png" alt="" class="animate__fadeInDown">
+                    <img src="images/Rectangle 3.png" alt="" class="animate__fadeInUp">
 
                 </div>
             </div>
@@ -381,7 +381,7 @@
     <div class="menu">
         <div class="container">
             <div class="menu__wrapper">
-                <div class="menu__heading">
+                <div class="menu__heading  animate__bounceInUp">
                     <p class="section-tag">
                         This week’s specials
                     </p>
@@ -394,7 +394,7 @@
                     </p>
                 </div>
                 <div class="menu__meals">
-                    <div class="menu__meal">
+                    <div class="menu__meal animate__bounceInUp">
                         <div class="menu__meal-info">
                             <div class="menu__meal-title">
                                 <p class="menu__meal-price">$55.00</p>
@@ -407,7 +407,7 @@
                             <img src="images/burger.png" alt="" class="">
                         </div>
                     </div>
-                    <div class="menu__meal">
+                    <div class="menu__meal animate__bounceInUp">
                         <div class="menu__meal-info">
                             <div class="menu__meal-title">
                                 <p class="menu__meal-price">$65.00</p>
@@ -420,7 +420,7 @@
                             <img src="images/celeriac.png" alt="" class="">
                         </div>
                     </div>
-                    <div class="menu__meal">
+                    <div class="menu__meal animate__bounceInUp">
                         <div class="menu__meal-info">
                             <div class="menu__meal-title">
                                 <p class="menu__meal-price">$75.00</p>
@@ -434,7 +434,7 @@
                             <img src="images/beef.png" alt="" class="">
                         </div>
                     </div>
-                    <div class="menu__meal">
+                    <div class="menu__meal animate__bounceInUp">
                         <div class="menu__meal-info">
                             <div class="menu__meal-title">
                                 <p class="menu__meal-price">$82.00</p>
@@ -447,7 +447,7 @@
                             <img src="images/filet.png" alt="" class="">
                         </div>
                     </div>
-                    <div class="menu__meal">
+                    <div class="menu__meal animate__bounceInUp">
                         <div class="menu__meal-info">
                             <div class="menu__meal-title">
                                 <p class="menu__meal-price">$155.00</p>
@@ -460,7 +460,7 @@
                             <img src="images/egg.png" alt="" class="">
                         </div>
                     </div>
-                    <div class="menu__meal">
+                    <div class="menu__meal animate__bounceInUp">
                         <div class="menu__meal-info">
                             <div class="menu__meal-title">
                                 <p class="menu__meal-price">$99.10</p>
@@ -475,7 +475,7 @@
                     </div>
                 </div>
             </div>
-            <a href=# class="btn__primary"><span>View All Menu</span></a>
+            <a href=# class="btn__primary"><span class="animate__bounceInUp">View All Menu</span></a>
 
         </div>
     </div>
@@ -507,7 +507,7 @@
     <!-- news starts -->
     <div class="news">
         <div class="container">
-            <div class="news__heading">
+            <div class="news__heading animate__fadeInUp">
                 <p class="section-tag">
                     Offers
                 </p>
@@ -520,8 +520,20 @@
                 </p>
             </div>
             <div class="news__wrapper">
-                <div class="card">
-                    <img src="images/1st.png" alt="">
+                <div class="card animate__fadeInUp">
+                    <img src="images/1st.png"  alt="">
+                    <div class="card__info">
+                        <h6 class="card__tag">UP TO 30% OFF</h6>
+                        <h5 class="card__title">$5 Breakfast Package</h5>
+                        <p class="card__desc">There are many variations of passages of Lorem Ipsum available
+                        </p>
+                        <a href="#" class="card__link animate__zoomIn">Know More</a>
+                    </div>
+
+                </div>
+
+                <div class="card animate__fadeInUp">
+                    <img src="images/2nd.png " alt="">
                     <div class="card__info">
                         <h6 class="card__tag">UP TO 30% OFF</h6>
                         <h5 class="card__title">$5 Breakfast Package</h5>
@@ -532,19 +544,7 @@
 
                 </div>
 
-                <div class="card">
-                    <img src="images/2nd.png" alt="">
-                    <div class="card__info">
-                        <h6 class="card__tag">UP TO 30% OFF</h6>
-                        <h5 class="card__title">$5 Breakfast Package</h5>
-                        <p class="card__desc">There are many variations of passages of Lorem Ipsum available
-                        </p>
-                        <a href="#" class="card__link">Know More</a>
-                    </div>
-
-                </div>
-
-                <div class="card">
+                <div class="card animate__fadeInUp">
                     <img src="images/3rd.png" alt="">
                     <div class="card__info">
                         <h6 class="card__tag">UP TO 30% OFF</h6>

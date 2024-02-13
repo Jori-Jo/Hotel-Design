@@ -4,6 +4,10 @@
     padding: 32px 0;
     text-align: center;
 
+    &.animate__bounceInUp{
+        animation-duration: 7s;
+    }
+
     @include desktop-mini {
         padding: 72px 0;
     }
@@ -29,6 +33,11 @@
         .common-desc {
             @include common-desc;
         }
+
+        &.animate__bounceInUp{
+            animation-duration: 2s;
+        }
+
     }
 
     &__meals {
@@ -74,6 +83,31 @@
                     text-align: left;
                 }
             }
+        }
+
+        &.animate__bounceInUp {
+            animation-duration: 2s;
+
+            &:nth-of-type(2) {
+                animation-duration: 2.2s;
+            }
+
+            &:nth-of-type(3) {
+                animation-duration: 2.4s;
+            }
+
+            &:nth-of-type(4) {
+                animation-duration: 2.6s;
+            }
+
+            &:nth-of-type(5) {
+                animation-duration: 2.8s;
+            }
+
+            &:nth-of-type(6) {
+                animation-duration: 3s;
+            }
+  
         }
 
     }
@@ -142,6 +176,12 @@
         img {
             @include image-length;
             object-fit: contain;
+        }
+    }
+
+    span{
+        &.animate__bounceInUp{
+            animation-duration: 2s;
         }
     }
 

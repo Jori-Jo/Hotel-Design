@@ -1,27 +1,27 @@
 .about {
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translate3d(0, 20%, 0);
-        }
+    // @keyframes fadeInUp {
+    //     from {
+    //         opacity: 0;
+    //         transform: translate3d(0, 20%, 0);
+    //     }
 
-        to {
-            opacity: 1;
-            transform: translate3d(0, 0, 0);
-        }
-    }
+    //     to {
+    //         opacity: 1;
+    //         transform: translate3d(0, 0, 0);
+    //     }
+    // }
 
-    @keyframes fadeInDown {
-        from {
-            opacity: 0;
-            transform: translate3d(0, -20%, 0);
-        }
+    // @keyframes fadeInDown {
+    //     from {
+    //         opacity: 0;
+    //         transform: translate3d(0, -20%, 0);
+    //     }
 
-        to {
-            opacity: 1;
-            transform: translate3d(0, 0, 0);
-        }
-    }
+    //     to {
+    //         opacity: 1;
+    //         transform: translate3d(0, 0, 0);
+    //     }
+    // }
 
     &__wrapper {
         padding: 32px 0;
@@ -59,8 +59,7 @@
             img {
                 width: 100%;
                 object-fit: cover;
-                animation: fadeInDown 1s ease-in-out 0s forwards;
-
+                animation-duration: 1s;
             }
 
             img:nth-child(2) {
@@ -68,7 +67,6 @@
 
                 @include mobile {
                     display: block;
-                    animation: fadeInUp 1s ease-in-out 0s forwards;
 
                 }
             }
@@ -94,27 +92,7 @@
         margin-bottom: 36px;
     }
 
-    // #parallax-img1 {
-    //     width: 100%;
-    //     object-fit: cover;
-    //     background: url('../images/Rectangle 2.png');
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    // }
-
-    // #parallax-img2 {
-    //     width: 100%;
-    //     object-fit: cover;
-    //     background: url('../images/Rectangle 3.png');
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     // overflow: hidden;
-
-    //     display: none;
-
-    //             @include mobile {
-    //                 display: block;
-    //             }
-    // }
-
+    .animate__fadeInLeftBig{
+        animation-duration: 1.2s;
+    }
 }
