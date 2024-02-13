@@ -246,6 +246,26 @@ nav ul li a {
   }
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 .about__wrapper {
   padding: 32px 0;
   display: flex;
@@ -286,6 +306,7 @@ nav ul li a {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  animation: fadeInDown 1s ease-in-out 0s forwards;
 }
 .about__wrapper-right img:nth-child(2) {
   display: none;
@@ -293,6 +314,7 @@ nav ul li a {
 @media screen and (min-width: 576px) {
   .about__wrapper-right img:nth-child(2) {
     display: block;
+    animation: fadeInUp 1s ease-in-out 0s forwards;
   }
 }
 .about .section-tag {
