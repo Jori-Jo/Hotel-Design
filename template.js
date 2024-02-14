@@ -186,7 +186,34 @@
 //     });
 // });
 
+function handleIntersection(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
 
+       
+
+        const animationClassName = 'animate__' + entry.target.getAttribute('data-animation');
+
+        entry.target.classList.add(animationClassName);
+        // Disconnect the observer after the element is in view (optional)
+        observer.disconnect();
+      }
+    });
+  }
+
+  var options = {
+    root: null, // Use the viewport as the root
+    rootMargin: "0px", // No margin
+    threshold: 0.5 // Trigger when 50% of the element is visible
+  };
+
+const cartoonElements = document.querySelectorAll('.cartoon');
+
+var intersectionObserver = new IntersectionObserver(handleIntersection, options);
+// intersectionObserver.observe(cartoonElement);
+cartoonElements.forEach(function(element) {
+    intersectionObserver.observe(element);
+  });
 
 
 
