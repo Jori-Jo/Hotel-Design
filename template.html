@@ -565,44 +565,82 @@
 
     <!-- Form starts -->
 
-    <div class="booking">
-        <div class="container">
-            <div class="booking__wrapper">
-                <form action="">
-                    <label for="fname">Full Name</label><br>
-                    <input type="text" name="firstname" placeholder="First Name">
-                    <input type="text" name="lastname" placeholder="Last Name"><br>
-                    <label for="email">Email</label><br>
-                    <input type="email" name="email" placeholder="ex:myname@example.com"><br>
-                    <label for="mobile">Phone</label><br>
-                    <input type="text" name="mobile" placeholder="Mobile Number"><br>
-                    <label for="rooms">Room Type</label><br>
-                    <select id="room" name="room">
-                        <option value="single">Single Room</option>
-                        <option value="deluxe">Deluxe Room</option>
-                        <option value="double">Double Room</option>
-                        <option value="King">King Room</option>
-                    </select> <br>
-                    <label for="guest">No of guests</label><br>
-                    <input type="number" name="number" placeholder="e.g :2,3"><br>
+    <div class="booking">   
+        <img src="images/ghibli.jpg" alt="">
+        <div class="booking__wrapper">
+            <div class="booking__text">
+                <h2 class="common-title">Your Journey Starts Here </h2>
+                <p class="common-desc">Ready for an unforgettable journey? Use our easy booking form to secure your spot
+                    now!</p>
+            </div>
+            <div class="form">
+                <form action="" method="">
+                    <div class="form__contact">
+                        <div class="form__contact-info">
+                            <label for="fname" class="form-title">Full Name</label>
+                            <input type="text" name="fname" placeholder="Full Name" class="form-control">
+                        </div>
+                        <div class="form__contact-info">
+                            <label for="fname" class="form-title">Last Name</label>
+                            <input type="text" name="lname" placeholder="Last Name" class="form-control">
+                        </div>
+                    </div>
 
-                    <label for="guest">Arrival Date</label><br>
-                    <input type="date" id="arrival-date" name="arrival-date"><br>
+                    <div class="form__contact">
+                        <div class="form__contact-info">
+                            <label for="email" class="form-title">Email</label>
+                            <input type="email" name="email" placeholder="ex:myname@example.com" class="form-control">
+                        </div>
 
-                    <label for="guest">Departure Date </label><br>
-                    <input type="date" id="departure-date" name="departure-date"><br>
+                        <div class="form__contact-info">
+                            <label for="mobile" class="form-title">Phone</label>
+                            <input type="text" name="mobile" placeholder="Mobile Number" class="form-control">
+                        </div>
 
-                    <label for="payment">Payment Method</label><br>
-                    <input type="radio" id="cash" name="payment" value="cash">
-                    <label for="cash">Cash</label><br>
-                    <input type="radio" id="fonepay" name="payment" value="fonepay">
-                    <label for="fonepay">Fonepay</label><br>
+                    </div>
+
+                    <div class="form__contact">
+                        <div class="form__contact-info">
+                            <label for="guest" class="form-title">Arrival Date</label><br>
+                            <input type="date" id="arrival-date" name="arrival-date" class="form-control">
+                        </div>
+
+                        <div class="form__contact-info">
+                            <label for="guest" class="form-title">Departure Date </label><br>
+                            <input type="date" id="departure-date" name="departure-date" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form__contact-info">
+                        <label for="rooms" class="form-title">Room Type</label>
+                        <select id="room" name="room" class="form-control">
+                            <option value="single">Single Room</option>
+                            <option value="deluxe">Deluxe Room</option>
+                            <option value="double">Double Room</option>
+                            <option value="King">King Room</option>
+                        </select>
+                    </div>
+
+                    <div class="form__contact-info">
+                        <label for="guest" class="form-title">No of guests</label>
+                        <input type="number" name="number" placeholder="e.g :2,3" class="form-control">
+                    </div>
+
+                    <label for="payment" class="form-title">Payment Method</label><br>
+
+                            <input type="radio" id="cash" name="payment" value="cash">
+                            <label for="cash" class="form-desc">Cash</label><br>
+
+                            <input type="radio" id="fonepay" name="payment" value="fonepay">
+                            <label for="fonepay" class="form-desc">Fonepay</label>
 
 
 
+ 
                 </form>
 
             </div>
+
         </div>
     </div>
 
@@ -739,21 +777,6 @@
     </div>
 
     <!-- footer ends -->
-    <!-- 
-    <div id="modal-overlay">
-        <div id="modal">
-            <div class="modal-header">
-                <h2>Modal Pop Up Window</h2>
-            </div>
-            <div class="modal-content">
-                <p>Modal Content</p>
-            </div>
-            <div class="modal-footer">
-                <button id="close-modal">Close</button>
-                <button>Save</button>
-            </div>
-        </div>
-        <div> -->
 </body>
 
 </html>
