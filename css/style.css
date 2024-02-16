@@ -1411,7 +1411,7 @@ nav ul li a {
   position: relative;
 }
 .booking img {
-  height: 652px;
+  height: 708px;
   left: 0px;
   top: 0px;
   width: 100%;
@@ -1431,12 +1431,16 @@ nav ul li a {
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
   left: 50%;
+  padding: 20px 80px;
 }
 @media screen and (min-width: 768px) {
   .booking__wrapper {
     display: flex;
     gap: 20px;
   }
+}
+.booking__text {
+  margin-bottom: 20px;
 }
 .booking__text .common-title {
   color: #000;
@@ -1473,9 +1477,9 @@ nav ul li a {
 }
 
 .form {
-  background-color: rgb(255, 255, 255);
-  border-radius: 12px;
-  padding: 20px 20px;
+  background-color: rgb(232, 232, 232);
+  border-radius: 8px;
+  padding: 30px;
 }
 @media screen and (min-width: 576px) {
   .form {
@@ -1504,9 +1508,22 @@ nav ul li a {
   margin-bottom: 8px;
 }
 .form .form-control {
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Nunito", sans-serif;
-  height: 28px !important;
+  height: 40px !important;
   margin-bottom: 12px;
-  width: 172px;
+  width: 192px;
+  opacity: 0.5;
+  padding: 10px 10px;
+}
+.form .form-desc {
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+}
+.form a {
+  text-align: center;
+}
+.form__button {
+  margin-top: 20px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

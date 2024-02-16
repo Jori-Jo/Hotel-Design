@@ -56,7 +56,7 @@
     }
 }
 
-@mixin sub-heading{
+@mixin sub-heading {
     text-transform: uppercase;
     font-size: 18px;
     text-decoration: none;
@@ -64,33 +64,29 @@
     color: $black-color;
 }
 
-@mixin form-title{
+@mixin form-title {
     text-transform: uppercase;
     font-size: 14px;
     font-family: $secondary-font;
-        margin-bottom: 8px;
+    margin-bottom: 8px;
     @extend %bold;
 
 
 }
 
-@mixin form-control{
-    font-size: 12px;
-    font-family: $secondary-font;
-    height: 28px !important;
-    margin-bottom: 12px;
-    width: 172px;
+@mixin form-control {
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+    height: 40px !important;
+    margin-bottom: 12px;    
+    width: 192px;
+    opacity: 0.5;
+    padding: 10px 10px;
 
 }
 
-@mixin form-desc{
-    font-size: 12px;
+@mixin form-desc {
+    font-size: 16px;
     font-family: $secondary-font;
-        margin-bottom: 8px;
-    @extend %medium;
-
-
+   
 }
-
-
-

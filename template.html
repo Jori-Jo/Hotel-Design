@@ -565,7 +565,7 @@
 
     <!-- Form starts -->
 
-    <div class="booking">   
+    <div class="booking">
         <img src="images/ghibli.jpg" alt="">
         <div class="booking__wrapper">
             <div class="booking__text">
@@ -627,16 +627,35 @@
                     </div>
 
                     <label for="payment" class="form-title">Payment Method</label><br>
+                    <div class="form__contact">
+                    <input type="radio" id="cash" name="payment" value="cash">
+                    <label for="cash" class="form-desc">Cash</label><br>
+                </div>
+                <div class="form__contact">
+                    <input type="radio" id="fonepay" name="payment" value="fonepay">
+                    <label for="fonepay" class="form-desc">Fonepay</label>
+                </div>
 
-                            <input type="radio" id="cash" name="payment" value="cash">
-                            <label for="cash" class="form-desc">Cash</label><br>
+                <div class="form__contact">
+                    <input type="checkbox" id="fonepay" name="payment" value="fonepay">
+                    <label for="fonepay" class="form-desc">Fonepay</label>
+                </div>
 
-                            <input type="radio" id="fonepay" name="payment" value="fonepay">
-                            <label for="fonepay" class="form-desc">Fonepay</label>
+                <div class="form__contact">
+                    <input type="file" id="fonepay" name="payment" value="fonepay">
+                    <label for="fonepay" class="form-desc">Fonepay</label>
+                </div>
+
+                <div class="form__contact">
+                    <input type="range" id="fonepay" name="payment" value="fonepay">
+                    <label for="fonepay" class="form-desc">Fonepay</label>
+                </div>
 
 
 
- 
+                    <div class="form__button">
+                        <a href="#" class="btn__primary"><span>Book Now</span></a>
+                    </div>
                 </form>
 
             </div>
